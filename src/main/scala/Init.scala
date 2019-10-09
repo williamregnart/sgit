@@ -1,9 +1,8 @@
 import java.io._
 object Init {
 
-  def main(): Unit = {
+  def createSgit(actualDirectory:File): Unit = {
 
-    val actualDirectory = new File(System.getProperty("user.dir"))
     //if  the directory doesn't have a .git directory, create it
     if (!existsDirectory(actualDirectory.listFiles(),".sgit")){
       createDirectory(actualDirectory.getPath,".sgit")
@@ -36,7 +35,6 @@ object Init {
     new File(gitRefsPath+"/heads/master").createNewFile()
 
   }
-  main();
 
 
   def createDirectory(actualPath:String,directoryName:String):Unit = {

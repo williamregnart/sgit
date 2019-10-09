@@ -1,11 +1,12 @@
 import java.io.File
 
-object Commi{
+object Commit{
 
   val actualDirectory = new File(System.getProperty("user.dir"))
   val gitPath = actualDirectory.getPath+"/.sgit"
   val commitsPath=gitPath+"/objects/commits"
   val branchPath=gitPath+"refs/heads"
+  val index_file = new IndexHandler(new File(gitPath+"/INDEX"))
 
   def getCommitContent(tree:String,parent_tree:Option[String]):String={
     if(parent_tree.isDefined) "tree "+tree+"\n"+"parentTree "+parent_tree.get
@@ -38,7 +39,7 @@ object Commi{
   }
 
   def commit(branch:String):Unit={
-    val tree = Tree.getTree("")
+    val tree = index_file.getTree("")
 
     if(getLastCommitFromBranch(branch)==""){
       createCommitFile(tree,None)

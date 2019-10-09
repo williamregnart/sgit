@@ -24,6 +24,10 @@ case class FileHandler(f: File) {
     file.exists()
   }
 
+  def deleteFile():Unit={
+    file.delete()
+  }
+
   def getPathFromActualDir:String={
     f.getPath.replace(new File(System.getProperty("user.dir")).getPath,"").replace("\\","/")
   }
@@ -94,7 +98,7 @@ case class FileHandler(f: File) {
   }
 
   def replaceLineByContent(line:String,content:String):Unit={
-    val newContent = getContent.replace(line,content)
+    val newContent = getContent.replaceFirst(line,content)
     addContent(newContent,appendContent = false)
   }
 

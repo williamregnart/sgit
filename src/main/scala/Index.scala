@@ -3,11 +3,7 @@ import java.io.File
 object Index{
   val actualDirectory = new File(System.getProperty("user.dir"))
   val gitPath = actualDirectory.getPath+"/.sgit"
-  val index_file = new FileHandler(new File(gitPath+"/INDEX"))
-
-  def getAllFilesPath(file:FileHandler):List[String]={
-    file.linesList.map(e=>e.split(" ")(0))
-  }
+  val index_file = FileHandler(new File(gitPath+"/INDEX"))
 
   def getElementsFromPath(path:String,listPath:List[String],listElements:List[String]):List[String] ={
     if(listPath.isEmpty) listElements
@@ -23,14 +19,6 @@ object Index{
       }
       else getElementsFromPath(path,listPath.tail,listElements)
     }
-  }
-
-  def getFilesFromPath(path:String):List[String]={
-    getElementsFromPath(path,getAllFilesPath(index_file),List[String]())
-  }
-
-  def getDirPathFromPath(path:String):List[String]={
-    getElementsFromPath(path,getAllPathAndSubPath(getAllFilesPath(index_file)),List[String]())
   }
 
   def concatPath(path:List[String],index:Int):String = {
@@ -52,14 +40,6 @@ object Index{
       else apply(listPath.tail,listAllPath++getPathAndSubPath(listPath.head))
     }
     apply(listPath,List[String]())
-  }
-
-  def getBlobFromFilePath(path:String):String={
-    val line_blob = index_file.getLineWithPattern(path)
-    if(line_blob.isDefined){
-      line_blob.get.split(" ")(1)
-    }
-    else ""
   }
 
 

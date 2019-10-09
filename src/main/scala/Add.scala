@@ -3,19 +3,19 @@ import java.io.{BufferedReader, File, PrintWriter}
 object Add{
 
   val actualDirectory = new File(System.getProperty("user.dir"))
-  val gitPath = actualDirectory.getPath+"/.sgit"
+  val gitPath: String = actualDirectory.getPath+"/.sgit"
 
   def createBlob(file:FileHandler):Unit ={
     val blobs_path = new File(System.getProperty("user.dir")).getPath+"/.sgit/objects/blobs"
-    val blob_file = new FileHandler(new File(blobs_path+"/"+file.getUniqueKey))
+    val blob_file = FileHandler(new File(blobs_path+"/"+file.getUniqueKey))
     blob_file.createFile()
     blob_file.addContent(file.getContent,appendContent = false)
   }
 
   def addFileToIndex(file_path:String):Unit = {
-    val indexFile = new FileHandler(new File(gitPath+"/INDEX"))
+    val indexFile = FileHandler(new File(gitPath+"/INDEX"))
 
-    val fileToAdd = new FileHandler(new File(file_path))
+    val fileToAdd = FileHandler(new File(file_path))
     createBlob(fileToAdd)
 
     val lineToAdd = fileToAdd.getPathFromActualDir+" "+fileToAdd.getUniqueKey
@@ -37,8 +37,8 @@ object Add{
   }
 
 
-  val directory = new DirectoryHandler(actualDirectory)
-  val indexFile = new FileHandler(new File(gitPath+"/INDEX"))
+  val directory = DirectoryHandler(actualDirectory)
+  val indexFile = FileHandler(new File(gitPath+"/INDEX"))
   indexFile.cleanContent()
   addFilesToIndex(directory.getAllFilesPath)
 
