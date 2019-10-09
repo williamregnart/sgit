@@ -1,0 +1,31 @@
+import java.io.File
+
+object Commit extends App{
+
+  val actualDirectory = new File(System.getProperty("user.dir"))
+  val gitPath = actualDirectory.getPath+"/.sgit"
+  val commitsPath=gitPath+"/objects/commits"
+  val branchPath=gitPath+"refs/heads"
+
+  def createCommitContent(tree:String,parent_tree:Option[String]):String={
+    if(parent_tree.isDefined) "tree "+tree+"\n"+"parentTree "+parent_tree.get
+    else "tree "+tree+"\n"+"parentTree None"
+  }
+
+  def createCommitFile(tree:String,parent_tree:Option[String]):Unit={
+    val content = createCommitContent(tree,parent_tree)
+    val commit_File = FileHandler(new File(commitsPath+"/"+Encryption.sha1(content)))
+    commit_File.createFile()
+    commit_File.addContent(content,appendContent = false)
+  }
+
+  def addCommitToBranch(branch:String,commit:String):Unit={
+    val branch_File = FileHandler(new File(branchPath + "/" + branch))
+    branch_File.addContent(commit,appendContent = false)
+  }
+
+  def getBranchToCommit:String={
+    val head_file = FileHandler(new File(gitPath+"/HEAD"))
+    head_file.getContent
+  }
+}

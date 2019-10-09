@@ -1,0 +1,10 @@
+import java.io.File
+
+object Main extends App {
+
+
+  def mkdirs(path: List[String]) = // return true if path was created
+    path.tail.foldLeft(new File(path.head)){(a,b) => a.mkdir; new File(a,b)}.mkdir
+  val a = mkdirs(List("/path", "to", "dir"))
+  println(a)
+}
