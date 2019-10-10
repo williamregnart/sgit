@@ -1,0 +1,4 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mAddTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32man add process[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have initially an empty INDEX[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should createBlob of file1 and add it to INDEX file[0m[0m

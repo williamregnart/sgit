@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 746a3d6d2d0470f908f5c5810e9d588adad4fd40 williamregnart <williamregnart@gmail.com> 1570623137 +0200	clone: from https://github.com/williamregnart/sgit.git
+746a3d6d2d0470f908f5c5810e9d588adad4fd40 ed3e2630a338795a364d8f5ce284debff2202a45 williamregnart <williamregnart@gmail.com> 1570623215 +0200	commit: first commit
+ed3e2630a338795a364d8f5ce284debff2202a45 35b865e8bc98d8558fb0eb14ecd4b5524b1dfeda williamregnart <williamregnart@gmail.com> 1570642987 +0200	commit: create IndexHandler class and move some functions in it

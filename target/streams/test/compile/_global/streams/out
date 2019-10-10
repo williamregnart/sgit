@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\FileHandlerTest.scala:21:7: missing argument list for method apply in class ItWord[0m
-[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
-[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `apply _` or `apply(_,_)(_)(_)` instead of `apply`.[0m
-[0m[[0m[31merror[0m] [0m[0m    it("should in order, in File, create it, write content, write at the end, overwrite")[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\AddTest.scala:82:35: could not find implicit value for parameter sz: org.scalatest.enablers.Size[java.io.File][0m
+[0m[[0m[31merror[0m] [0m[0m      blobs_directory should have size 3[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

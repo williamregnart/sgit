@@ -32,14 +32,6 @@ case class FileHandler(f: File) {
     f.getPath.replace(new File(System.getProperty("user.dir")).getPath,"").replace("\\","/")
   }
 
-  def getBufferedReader:BufferedReader = {
-    new BufferedReader(new FileReader(file))
-  }
-
-  def getBufferedWriter:BufferedWriter = {
-    new BufferedWriter(new FileWriter(file))
-  }
-
   def getUniqueKey: String = {
     val msdDigest = MessageDigest.getInstance("SHA-1")
     msdDigest.update(getContent.getBytes("UTF-8"), 0, getContent.length)
@@ -52,7 +44,12 @@ case class FileHandler(f: File) {
       if (line == null) content
       else apply(bufferedReader, content.concat(line + "\n"))
     }
-    apply(getBufferedReader,"")
+    val file_reader = new FileReader(file)
+    val buffered_reader = new BufferedReader(file_reader)
+    val result = apply(buffered_reader,"")
+    buffered_reader.close()
+    file_reader.close()
+    result
   }
 
   def cleanContent(): Unit ={
@@ -81,7 +78,12 @@ case class FileHandler(f: File) {
       if (line == null) list
       else apply(bufferedReader, list:+line)
     }
-    apply(getBufferedReader,List[String]())
+    val fileReader = new FileReader(file)
+    val bufferedReader = new BufferedReader(fileReader)
+    val result = apply(bufferedReader,List[String]())
+    bufferedReader.close()
+    fileReader.close()
+    result
   }
 
   def getLineWithPattern(pattern:String):Option[String] = {
@@ -94,7 +96,12 @@ case class FileHandler(f: File) {
         else apply(bufferedReader,pattern)
       }
     }
-    apply(getBufferedReader,pattern)
+    val fileReader = new FileReader(file)
+    val bufferedReader = new BufferedReader(fileReader)
+    val result = apply(bufferedReader,pattern)
+    bufferedReader.close()
+    fileReader.close()
+    result
   }
 
   def replaceLineByContent(line:String,content:String):Unit={

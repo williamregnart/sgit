@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(InitTest, org.scalatest.tools.Framework$$anon$1@457a4862, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FileHandlerTest, org.scalatest.tools.Framework$$anon$1@457a4862, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(IndexTest, org.scalatest.tools.Framework$$anon$1@457a4862, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AddTest, org.scalatest.tools.Framework$$anon$1@457a4862, false, [SuiteSelector])[0m
