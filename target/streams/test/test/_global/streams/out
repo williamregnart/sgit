@@ -1,17 +1,17 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(InitTest, org.scalatest.tools.Framework$$anon$1@26562a23, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FileHandlerTest, org.scalatest.tools.Framework$$anon$1@26562a23, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(IndexTest, org.scalatest.tools.Framework$$anon$1@26562a23, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AddTest, org.scalatest.tools.Framework$$anon$1@26562a23, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AddTest, org.scalatest.tools.Framework$$anon$1@5e909cbf, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(InitTest, org.scalatest.tools.Framework$$anon$1@5e909cbf, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FileHandlerTest, org.scalatest.tools.Framework$$anon$1@5e909cbf, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(IndexTest, org.scalatest.tools.Framework$$anon$1@5e909cbf, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mSummary for ScalaCheck not available.[0m
 [0m[[0m[0minfo[0m] [0m[0mScalaTest[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 951 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 12[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 1 second, 56 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 14[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 4, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 12, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 14, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0mPassed: Total 12, Failed 0, Errors 0, Passed 12[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 14, Failed 0, Errors 0, Passed 14[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	AddTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	IndexTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	FileHandlerTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	InitTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AddTest[0m

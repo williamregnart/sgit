@@ -1,5 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\AddTest.scala:37:25: not enough arguments for method addFileToIndex: (file_path: String)Unit.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file_path.[0m
-[0m[[0m[31merror[0m] [0m[0m      Add.addFileToIndex()[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

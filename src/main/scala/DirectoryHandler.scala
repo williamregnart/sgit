@@ -15,7 +15,8 @@ case class DirectoryHandler(f:File) {
             apply(files.tail, files_path ++: apply(files.head.listFiles(), Array[String]()))
           }
           else {
-            apply(files.tail, files_path :+ files.head.getPath.replaceAll("\\\\","/"))
+            println(FileHandler(files.head).getPathFromActualDir)
+            apply(files.tail, files_path :+ FileHandler(files.head).getPathFromActualDir)
           }
         }
       }

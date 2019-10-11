@@ -3,7 +3,7 @@ import java.io._
 
 object Init {
 
-  def createSgit(actualDirectory:File): Unit = {
+  def createSgit(actualDirectory:File): Boolean = {
 
     //if  the directory doesn't have a .git directory, create it
     if (!existsDirectory(actualDirectory.listFiles(),".sgit")){
@@ -35,7 +35,7 @@ object Init {
     head_file.addContent("master",appendContent = false)
 
     new File(gitRefsPath+"/heads/master").createNewFile()
-
+    true
   }
 
 

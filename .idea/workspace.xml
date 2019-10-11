@@ -2,164 +2,956 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbce937e-cc33-45da-a562-3de7d1d69753" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_mockito_mockito_scala_2_11_1_5_18_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalacheck_scalacheck_2_11_1_14_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_8_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_8_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_cats_core_2_11_2_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_cats_kernel_2_11_2_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sgit.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/AddTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_mockito_mockito_scala_2_13_1_5_18_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_13_1_2_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_2_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_6_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_13_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_6_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalacheck_scalacheck_2_13_1_14_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_13_3_0_8_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_13_3_0_8_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_cats_core_2_13_2_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_cats_kernel_2_13_2_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_typelevel_cats_macros_2_13_2_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/sgit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/sgit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sgit/INDEX" beforeDir="false" afterPath="$PROJECT_DIR$/.sgit/INDEX" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/004DB85C6EFB7200BE7DF953196277F5F9BC874A" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/033EDD19BFF67C39C601494700A5081E969D6353" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0D79E4AAAFF9C77077EE59D8E7DBC225A2A9274C" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/103716B8B4C8D18FA2053068D489C4ADCD51CD4B" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/128D7A7B49A9D538FD0DF5F8506DBAB1BEBE2727" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/157B3BBA6885FAC91474E966FB3837239E75943D" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1C11781D386E29764FF9A9C88C222A90C6943C4A" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/237524589CCEB0980328E155D08D0834F90EBC66" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/26359A372EAEA8544105FBC14E06850EB6E84EE0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/264E019D72E2BB6900909AFB94CFC577677824D3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2E80362C2438E4922FC0FB9F2ABF6CEAA8DA3F2A" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/305E7217BCB8231D4B919041467C024AB5A53F09" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3674950D854C238B8A3258E7136BAC4CCBE1C9D7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3F77B42BA998EACE6974A464959A3974B9DDCCF7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3F9819F2D0EECD3DC4EBFAD3A9945B09841110A6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3FC01284C7F7124A5C4331B8CA192527D51F71E2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4849A9BE45F2686108E664D1E98490E52AA9EE99" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4C6472AD327AD4A00A0B05F4704B38BD8DB09FCF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4E644E02DDDBC2A63E269032139A6CA79846C9D9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/526364F5AB6BB5616C5A31A035BB439FA2098412" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/52ADFC5F84978F462DE69AC5B982CBA0F2458159" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/589D696A0DEEA8482C576667578139A0224A3420" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/59E78EB45E0B9C0AD9FFC158263CC4C8D3AC34B6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5A887361551EB5CD732F1DFBD495FAE9E707C85B" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5E5C95FE534CB58A0E6223A46970D17DB612F05A" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5F1CD8A842A5AD93282A475E9E1673E6060F6D57" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6A400D2AF97BC641946E84EB35C442FBAA7090EE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6B5F6929E57430D1E18DBE7EE8ABA1F973757472" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6BB01B41969808E90B59CC5DE4FBBFCAD08859EF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6F13A64C523CEE0E9FFA18D5171178CE3F7D4B85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/70AE6AE0FD083142A4D44C94E011A79345823401" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/72D1A4E7FD065829C88F8E01B0649D240037203D" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/790FD7C4157707826735EA6B30981E85BB4AB8B2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7EA6DFF0AEC3F2569446EB3B9DA53C3113BF8350" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/800416C2ACDABF45ADE363D3280599B34C757966" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/882F45E4F90AE51E55F570F3A0A12E7F5CA7262C" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8BFB688B7267EFE8C7D845E1514CBBB52E67BEB2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/933A571472E015E50D97B4A170C788896DFE8E51" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/93CD7D47B032778CEFCE6045520AC05EB9AD1AE7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/95678199A679C1E932A0A3DDE92607085742F890" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9799641EDF3C0C5397A46B1115F9B8032D62A673" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9914115AA4F1F1C6F2995A847C81B94DEAC4F46E" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9AFB4523B06B5813B733F25158E73E5026A3E172" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A1E1D327B0539706D059FA0471F20FDEFD5DE795" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A2EBCB26C93A986F0575A1C2A423A911D1BAEC49" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AC4D9B0D7F7B68903A6AADB55D494CED30B5ED1F" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AE6AF39E19D474B7E1E4198143A90D7A00D3B75A" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B157A5F22F8907557D5074F7EA565A68B61943B9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B7E4C6D653B473EC448056C96DEF7A3C1E1D460B" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B8D42121F6E4F0F325C72965CA048F12ACA7AD25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B9A353E43BDD4B442C0CAACCEE8F2C477D844719" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BCF8169A90E0FD0621BB1F62A0C0E7C4DBCA0638" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BE32FC77C2F863A9D0E3798DA9CD9AF53ECA1ECD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BF2A281BC6B3A16F07551AAD1B51C3E6E42E25C1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C19B0C1E96D0437B924E2DD83286637F109F3C25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C2D3FA743C157EBD1B62B1AEABB0D777CE9F5097" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C61EC7EA50C4EF5DA04E55BD09F673FC42D50636" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CBAEDF389F8C7CA2CC0CD9069D4CB84FB5021F7F" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CEA32BBBEA59DE89677EB132A12D5F1237CF61C6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D0C87B1B592121A3A9F569453ED162810B0225C3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D2A4AC3F2CB77438D2688925E60448ECB1F1357A" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DB92B2AB94E4341C352B0A2F7912ED81E7CEEF3A" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DE361CC9741A9A2763028A26B90849F73B59C47C" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E6F54C5125D60B64FDF25B43EE04ECFFB0C565F1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E79964BC7E500ED40995646A3A8382CC696E7B79" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E9D1FC15C39E0C901E4564780BB1582F913DB35D" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F47B3FF3B452AD6CC098D26CB072E222682E8C2A" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F50956A900AC22E88EC351E09CF1C65DB0A8425B" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F931CF59E924F6DC21F29E6BB8816D5D86E87B8E" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$36ad13194a6906e5bd83$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$36ad13194a6906e5bd83.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$36ad13194a6906e5bd83.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0078D6E6088BA5BA6C0A30D89B8495892F4C9B02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/00B104C1B5626ABA4A5AC222B1DED9D2036D7980" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/00D9FF6CB567F6072D3570B2422B2B30E73F31F6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/00E210987973422ACE0A5396107DA6DECA0E49E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/00E572F4554D8B98C18BCA72BBDFFC92245F496D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/00FF7210B215F74E7588430D48E47FED58563AE9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/013D31669BECC49935CBD4D769F60E63C6A25F12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0156755CEAFDA49F3AD0EB317B27C9131454D4DF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/01B23CF8D2F95D270276CF3CE9A03CF955682313" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/01C101C9230557ED4A5E7951490A5509B41EB300" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/01F2DAB3C8CA4E29CF647AD6EF4113CF3D3D6164" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/028123D23F6C624B377DBC152636D01E168B53C6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/02ABA37F11BD5EBD4FEE418ECBD45F080DD3A0CE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/02C950B18ABCFDF09C36EAAB1FA4DA069BD177D0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/02F48A381DA1BCF888DC66B90C4EAA24933F13BB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/039C8A1F66946BD801AD01D907CE8D4396F6554C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/03D8A5557128F5415F7A677DA950785FDD73CA2C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0593481047E5DB47A9BFF310EC3648AEE4BB7744" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/05D28292953561A20ED2C3055B23FD23B766F256" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/06131372EA1450BCF596301EF578B0D406674BF9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/065CF15E03E0EE47B574617CE80C03DDAF069130" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/06678EDD065DCA7574E00531D352F83D98802D58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/068429F6A1317D6B2F30960F3563408CCBC90427" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/06AD609E73281B38F62709E4908C6352EA4CEBDD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/070033ED8D3C7FD9ACC5B104B50C9975D320656D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/07022D41EAE030393C464414403159ED89CB0B6A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/073AFAA3D24468C1BFB3D4211C7674647FD200FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/073E66AC83D5389B488DB524019DE80B75FF494A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/078DB2BDC0F6EB3A0E8C2D3E9172BCFC4BC3BD0D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/07B49C586465F257FED73EC10E57B7271E8C8B1B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/085F2ECDA13BF03C9246EDF80066CB984AFBB3E4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/08E241A36F7458F07587D4435CB4178B66FEDB02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0903F612E40A9258D5073E07483B20985D61991C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/091D93893B53DC7182EC32A5D0B35F7EAC1F5971" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/097F951474CE4DD1A458C6F9433432887349FAA8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0A7B4E826EA8DEBDD46811B5C6FFF78BFDD6AB4B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0A88127D592A72FD8D074CB1ABD48309F41ED141" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0AD06CABF13588325F52AF663239C859F0564516" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0AD70794D70D0961A45DF65EE60AB7FC97F9F3F3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0B595214129F02A2E849FE2DCFF9E615965C1F7F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0B83D6F5BCB82BCA6DCA023B4FF40CECFBF6B5C9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0BA8AA73310F52791FA37B61D3516D09B183F9B6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0BF2D95247D0B500DB57DE36C30CA51EC2254F9A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0C8966E37347233C95DF016A12595AD839DB29C7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0C8C9778D5C26ECEA991E99C47CC629261561069" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0CA29B9274B1AA2C81A2581265583B1AB54BAD0A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0CDEB8DC6937C591069F2623249F5E84B9A8F7F8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0CE551768CCEE93E0425396E955BCB9880D185F8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0CEC0A1176C88457E379715EB601840EFC36831C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0D08D324F46E856547ABB2C3B9D744DBBDF5E2BE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0D54946E7C1C3EC1912C28313C8283249300BDCB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0D7583E6867CD2B1CF4083395016DEF80EA3C32C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0D9058B99DB14DFF7C8634C8C2A1052D2F5DB43E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0E1533031C4B5B63887F680BB17683FBA945E4E4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0E98D6F82EE6869A97B08C5A99FC1F77378D7806" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0EB4EAE34BC63CC72B043B40F1B304629DF2B19F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0ECF6C6B1EE7C66C4A260034CC3A4B62557DC662" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0F5A788ABB6F6D638D1586CDD55BFC94D9AA51D9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/0F6973E65CD603EF8C529801A2A261997B44F766" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/10BDFC26E04693E3CE207CC202883D201BCFFC47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/10D26735F6823B029073DB1FD0E7C676F05C8EB3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1168A4B381B90D09A0556DC3BE9EDBFB21BAD450" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/118E3672C693D7DC14862683C5DD780FFDBFB3FF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/11B84445FE92F9C711A3BAA4D88762E41D0CA925" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/125FAFE23AB04E462D6C584EA33881664F6A2B39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/12C0F4B3A1ADA25489F1B072DF8A819EE3637022" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/12C747DB21091D11C8D192A6C7A776E0DB148BE7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/137517F59722EF5DE808D1577E7522DA97E8DB61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/14158FBD56826E80FC12DBEE71A4818265C08A1A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1417BD6DA804555D912904F12A5A724D838D925A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/144894F3F98586B7FFF4C8D869AEDD44495D9B63" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/148014BE98BE3530CF19A55C3DFB8D0377EC8444" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1487540A5098C9CA9507D6A5442E9613B097E50A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/14899AEED854E0FE0E5A926CA0D09EEB43095C9C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/148EC1A3941718299BEF34764E3AD2858D3578C2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/14CB969020648F36120D5DA6EB212B2337FEA121" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/14D6E526E44F5B3ECD51A92426EAF603B01EF15B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/152E798EF2C983FFA04265AF42B2190E0CD11305" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/153CF66A0BDCC594A4C6C6A5440F312EAF5A7B14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/15BF28665301CE18FB962C9BD9F8FE22C4FE9432" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/15FA40F15141E96E930630FADCF6934D46324149" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/15FF33C193816A5115C622D886306B51FB4525F4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/16848BD92D234FDCD12D9D335047EF219FF9C5DF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/17060315E5EB8A312877A0413525D3BDF0480BCB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1739B798807CF50E29921CE755CD75BE97CD7AEA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/17BDFE3498723FD76F89A77E8CE55B8C92A919C0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/18084D9DACD24A1A5D897C14E3DA6F86441F6E47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1841EE7A2829D199B41234B35011444B8E0B6290" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/18467EF5B837EA6D72C2CB29B8E6CBEE52444FE9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1862C1A92876C626739EA35C38B5ADC84B8F23F7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/18CDF4C09982E15C0D784F98FB1FBC59AC2E03F8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/195CB8B5377C45C969A4AB22642A7B1E56A50FC5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/19910DF4F68A3519DF67F8B79379B48C88A0550D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/199235259DF173AA52EE3F10E35390ADAF84E710" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/19FE39C85D0DBE7669DBBE6EF95586A4982BFBAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1A1536EE6D9CF1974893D017106284ACE8B8E1AA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1ABB6D7FF40354C83C5544469185634966CDC632" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1AC815B797C6B201F09E910F671C85B30588FA6E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1AEC12837B5C4E35A79F8C15ACFDEF6599140F19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1B273822847A15DC5FA7F1E88721753901785C4C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1B43D1E4D26B560A3F25AE7E660372BC2A52A36B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1BA1582BD306C07494554A505A8C37F3DEF1F814" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1BECC9ABF1A8AD1D991AA9134FC37EBB99A6CDBB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1C8E7E5172C22CECB87C1E15CA1DC26CD0007EAE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1C925B50BE792D3679F8F5C14DCEFBD1D623E12B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1CD9CBC28AE4EBC32C2AEDD7A1178EABF9583CDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1D919427C11ED6EB4D22D40F460ED29EFE2067A0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1DB0F06DE8CB6380D4EC200662AF455A4C19FDBA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1DF7DCD48A719F9B6604CA5090620AFB46A690AC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1E0F94D56D5708FFC555C35B97430A9842513D3E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1E4F760E13E6DBF17082A7028CE6E7A76920D05D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1EC4F4CB16ABC1C237585D3E7DA4B1932AE30A3D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1F0059EDF79BBF36B8AC2EFACEDFAFFC905DAD70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1F0AF7E5655F67AAFBE9406C3D3DEA79ED32C057" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1F16F0C4D7B35FF7C4CFD421867CDB9F9942446F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1F2E2B57CBE58D3F32A6773E3EEECBFA4FB9FD57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1F54140A82A92C355E89F163B5B82011D1819F59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/1F7BEF6878A51594A995B1623EA02FD75A06B4F4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/20274FCF790895A9FA9A4B8349B59B2007E4FAB6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2043493F6EB6BF1E6440A91CDE83022A2CB44429" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2062B02FA37588475E4287878351B7F4D89ACB2B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/20B58188C4D3FD2609944295C7CEDFD4F9FE4160" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/20BE119ED0D7401AC6463D1D74796C230CAC694C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/20D1192E7C5C967F62CC2DDE08BE92DE3CDFB29B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2148F384BF4F42635C16E1A44CC08219DC2D5931" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/22258175F80564153BF78735A5E3752A4F334D91" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/222C699C6093AD5BB2E12B9024960993B8C0EC7F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/22841F3DCF91B8810F00884D0A587E88C0E7D595" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/22860757CA07CA06A1527A78773C950731CBB451" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/228C85C18BCBCDDC76481D1BB09A1154D65C2A80" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/22C5BBB90FF0A7974AD3B726E05E97B7C6BED2EC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2308834CC0F38391C7A4E5D5E65FE923354050BE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/23269E202BFD326C5DC8ACD23E15A8AED3131AB4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/23444AFEAF2F093642F4F109D1C05DC5B61190F0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/237049B58CFE120A562808829598767998FD5D40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/237A1F580D94A6EBBE8416C93988A2A18D22A21F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/240E18D8A552FF7F365D7F3975FDE14C37482379" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2446C542A6C471383C947AFD8A3418C3F85ED241" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/24AA393C0F063D951BDC55504E2F5552296139FF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/24ADC26A30DA847D3EBDB0C5957DD9A5D315D15C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/24C862C63EFE88DC000F5E7EBBA6340C08A0C265" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/24F8195216FFD115D52B235D87A4447BAD439B6E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/250D94E40A29A2424DBA8749FE9CCB6901D0B8E8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/251B9C047DF475E950E8564EDA997A153FEC10A5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/253349F0E85804E7827C0D1A62125F971AAE848F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2535123196F6A6D91A55FBADDEA9B5BE7808DDA2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/256D2AC22513AD4D5FF72757DBAD196F6A267ED9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/262519471EE91062A45D48D4C0853CF29D320602" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/262BC642E2C3946C78F1FE047BF93C1A822789DA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2654A9A03AF65D7FFFEFD4DEBE55A78AA1306012" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/268C80858304BF82A878FD6EB6BE2D3B9C01B117" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/26A5EA404A6E412036B3DA8D2F38E57C0275584E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/27200076357FF7F0591BFDA2F82E737EAF50255B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/277072D3AC04C025219FFD3C2EA28789D03EA1C8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/281D4A49646885F0A403C6AC50E1A7959684D7AF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2830315CDCE36F9A2A4EA37755DB8C7B001DBBA8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/285090F9B75357785091FFAF1D5448EFE5F40F3C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2897E068DB2F87324D1698254FE78BF169E99B99" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2918C8BD398B5D5F7DE44A20AD30E54998798F58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2939B74FC3824C525ED1E6F9B7EECF9A4E3609C2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/29948E37C08E3B936A0C9B7BED20E84F89852528" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/29A0A7EF195CE71B56E7DAFFBEC618CCCB2B364C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2A15228C73B9D38FD4604E94877AE612C5BCD754" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2A6A36F9E853130FF221730FEB4DDA085DB06A5F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2A8454D150BF5AC8F5B554271560784C0B3CFE37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2ABA77BE4B8B62E66859C32027B561345215AB0D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2ADEEA51AFE6F05559EDA37DB2C17D77BEABB920" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2AFF54D4EFC9F305F1A2FF392C9D9110C64D1A23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2B59BE6F8E296623CD4729B75B18C0E0E0912E32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2B6275EDA365CAD50D167FE3A387C9BC9FEDD54F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2B8E205153842D75FB7DB3520152AE59402F7E8B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2BA3591A795C4E70A8ED2FA33EA7F3A692D33E4B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2BEFD0A4418499BA5957983B18E1FE8236EEF9CE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2C4BAB94283F4007AA12CBD8EBEFF16732458ACC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2C67711DADEBDF4EDD81B6A97AD2965E2ACEFF73" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2CB61A1941FF9E4D0C191D795E09F2141C5EC430" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2D1EC006426E3EE7B9EBA20BC60B28515F6A39B4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2D51B39E6370D99DE5FC3D483869873C46C3EF47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2DA8C3D702F05A8D2670AE4E9A169FE3E3301729" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2DD2363C708AD274E54D95B9913C09018194254B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2E055BC4D3218CEF6F926C889BD500B89AAD41CF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2F25674070B0B6EF1890C4F05290C6E2D37FB521" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2F64BC7F58D02C469261E7CB162CE6BBD7624549" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2F86EB326A14008A663542D57A505F584342CF26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2FCD25CE959A5948CEBBDE6691B2BD82A8B6D5D4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/2FFC575D240B030D534228D51DED4FBBAD65ACFC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3029E8A3793614D134F8B53A471D8EAE706FED56" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/31A172787D536957EA297390818EEE9D1109DFE8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/31CBB9F76D87B78F09E42A75B6E93CDB62851C45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/321D8F46BA163BB0878CF2B4E3A4C325BEB3C632" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3250C15EF526C03D84E3965057E0C1CDA0A958F4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/32FA499DFC79473E71D8F6CC4983F01C60915ADF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3319A262865A87197C427DC4AB3794854CA50261" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3326EA75702CC5BFD3912AF5B982A63D41854354" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/337F19D3DE6D6913298E5320D4F5FFFE21A4DA1B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/33CA40B218F8C0AD6E6BE97735B44818ACE398E2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/34859D52D561FAB19D787E83C3B6FB56953F15EA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/34FFD716D7EE2DACD5E12F2613C34F105A78D177" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3641487435B269754B5F91EF43DD4320D2CC4AF5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/36AED8976DCC08B5076844F0EC645B18BC37758F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/36B02B43A6B76DC36956EC7CD536709C62E0BA2C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/371E296B3CB532BBE95D84EF756C09A8646F127B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3786E0B431E1B0A8BFC008309FA93E43688F1375" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3793C581B77F6033D4D98D3C6E84AF9237E31DF2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/385E6C5BDB5CE71D10183ADEA661CD12B5B11FD7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/39032B608EC24DE6D279298991B63F350625CB70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3911C3697C0BB216D8F280007575BD5576FAA61D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/397415D74F2E3CEAFE8415AEF907C4AB637780C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/39C5EFA8DD0516548CE824DC770C0445E335C714" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3A0DB041D2B9DB2120A47A29C90882D292A3B953" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3A5A0966E28D1DA35067F4E5E7DD71947E2520F4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3AC40892B4246158CACDAD11B82F9E9E0279C3B8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3AD39398665962B7E5981F3D501A0799F5EA3678" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3AFC8BD146A434844601B0B10D5D604234F84AFD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3B48743CDE3AE15AF17BFF815D86EA08959936DE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3B60D8A8C98599ED47F36545763352302AF683D9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3B738A2F5F0EA9DE287453493F4568423BB4E56F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3B81563750FB2FAA9D60B00A2ECDBADF4A027C4D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3B9352178706ACB7B0A75EC6B1DE9D87E6AAEABE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3CFEB3105B0ABBFBB66E7404441A12635582E539" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3D09F51313B5BBD6A125FC07D87636D9F23DE076" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3D18B4CA1C307313C8135893D071B65CAFCE3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3D25616D8682A1AEE085A3ED4EDCA53235B65357" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3D7549F5DEBC0B7C8E8E9D1F831B8CEB266AFAC1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3E2A6901F42D7A47AA3BD4F4BFB9F5C5B351C144" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3E86A690F0417DFAA3C2AE203F67B3632F8AFE9A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3EEC04BF479CA1EDA0ED0B81ACF3E9D73BD05B9B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3F1B99895121E48CAFF9A594CBEEC8BED1605D24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3F88D4A9A09F60C6B60FEA68C116CAC9D9C91E29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3FB9FD815694A62EDF9C1B786BECAFE51932D755" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3FD1B85B11269F1E5C979CAEA6DC8214FCD534BB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/3FFC58D255CF942F8C870F56C92FA23B070BFEC2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/40B6364EC7191115913026F1850B807668E0E0FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/40BF239557F80E4ADA0DFC66860CFFE3CAF84329" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/41309AB9FBE98697F9C3257A288CF404B2AB836C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/41891BE49F00D0875F0B94C78054193A9C109E22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/419DC8FE4177104614E4C5B7AC66BBE0AAC618A7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/41EF764993AFCD2AECA422EF0A24903D9DDC06DD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/421F3A96CA21F7BD3958A2C18F877BE0F89BC5EF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4246E4E71CF7B2E400C8157D7A735FD107CC71E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/425733346C4D60421A99459FA77C6F6EFC5B89BE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/427C1F3F955C33B51E940C2B5880C2682C1782D3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4311A5E479B13ABD9047BE672A3C30BEE5A4FE0D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4362167D82A742E5C703EA1965990634B4B8546A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/436983BDC88602F4447A14ADD4FB20F8AE7DD44C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/43C2C22E13044648E994C4AB9ABD74E91396C4EA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/43E94CEDBCC509E3CFC165D35C7812691DB3A968" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/43EDC0ECA9217D07157FEC60F35D973611959FC5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/43F821BCA8B3FF9A737BFD1EF7BF0AA3DA051508" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/43FBFE53D4815016EA6F0DCB1DD03A4072CF8715" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/44FB85CA7EA63C47F08D1E195DF60D4420FB9BDC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4517053F2EE2BCF52255202D03654B4AC295558A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4553E403800DA1185244CD5855768870E7E4065E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/458B6F2C0D47F4D67A5518CB8BE7F9010519862B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4600052453E40F45E7F64C03BFA576087EBEF7D2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/463EE14F510235BFBA1BA12943362B35438F1CCC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/464F0A93F2AA2ED6FAECC52B9144E1BA1C5B1F97" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4689557791475A43CE3BB6EA9678A62CD8CBDA24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/471194D9053BBEC4C3292D18BAFF25D981B99544" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/473288204E8B772C305540F05EFC49761648A356" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/475828112DC7BC4F99B2E8AEB14693941BC7D516" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/47797031C4FD251D6B5ADD1FAFDD9BB4C9B75098" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/477D83B3F7FACFAA8969136F1BC15EC05AFF5928" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/47F14A448F71E2BBF4CC382C91AFFED658F59971" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/488DA9FFDDF0109A39BB1DB86CD9E0BD3479334D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/49313DBB2095187D7639E38F01E43449DCDAF668" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/49711F34A71A0B03247D12399C14E11AB7E53550" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/49CAAEB5C7790B399C79534C61895A2A4126DA56" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4A0014303D7A4D52E7B093D5C4F5E49557A77FC5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4A3F88FA1FC42BB9467FBD6C3CCB3529BCC29ED4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4A5EA2AB60FED27B321DA0E314323A0D11D23EA3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4AEBAAEEAAC2C7A56E8C3FBC16F2F5A9661A4FE0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4B4E810B147898D52D19200B40E6A31F1ED1AF0F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4BB9F4066777358DD5F94DBBA14332ADA3330B1D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4BEB64E8F7BB43D77B133A9F746B424AC274A67C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4C53E656BC4968C56CCA6C1358297AB76251A143" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4C5BDFB1F72649B5F1ED96A858E6918DF722E197" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4C62DAF6309D92296DA12BCEBB04F0DF6378A8C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4CC42B8C8F11480F8F1153E6487D88D05D9E80F7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4D0DE24F611CFFB4C1A1B8A777408C75F23CEC5A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4D8BD01E04B491FFED7D79DB42A45884C08E2EA2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4DB09AEFF03DE4FB49F88E09674681CEAD1D908B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4DE88EB95A5E93FD27E78B5FB3B5231A8D8917DD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4E40E9F028AA6C7903FE69E00D89B7329B4F00E7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4EBBA50855515C1053ADACA03741AE381908BB90" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4ECB9851C76BA8CF10B3C9345D262DA1C9E660CC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4F87F6685E09B0DF92EC64A5B1C061BA7255D5B9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4FBC782AF862B9E5A26DA2569032982215E751B1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4FD346690D5B6E3063E3C6B7D7DB877A2D8B13F1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/4FD61AC964281A43A2BACC2B0BE77171BEDDF2EF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/501B1DF9D6DA25B772FF60FD218D8C6CE2A66F49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/501E3B62A75C3D4DA2DEF7ADFA4C2BB1EC73E84A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/506D360218CBADD407ECD924E87A8F94C38AE8AF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/508A7AED2A4DFB40AE944544BF434C703F26F5DF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/50B3F3A1728C9077B4BBB55D8C133F3936776527" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/50BBAF4C0378F7B39DED7D8D8074625CD203B1D2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/50E86F9FFC267F8BC1D283B3019847761579DFF8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/512737C8C9E012197CEF57DE56017BA0F10414E1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/512B5760B12B6CC8641E2F415255F615ED1ACC5A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/51336027E16EE7C3081590A2C8061B41E0385042" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5157E930603A30B6FF21CEC09B1BEDB0F13B1997" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5170E3DCFD13492EA91EFEFC7D326FC8D915F933" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/517880142C7835F6521968A40BBD674BB3992056" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/51CD8383966A802CA0A53BA8F20145BE6892CDEC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/51ED8D2DC803CB0AE7337C8366681750DE84C502" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/522A4201CB0C9A50620A47429CB75D3230CB727C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/52385E37AAE55EFEDCC0E44DEA40C2ACC8A8B06C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/52E0E503CA2582C19FDC394BFE2D9B06F14BB1C1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/52E4020F462B0FF4909727B1243C795B58460D1C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/535A3BE912E186B3EBCB48F215CF9BF814DCC3AE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5485BE6630292C2B12462C9590A28F5769B5E506" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/55D8F1A1A27B0B5107B9BDBAD44EA0F616589B4B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/56A8B24BD0A920F941AA0B8B15050B0225707B5C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/56B9C0175CFB699C9221DE4AFBF36B2402A86855" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/56C6E810105B049878B75F30F75FD3845526ACD4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/56D423A1FCA332897EEF53AB95D295C67541FAE9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/575C92EA24B845686A904C969975A41129755A7B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/577D5A7E64B46EB00B99382694C22BB05F86C9DA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/57D5D91A7AA357DBBE35ABFE77019C2BD19D8193" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/587FC6D032956639B1F8259D136DC29D1C677F45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5885A56AB4FCA8075A05A562D005E922CDE9853B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/59061F27E9D7477FB803D045E5DA50F673541366" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/59127A5C2959E30E5754D28D64D6B62E1D0FB0E9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5932F57B0DF5BC6279685C69FEB68793170ED900" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/593449F91865CA3C4AF8283009407C83152C7F1C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5A97E4C4BEB7F6EC615BF1A91F891DF2F46BDF0A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5A9A0A6DD29659C1F0C6406D298DE114D2E2247C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5AE17C961F160FCAFE91FF8DD2A7585C15F56C38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5AEF17C9660586BFD8F8EA8438F827C3CDA6EFDC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5B371047899E8128C2E63BBFBC019010A3909CD8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5B40C9B83703C92F17A390CC9499E28C573FF3CC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5B60D6149463952F4B1EED16BDA30E93A3C45D93" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5BA5CD305D5BD1A3957E17DA423C3A861A5A031F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5BAA62233BA1A443EA9CB242475D1B8B2562FC04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5BAB184FDFEDD59538BEE97B5036A8186E863D85" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5BB48EC51E7D7C5DFD0F5768F13E4FD20B5F8186" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5C05CA28EA5C66BAAC081C9F8BF0EA3570D539F6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5C8518BFD1D1D3D2C1A7194994C0A16D8A313A41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5CEB98DB438C9E0BE3CFE9B85479D6C4491BF264" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5D4635B900A990CA424AFFDDDA6D976B93D39E8B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5E030B1804619BB1C083E41F312E2D8D2F1DF0C4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5E7B45D96A21612CB8FF39AEF1C5DC3D1E64514E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5EFD744D156C770CD8D7CFE5A0B32B4684A8A390" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5F0CBC8FA8A28617588A59F66E30D7AF896BB8FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5F993BF15CC949D813D9238396825F9E23B9C263" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5F9D45BA5CABBC1C41B3DE3C57493E40535681D2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/5FD07B3329D37EEB6410D7F324BBBBA3EAD48D4C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/60250E3E9D86E4DB544E1D43C24B18007DF7C0A9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/606606B53128FBC797A29633E355F23A426E43E4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/609224DE41828A2B3201D4BA0211E5E6AC91530E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/60A692194434F00502ED1D217F9EDCAF02D42CD1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/60CD6F3299A0D64C4A541DC887E4F3FA781B3197" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/60CF6C4C38E9D63D49D2659AD81E9DE49A0BA117" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/60DB84475AE9C4BDAF9A2EC2C740B9D1BCE96B6F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/613C229455102834F4A340E55EC89F196903D14A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/614EE0639EE1717B42DBFBFF8C5BA4EAB9BC72A5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/61EBDC20E922450CAF78E241FBE1D41235331579" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/620138DBED9AC6E55D71E5AB7E03CFFEFAF6F286" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/621A9CAD25DBEB9CF2CF94F2560B1AD805C6BF14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/627C387FBB89E0536CF3E34B2FC013BD60878075" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/63087A55A700F327142FFF471233C901D60F1D1C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/63E26159093331837A80EEB547DFD63D83A80CE3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/64BA6C08948D195A7D09A211361C90FCABCE6FF9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/64F38216A4C7FBCE69480E2DB5633E90DA611498" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/650DAD1EE4B80E155F84177166476B650E0CF3A4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6528ED2ED81B3EA176D0AC32EC1318C4030D2FE4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6533746EBCFBBDFFA96EB40BC479F47DB3486093" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/661DB076B506C2DD99C57F584D1AD9C97484A653" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/66742C4148C1409857DACD4247D9896395CBCBB4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/676731C54B00A35D59C21F16992CE89C11A182B6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6770E99ADA3737D2F43FD0AD30CEF30140D9DE4F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/67B11117A1D9D7F968082054C933EC65F037E495" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/68F829B0755409C11D110282F41802D3F6FB2FF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6933B8A23FC3E9AC729590955483C1D8EF78D196" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/69A9A326CBA1D89AD9B1773B30C682D79EF30DC8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6A0D6CA76277D4590769069E0798D2571473AD0D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6A1D12A38E1F862BC62E896EBA5B428459C97209" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6A489FEEE080BBE0EC13E30615B9C678D992D69F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6A72EAA9304729D92C1ED4D1F0E64D06DBDD2FDD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6B2C080EB01DCD9454E7159254E51DAE0950E029" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6B6FFDC10EC89EDFCAB9D28ACEE893D141287FCA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6BBE1C03DD7CFE18BBB5A29168209A9BBABD8FB4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6BDD21E1BECC22B3CA04ED3F09A5C2947128E8F4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6C5A4606367EB2C48F981ED3B32F068821B31270" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6C63E86FFB080C8B7B006D90E2F42219674C4860" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6CE45CC579E799D8C14C29D354F0623E4F9103E5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6D731060A9E3171BC17C25308A9B2B95A0C90EF9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6DCC0C72ACE6B4604B69D4BC695C111D3ACF6140" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6E672EA3B8E1A30332F523EC8AD4970BD9E286D4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6E8AD8B03E9535087231D05EDED06EB3AE35CBB8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6EADDF9C942A62ED68EB8E283E56E7C001A7356D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6F23FAF58974CD3D43CFF14C39B7413DAE8AFF4B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6F9D1110E91021B5EBB7702BDBB0558D7756D275" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/6FCA30A631E984055D82EA2D5730481A49DAC97D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7003767D8C91A67BD3D904AE35B44565F207B6E6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/701A97EF78F794A92CA03D7F20273F3A7B077D25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7075C789E8DEF60FB4FF3E4E612580DDCD6AF66E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/707844FE41BD8317FA091990A9D6E78BA10A38C8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/70B33E66D515D89BA92E22D1652F1CA8C8CB9B7C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/70E2D49C08A2175864F8B1098EFA34C1C10DAC01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/714FD91843F4AB8875D97473427EC11DBBCF86EE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7155A9F2B9E1A81D7C855B108635E5F67C3EEA4E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/717E0187A94558107B153EE87CED67840440CB77" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/71B2A41986AA5E613E354051CDA7D3AE4A5F7C02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/727EDB59A0846B4DF12FB4452F6002448F4CBDB5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/72A6A8D496A7904B9E89A11FED7F8607B1860914" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/72C421BC465964341523FEDF3C66359F99CEE415" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/72C584E0E6290ADEEB621833C4BE95D331A094B8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/72CF7AF0AEAB63298A693AE85A187042BC33C117" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7308DB6CB75F227804AC462AA680A7CE4073C23A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/73165E88B2ED2E737C483C9ABD56908C50DC072F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7329757869B8DDAF89E72A108F1A8A7CAB087436" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/732B113D8E0CCC7E00FA21E52CDF1A2898D0AABC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/73B6F35FC1A91AC9463AAFD5A519A9487250BB28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/73ED9B5E0FC598517BCD9AEA15996D0B16358B12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/74304A198998CE90166D6C5E9F4C4BF8C72DC9FB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7447ED9F1C6C7E58091FD1EA12776B9204F4B64A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/751B368F5A065E48A9AF295BD3324808C1290EAC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/75392191AC7F06F90BD5879BB9F83615FDE7423D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/75D2E8BFEFD8FCB84AF729984F9E814FD764AFAA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/75D3F065E700DD085A6946D58EDF604031569BC4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/764EB309335876CDDDA3490539E32FA24BAB1B78" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/776A93F7DFA2A9903F926BC90E5BB80CA44E1DBD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/77861BD2FBDA3947C52D3B8A477A00149A13C1E0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/780A308208BD045D97684962772061F4D6CF7D1A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/781847E27F60A74941A7FA2FA09D0866630730EA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/78615585A6CB7AA0240D240238AD99F08947D668" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7880DD0F95480B661B2BE7499B6EF3AFBD80AC4C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/78B8965BEDD2966A3E4FA17382C907B23B114719" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/791BA9D26BD95C5A6AEB58836B854F8FE413B01B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7979A763148E491FB2CAC4D8B8233977F00721B0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/79A32642EEC10E099D0F0E7409FA1B930818A58F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/79DDA4D30F1794FF57130A1CEF3CE433CEDD6852" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7A3146F2B8FECC0330E24835603255F7878D1D9E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7A76F388824B863E0EF678836139710F26DC2DE1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7A867EB2BE6615A8A72AEC014B14612659C00781" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7AE8146A64D63886D5642D73EACFBB2C418699EC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7B0167211603EA7A386E3EB4F2D5E936164E537F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7B72B76393397C2EE74FC95B64E5600F8F317716" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7B74AF6425AEA169885B02C890F9B8795A7A9790" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7B88A48EF25A9333E04C1D5F051F1768FDFF9BF8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7BA186A579A124C76E0126FF12755851BBA4F3E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7BAF93BC83E834C0816B725B78D4766BFC637EDE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7BEB16F81969130DEC196BB576C3CE3013465185" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7C3DD724BC8B536AFF06F1A598BE2EE2FADD6B6C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7C72C131BAC8AB98790929CA14AF6DAF1B6366FB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7CEF2DEA355397F4DAFF14CFE51B0D5736C5C529" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7D4A5B5D5BB173890EDA09D0DC4EE90AE76B7263" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7D5BAF1636791AF478BE2158DC5C4770625FCED7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7DA4C33609F5B2A3962A0DF0BBD57CEED7DDF426" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7DFB2CF21FD77EA76CDE0D953658BFF28AF926FA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7E00B45EE4DBF02FBE67FBA8AA9AB704D8CA08CE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7E4989D31061C8663957A5E14E676EB0A155B69B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7E536BFED20BFAEFF782595EBC5A6B83F87B7B9E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7F17E7D60398E6D42FEC8503480C43D222F7310A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7F4069A586466074B0677FBFEF652DB958870F46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7F482A3CBB4AADCEA475A48B1CCF4D47822778FA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7F948204F75F6E527C666C27AA575A3B3A27591F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/7FE690D0C0F7EAD3C6F959248DD2F7D09A71BE74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/802D3C175309AB0B327CC8506A9C47B058223D11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/80ECC312836544599E4963F90FCEC56D01F886BF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/80F32DD31BE1CEAC62C487721A66ED0F7564B283" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/817010E00D4B58DB9C71364E561B257CC635BD5B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8192FCEA4F17CC3455F17376EC162B0515EC10BA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/81B58BF88D605C72FDA7C3B6F1343327F42D500F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/81DDDAB87A853D1E1293C93E1C664F14507C31AE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/821E139FE0318D82B88F24551E18B2752244FDCC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8324C97B2887A41CB2399B1FA3BD94A2AEE3170D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8370BF2D64E1CA56B75FBD718AF05675988F99D4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/83CF602C72194710D443614D129C89D02946B535" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/83EB3043C31AC2F878C7AEF34C35C030A649E16F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8401C56357A3B8D920D429564F1CC6BAA141EC29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/84974DADA2FF9689FBA3A91F25B535A40DDC7653" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/84A0586684D6ECDE7B953C142A7EB6326C841741" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/84BD5AFD57DA2EA26531F01B61A00D3FE7072963" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/85400B4F8547E00D2F256E7CAFBB39955CBBDA5C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/856C2E398C79C74A5A6F5B0A061CED749E6673B3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8578E6C4C21A35E145C6FB93C5B2927A2092FB27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/85AF22E138D0D31DD8EF831C0D042DD756A62ED3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/85C5EE4FE135EC4E2FB3EC721C9516B3B1693D32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/85DCA1C1C9612559F3F4355855CBDCD268874975" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/85EA3B25D926E9831925C81C57F20EA5EBAC0BB6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/85F9C4F2A2B8B13D0D76623E4D2CC26A731AF4DA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/863E35F78B6B55055FA384BA630FD7E825AA808D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/865E8FDEAE290C18A1E257903A6C6DA5E7D07946" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/86B736235DEE5545E0816BA0ACB52C2543F5F91D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/86D17DCEAC6D583539950993E6A017D9B4C36387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/86EF2EA31B7E6E897831BA84F32E777F7701C849" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8701E52A37D9B8D67C9D6BE42C6B31B5949202B3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/87513F6A923B07E4C8A0297B0D061C6F37D2385E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8764027CC7A56CE8F30C3A3576F6218AF239AAD7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/878135BBE3496D636D0298ED3A074081403C54C4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/87EA73A29C8498370033C2D5DF06BA06210AA608" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/880BDE47E66787D1E3C6679C0EC3D9BD311A9C64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/882FEFFE70586D9A02E3BEA774EAB96679A65533" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/88726BC9B663C33D5A0FA47CE8E0228FCCF9CEC7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/88C756F6835160890843AF6C44FF52D022DDF010" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/893E2F3B80138CA7E93084E393EF616C60ED91A1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/89C4F2999411CC03139459E3E6BB1DBF0DF5078A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/89EF19E76FB5C5DD05DD580D2C88F02B740E44C6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8A65FBC7F34C4B0A2823682117B986B697D8FE44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8A9A04EE801780D26E6A1A022DE46D1926192A46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8AA314F064ACC17AF3FFF8EDC1A2E4600DC2C4AD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8AEAFC7C252BE51C169C5804D1D0FBFA762C484A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8B1A9CD587806443BE0B22B3A11EE9F6292E05AC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8BBAC7C789638CAF8E1CC28C37102697F3E18FC0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8BE4B45258F296756AA7C928A98AB6FDF0A16E3B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8C5C4132B5CBC0D42CCCB80FDC70846A09CD8676" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8E78AC09090BEFF4B988944D5852C87C24FBBF76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8E9234C2F50D1D6119AA5D74DDA7AFEBD795501D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8EC9753B0EA3D11E185C1104379826341F670B25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8EE5D1FE3091FD005453BCCCA87939C717971BE4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/8FC1F23DB1FB4339FD9330FBF66D3D5E39C28B17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9038C7F935A31FE7EB129BCC0718AAF8191E8976" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/90C3EB5CEDE3034707B59478F3E1F7D35DE07642" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/90E9005A88F10679092C85C7CE0A50F9858BD222" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/90E907255C06B3095E8AFF991BF55DB942BA4DAA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/910FC2D0C91C3907EFEEF9173526D200B0CBB803" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/918817F9114EBD5864CF9AD6BFFF821CDF5418F6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/91DE3028E8B7834CCA212649D845BD6FF6AED8A3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9214B825EF0362226F8E703AF8BD71DF5F14F1E4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9250287CF6135B10388C4275477140001DB9C26B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9280C9C6589EEB3F6081FDCF173F032007426393" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/92BBCEEB0B56E277FB0B7F097696736300EA1DDD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/92C2E25AFCA49701B25BD9DC259CFB52342C7B02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/93655C8B2EC674689D9E40A1B0A3B52EB4262CFE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9381B9FE1CF323CB62DAB5C4A93B88DA48D94916" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/93BE240755BAE5779EDDB09FBD424DE8D8AC7B81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/93D8BB33EE7AF1F8A895588B55534E05AA126A3F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/946474D11F1F52A3794E19F4D364A28894694CCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9470D2E6EDD07E8512730B2E8CAE7561D9DC3D08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/94E464A451F1AE90A1BE09EF22F8F7948B2A9549" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9566F48B9C32169E63818599097A2CB04921B4DC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9599BB6CAF7493337FD5E95B93BAC05AFFCFC7B2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9635F1B7E12C045212819DD934D809EF07EFA2F4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/963E35EC8E6648FDFADC76C33ED8F25F56690CDC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/96914A63DE3CC0C6D70AAD1CEBB946A9536759C7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/96961C213A827517C075EBECD857B57120E66137" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/96D66075F23D9DBAA74F4C5474E65698BDBC6AEA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/97013965CAD205879F365D8F974FD3E54BCBDFB0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/970A05B54F7A0A3B527FD483FFB3585550A85B00" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/974F75FC637ACF1154D8436F16DDAB3C1F406741" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/979E0EEE47D5745A7C636BD46281F3D6533CAE2A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/97D8649D50DEF73C905887C444E88C2718D45ED5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/984F985A5E921BE5BCA1B2DABCCC3B0947ADAD1F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/985F1E87E540534B157504FA2E66D248C1D3B6A1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/98A1966F49697C80506CF6054FB4A4C03ACAAEE8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/98B34D10A0981444FE17A4B200E67ABF77DAF4FB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/98CFB0B1CEC4F71FAD93E3FFD834F50F2E703410" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9915156FA94E702C471CC92B339143FEDB44D306" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/99166864D3D145852486EAF4890A397C4F0442BC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9A28CB5E1DBEF351930014E0181239E80A396CBE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9A4B363028420BF531F8BF26FFC5EB45A0074C1E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9AF29DD37DD57F0F6EA83FA6059C9F7E8767D77C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9B04BB216C9C7D9AC670E6E9B5A3F1CDBB3FE7F6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9B46F6C6ABB78F37802A4094F33257468ED107EF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9B7006913BAFD6415CB389387CBAED3AF5AC2C03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9BDF84E44A514833130DB3F0E249D6B7F8BC8F97" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9C19D37803D7BB8448F0BBC1D4B16AB94C6BA8AD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9C776C0B2E3B8E158B5CACA627CFDE1E6C00E8D7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9CDB526D710EC10DB8566D5E59DDF094EB468DC0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9D26A3956FC0EAC370296DAD2EFF6526DB2E3DFA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9D3D8A0670BAD81D0C37FDEFC92BF0797F44FBD9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9D69324523C2D5A938C4B22C41251377EB7EA338" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9DB5EAC92C12D688CFCEB1DAB6FA4EDCA67309C8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9DB793A66199FACA639D1921991C065B809BBB18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9DE187121C96EF1517023686F41B4BC17648686D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9E33EC2BC137B786966E236AFBD2375B7FADCB6A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9E4966B23004651DA1F5A8C4C3E4E2A30C542D9B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9E4ABA1622A55CD2D71084466BEAD57B73D1F5C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9EA24CCD01F422A0AD9C8421C40D3FE4E7516088" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9FB7A86D6B3CED04E4CBADB5D8678965D594C6DA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9FCECE66F44BE74D5A8EDD2B739568E0981E5A95" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9FD2DA4C44739C5A5EBDEEB973B872572554A793" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/9FE7421412DCB2AAA68A5224A1A5D573E17CF92E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A09AE3FEBCB600CBF243105FE1E9E55EEE839566" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A0B054A41E8C0AA3789BB33176B14A366DE4FADF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A0CAB3FACBE83FDB28E9AC3B7954364DF996D518" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A0F1EB0830ECC687EC46F91DD6B416318113AAE8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A0FA912DE5D167041CB6E28DCFE032F1A343A684" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A1A954AC37BF8EC50F45E5606D8ED701CA24D76C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A21F2B06556B02901F8E35E46A0D1F47D5F19B54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A2FFAD3F559F2561D45EC40DC4C8EE9F8D1EB17E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A3E4ADEB3F4475FC90AE44CF74237453CA218E4F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A4807B26EB710B78C38EB26FE25FD9C616093802" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A54F3A78A63C9AC177E0EF4AED7ABD73C7BD9450" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A588759B8F6840C360C4E589154860D80D68D742" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A6294C4594CEF4C9FAF9611761B1DC218889BC3F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A6F9278EF89C1F12D18A8960046E81D2A7EB6D43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A71A500DDE533B9A0AD68654D6D1539EA986325F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A72CD87B048159AC601A04BF92EA6E61D3FD31A3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A788F151B9002780EFDF1DC471168050CB50D0FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A8DC514B0401DB153691E8E75A26BD4FF24F46D8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A96BE07A2187910A1A3BC9A10F8A74AA001AF8BA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A9A20DAA516768AC5CAE7A3A94C4C4E01907ADF9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/A9B83CF79998E1655190C3130CD5EFD3B8868CDE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AA0E8017B025CAB8CC2A6B4B016AD5641F80DA8E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AA2AAE3711E8E39BCE47477B7552421CDD593008" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AA5D9B595980BCD55A117E009C78DDCCA125F778" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AA7CD88E8767533DA2440A3692B53BBEF11FC9C3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AAAAC19698543840ADB734B0AAFA2F970D4D8A0B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AAAF23BD99C6BEA4BA8DA1508E2F193F2363D01B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AAF23C7D82FA465C0EE95AA577E271F3B8A3EFFB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AAFFED196ECD869E622ECE356FB64894225EF6B5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AB666B1F07FE36DF4E051E6B3669A46C33AD53F4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AB6C8532D130F3DA64E89B0F6B1BEB088BBF63E8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AB7EBE07EDD83E19ACB6E2667BE96A8460E6DDBC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ABD18F499A559AABB180CF1ED62465C023230D07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ABD353E066E68ECBD3CC3581280D6A8964691222" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ACBAEF275E46A7F14C1EF456FFF2C8BBE8C84724" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ACC2C92147101DB50AC7E81CD1352949504F3FCF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AD06F017F6EE32EFFEF205EF95F759DCF820E877" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AD5837167D215483628F95FEAD6047BE3C1CA760" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AD894ED235611975531BA0979BD6DB10A22918EB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AD9AC15CE37BFD40B8328AB2916B9F80084B7B47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ADA322048C7E5944227FCD494E177BFC5191741C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ADC72FC4502D4B996A01CFD391D656D5DCB7E805" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ADC83B19E793491B1C6EA0FD8B46CD9F32E592FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AF048B6DA17DBDC22448970CB1A12C849B676124" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AFB0828FD63CEE16BFD7D9136186057116FA168E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/AFFDDA30D8A2AFB1D2F449E87D8183F628A1E18E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B031283F3E6250D7C45E1DAED40C7CA986E0C3FA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B077F2B114E7EC6AB5DCE784E085A055138C792A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B0E73B1DD1583489CCF7690D70267295E8CB21CF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B0F88B62D47E7BEE27BD1562637449156B737035" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B11686601881A752F239F04C31EDDB7A75F27DD7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B16CEFDE79C719C37C2F82928160A9B579C95D54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B1A651BA51CAF3BE887CAB6CFC4F9ABF8F8AD89F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B1D5491AAF9C682AB4E15B854BDE54C749AF7054" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B23C437D7FB2AABE1D26707AA7D13F84EEA24D62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B2932897F41973297CCFC8318E6A2EE52DDAD8AB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B2B9C9327866FE292EC96769D4CB71D9E73E3407" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B2CD1E4D75B0CC958C073C2D5099B7C1DDD19420" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B2D58E53E8B7A37F52773AF77353FFBD3BE85678" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B2ED38CEA8E4D83A401F3DA2E69DF0E531C21693" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B337C4698511EC01590F3A4EAA64B25FEF1E8932" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B3E3B368D38E21ED070D3E0DA928521CD8D32C80" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B44975E1C43A162512DEEE8B62718F3659252F5E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B4497BCAD8F8D78AC4C0446C4136CB9926C4C3AC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B483DBCCF5669D2DC27D34FFE18266000F9A1129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B5E8234090EFC82E8199882049A81FAEB6F61CEB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B5F88ECCA5BC2692C016B9E7F9164CEBFD73D6FF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B614C2F63DA7DCA9F1DB2E7ADE61EF30448FC96C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B6C4CF802634AB0AADF65D6AE2426498F4766E58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B75B156FD518BEFC1EC5D37CC50728455F89CEA9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B7800B3B58D6E6A7D90459CCA98832D943CC3B46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B83E832694E2835BDD4896FE417D80358CD07534" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B8681ADB4FD592F9B8BBAE0A2721FC7BEEAA8249" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B8E75C7A74541616917281063BB630FD9EA4A1C6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B8ECC410108912754CF36C2E937E7AD8DDD85D28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B9524388E2B39EE05CD2BD69A2358CC7F60518DD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B95E865A4746FA969198E7D7316AA1E49801170B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B963F50F4C5775FFCC3A3F3FF235C8B1DC318D44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B96C5724C1FFBAA10F2AD320E8536DCFAEFD0FA1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B99314DBED451CFD4CE50E9CD361E187F0E8E818" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B9AC9FAE0D3D5F792612FC4583CD5E315F58F3EF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B9E31E69A5F1A9E5E0ECE25678B39E2FD124925C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/B9F068DBC9B6D6056628D2B3E75A42B99E08E27D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BA0FCF7BC9E5BE7966D4297ED6570D4A9D5A0246" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BA0FF035701F1652FC13159005409D7D9BF36562" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BA1DA7C1FB69E6878EC0038F884824BE5B18C26D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BA85CB834B39F79F78FF9F9E6544298D8A1145D3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BA8E9EB8FD475C453EE86FB698AD6FD95162D21E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BB22BF7C0B2387FC1C1161DC554370972AF286B1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BB30CFBFAFF8490328888827558F2730DF246C23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BBB65C9C875C7661FC8C2A352E0F68C51F00DE95" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BC1CD0D1293158AF233ED318813699D417BB47D2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BCAE9BE282CB02B6D33851BAC34DD2746223BF45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BCDE00E95BB01E27DA5613BB3755E915661E3C84" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BD8860F37BED23CDD58C7FBEECF6CA567173955A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BDAEB1460A351068DBFDAB19202387554687534C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BDF416F209BF115B654E58EB019973199007DA42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BE0882A8F23060D785A8F08E44EB9D0C0E973B68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BE53EBFC6AA6AC8C2B943B1D67E7F0687CC22BCB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BE719E6256C1C129D64F2E2214166FEE203C4B83" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BE8606017640D642ABFF6EDD9EBD7593FD1780CE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BEAAD53DCE170953941C97848FD81651512F0BA3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BEDD93C69D95C6315622073B37C033547D6156A1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BEECF90A213E2F58D3BD3F7D1DCF4FC6DA6D3DE6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BEF9A5F0A422F7813FC2888F2A3731AC2E7DD870" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BF355C20F29197BA0E2ADC0796961E6185BA2377" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BF6EC03FC98A0B06518B83E7C8137802771FF2EC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/BFEFB50AF8682C867DF4B0C56855970B41CD51BD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C196E3BA8D8AE71CBF7E69AD9B4838DB57C6AFC8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C1E1B9CB68EEBD3FB368442F278C70E26D17F9F8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C223991E14D71EB05890AF501D1CA6C26881616D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C237E3E25B62C90F2CD213FD1226931B4A3B1BD6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C2D40F1846C8B814609843FAFDE025ABC2DBB4E7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C30C937BC010E065A221CBC612D969632DF46810" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C33A719F22BA71B635D5BF0099A15A17BC74ED7C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C35D3EBC602ACAAB1124CFC012910E9D303BF457" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C375E68FDBD8E3867DA24D2659278B4F99580595" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C3D63B7E7999162EFE1EF174F73D107C5630A8AC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C4BC6F2725A9C5CF16F74E12EA547A6D4F623CDF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C55A7197B647FE76DA6FCB5AA09D30E27333584E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C59AC7A772AE451A97D29042163CFE618F7A60CA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C6D9895FD3604CCB850072F249C3217463E1D2BD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C7AE24498AF85C987C38DB1CCCC2F79EDA345A07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C7D1D2481D5D069AC159DB1167C594413B5BE639" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C879DF015D97615050AFA7B9641E3352A1E701AC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C87C3C134BBB5D8DBE40F44D8FCB6B7908202AD4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C8EFA8602172E524791B4E0CBA2F497B0A08BF43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C9A1103F8798C5930E554A656B6BA3E53403D8D0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C9CEFA7F578539B45529D76A75C8DF0ED61B2EDC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/C9E5F3DCDDB6E6D26695834DB6970ABCBB4DB6E2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CA18262007A9D072999AFF2F75A53978C873B793" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CA72C8981024F279F4BC0F4D6582E27281E8A1A7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CB0CB77C9DE6B17BB185C876161609666C3C48F0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CB7E1683AFAD2A74C2298C0365206A395A4643C4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CBA116A072C8A05E3297302B0D5DC7AADC8FFFEC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CBB149C02DE70A016CA2B2CE16120DD14AF89418" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CBC31D2E13B68DDD5B116056C6CF37F2701BA107" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CC118C829B11F704A417E1515BD4EB3BECAB70DC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CC4B897CC2D4F13B6F694182EBD7108EF0FFD989" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CD0D4CC32346750408F7D4F5E78EC9A6E5B79A0D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CDF6758088457C6D9F7AD8C79D3E1AEB2A622852" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CE309DE02F2CD0CABF95FA4CDA7665054C5245A8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CEDE176F9C1FF0F97E5845F29224F9A8AB986F8D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CF383C698CEF3F3B06C986E8D7A8B10D98E27145" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CF4A4DD8023A75532AB1522CC50B11E5DC5AE2BC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CF66F3A6A19F3C168F53CC9D8609500193FFE98C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CF6F2DEC305D371561A7CA324A974A329F06FC43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CFB89B1B065B0465E8290C09B89E8E4675A80ECD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/CFE0FB38B8BDCDF20E258AFFB40F0852611DD84D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D04BDBF1295F75FA6107EE2C028486F66AC9EC4A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D074841FAEA4C720AF4224F82A3BB4C8B6C6CB2C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D0797D3ACA78E416B5BD579D9A5A2212ADFC67E7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D0C84627D6629E6621EAD7A69FF92FD27A009265" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D0DFB6C138F3DFC1BBAA3DB7ED56DA755A3A1F9E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D18E983EEE47225D37A3E4F712087B2A2AD9300B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D191750E26A032B2ABA328B7397CA80D462AE4A2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D1A32641A835C6EA1D1B8BAEE5CC2C673958104D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D1BF41C91DC083D8F58F2D23AA0E7FD32FABC648" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D1C2864DC07DA63D7767530FC67B2C749B93E0F6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D264223BDBC58BC9DCFF2B0C4ABBDF7D938D91A2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D2DD0DBC5E40C003504BF7E672C2DE48769BAFD1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D354BE3EED7FEA4CC0B8171B8C7D17CC03525176" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D376D00A703B67D326E6FBF645C82697FDABEBE1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D3B5E9A83D004ADD045D70D6FCC5EF1A31C5100B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D3DE6545E9BE88A0F71CC3F9F99E6380B0C4487B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D3F44994B0B703E6DC9CF78CC815C8726B6D32BE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D3FFEAC1D21C2E494E0199B7F7A467093C5E11FE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D4262A481C4C0774D3913DC9D2067C2012099437" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D43E49DAF1F8E622E8B3318713A8C32A8408990A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D443939669106958AB0168D6091A707ACC94CC2E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D46E77E481F411B124F05C7BA3F87CD887FD61D7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D4A31342DC6CC67659D29202AC263E03A83C825D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D5B7E5E9F7B276AC0B06CBCBD0B9309950CFDDF8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D6B7A8FF93981D1CF11CFF8E37806FABA43DE3A9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D6F9D91C7ABB6F892C21A3E758EFF8FD7A6EE880" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D709194AA5A51437E60389761CA4260745CC8E7E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D72E2EC4417524F42293C4725403CE042F42CA53" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D73FD0D77389BA1C54D2301C783FEEA2AFE76ED5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D755A0CFBC4CF11D2860CA3713ABB46717BF6AED" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D7BD5A0C50F25064F3E6B9164BE0258073F9839D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D7C7FCF5E2DF95CF80B39E812B990F59E13E6514" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D7FE1B37003A8C17E58A414439C017418730285C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D8B32A01741674FD5E5ECCCFB559ABFA7696B3A2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D914DF0A0EAD7029076B2FA976E528D63A928035" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D9427CDA09ABA1CDDE5C69C2B13C905BDDB0BC51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D99FA00EA846FD08F28AF36C38F457D86EFAC4A5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/D9A6839CA2BD700BEE91CFC9D606DC8C804DE05A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DA31C06CF51B14D00AA60B97614FCEEB5985741D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DA39A3EE5E6B4B0D3255BFEF95601890AFD80709" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DBB7212394BA0F4695039DD358295AF3A8880B31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DBEEDFB3013D25A4074BD9B8AE9D7C6997ACDD1A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DC04D5B7E2BE06E332D62703FA7832423E9328C8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DC495D55842231C7AD6287B73D4BFB0112391948" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DD0D737E9690725933B33D1666E789EC8AAEAF4F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DDC654B50EF5B0792379EB63F9625EA4959BFF7F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DDEA5CCD955C15B127CE2B83E4860800FEB14398" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DDED51746056720E89C590AB33D171C73D4E805C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DE1195A2D1123FDCCB204961C9BDF61B0DEC697F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DE123F85BB74092BFF736FEBDA538BA5A447417A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DEEC2C2F256BAC220F95226AD832B69237FC0634" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/DFDA60832A47017B943C8E4F892810D5AD7DD240" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E076129CC1FF9514DD0428AB93608FBDFD39DF11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E0AF79DBAFF2247F0480A865CEE23AC63FBEF3B3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E11BA5902ACF979DF6DC2E7500F488A7BF53EDD4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E1219818CD71AD82BA50AABA38100D31B5528EBF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E1C291C3616D0DE61B7B0ADEAB988D346514FAD8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E2B6B3E9E105C871B81AFCA36311C7E76BE6A131" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E3521F929C37E7F9ADE9ADD5089144076746F48B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E3EEEED091417CC1DE6D9CD24C10ED15457032F2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E3EFB4481CB1FA520200D1F2C11575FED9E60D1E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E42AD4296B640AF075CB6AF444E8A7DF2D044C68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E447B26E771D6B0A3530F185B2D1622BE0062D1D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E486AF0832AEBAAECCC4D04ED4EB98157077C727" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E4F99C09FEDCD76736527E9E5C1C2BD43CEB7F30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E54488FB099C6D9FB399026CD6F7F54B0CF973FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E6253BAE2BAA8AB77B6A42710F9A19DDECFF1E54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E62B7B24E0F2DF9F963DA37717237D1B330DACB4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E6B18E654D11B837C2F6404495C31C8DC25433B3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E6E510513A66A6987493D31A46BB9A7B73FBAAF9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E7212B61EFC7B99716AE17160E29A90BA954EE07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E729CD61B27C128951D139DE8E7C63D1A3758DDE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E7B45CC43B96EB8F399A209A1B0E36121CDC261E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E7D6322CDA30628B72C81CA82713AF95A82995E1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E88F97FCE26CF7062B188976400487CD6430AF73" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E8D1EF5187D1FF1427B30124E98CCD3D4CC57459" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E8D345D1400258A1774F99FEB42D9025ED42D9A1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E8F33248643183ACDAFC6605A20E0230813A5E13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E8F82DC0F3820641A62F01332C4F2F9B0796EC98" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E9062B52B33DE6CA16B3732B1E8B1C86B74469DB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E97F5BA29C9DDD9DAFDEEBD759997681D8D46E09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E985B606AF104D87A2129C615B904EA75AFCA28E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/E9B0640E7FB2064B36B2FE96367CE1A9AB1717D9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EA03683995300F4AE4AD7D4EE7F6F257080F787E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EA152693CB0F9C74BCD29BA0ECE266727C936A70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EA2C62CAD6E2232B7E2F6AF67A8D689B83047A09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EA903EEFF8D8370685D96240E511988D02E7946A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EA9B7711604FD872567CFA757A0566EBBD2AFE9B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EAEA2BD3B43DD0F9A72F4BA23051CF7B71B17C43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EB4ED2C6C9A7E0E60A103FAF7707B1EAB7584154" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EBFCD3BB61DA25E215B5C19277C4621838F46DDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EC19D1F3988E181A58775F9AAE67AF5822540BBB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EC1C01FA9AAA6F169AC940C6606F5D28AFA447B7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EC2ACFDB2F9065ABA6051C848286FFB2E792C415" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EC70459391D0C2EDD67792100BA0117C774C4EF2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ECE39CB0ABD817606B8AC474ACA86DE6EC0214AD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ECE3E9400D6F61FA1BD1F4B687308A7EE5A23181" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ECEF6F3910EB0E2B4CA88B4CDA00CFE7FF5F17CC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/ED55F118F75C7954B5F828FE279AC73B66852A94" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EDE66EB64C83B683FC5740A8A319E1D04AE6C3B0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EE1ED5AAD98A435F2020B6DE35C173B75D9AFFAC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/EFB3F08B950407A0A12EB8F6473D745E5E904270" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F009F0F211B063140676D3A7651751DE8883A65B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F00B6B625E2EEB5FD5D9C69064726BBB3727B849" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F0A7B4ECBE4FB67EF5BA108BE84615DBE3FF725F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F0B07CB0DE3EF64BDC9589F0CE5AD738C3BB25B9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F0B736441E1086F61FDBB0719246D89684838B28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F0FAD52BD8819E191AD11304FB7AAEBBB27E420D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F12DAB4688CEC2F0E3F02846E19CF94DEAD14C3E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F13704F1A88A062CAB2BE57930C7B3567B761B5C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F1C0EAB1191A12DFB4E0DD07841AA0067E77D502" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F208287C1A92525DE9F5462E905A9D31DE1E2D75" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F23ADE83AE82BAC9C5DCC941C47E2CC8BD332CE9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F3268214D07F271C55286E8F74FFA5026C6495A1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F3293CFCCBB3D601D7212FBCC0B87E4076D19AE4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F37DD6304DDB7530AB99262946801F8424C4093B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F38B9555AFBD37CBBCF909BA15358E066EAE4ED7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F3A4214B7D8279FA74E2DBB01AECDDA80ED1EFF3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F3B81E73347AD23959AF6FC6BE89B65499356379" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F3E6676D5C5589428915CC032BB8C07E4E5A9DE8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F3F29E39D6350110C52A5315C334A0F63BEF7077" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F40E7A28ABAEB58AD2F26221ACD24CECF35F54CD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F42BB7F803C74DEE095160A4D612E05E4B665D55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F4717106CF1A169354868BED15C76D759AA1FB14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F4DCF06BE4E25673A4BB611688C85E102097921F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F69D7C345EF088C71D3E2549CAEB04E1178DBE58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F6C1891CC114C95C44599E5947A9D67A78C9D97C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F6E0ACC07ADCDCDE2D5032DE218544133731B3E3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F775E0E643C45FF6CC1A99E60883D5994B65A638" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F7C550ED5CE291F96D7B6F8565F8B53798938506" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F7D75CF1356DFCC3E9778C9CC6455E3DCC8F6236" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F7EC24C2DEA56AC37FC5635AC064DC1736CF7847" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F81760F4359894250B7E5F4CBFB138306789213A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F8848949F67765ABF324F78DAB79E0B097292E1B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F8992CFCB24D5BFDDE61C51DCF2820360711EDD4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F89D61C6E788742A1E944CFFDB39CFA8A8799F89" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F8A1518CAD8835411411B12F1E70ACD33A74BF34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F8B4EB721D6E2A89D09819D87A2155FE1609024A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F91053F8F1578453CFA3862F1316D93BC9254146" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/F99FBC23E23149C885BA2E6A4F4B9EAEC4FE4C48" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FA13468D7D941BD55A61B5081D3488D7332A270A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FA1B7F93B63F3FCEAEFB7B2BA03B133BAEA7A4F1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FAE1DCDD851533BB2ED06585E5312B4B5652156C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FB0ABE07D2BE8123FB495BB9273EF9EFA76FE577" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FB14F74CDA279F5CF33E4B8CC2AAB2E07F6342B5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FB607222A8EACFABCA9A88C2F40EE28F33983D53" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FB85163621FBC749A20C88EB4FEAECE069F2A39B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FBC53BFDCA8A6CE8F1862831FD010D89BECF9B02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FBF70C220F91C372FD22450E855F6C0FCC8B4BE2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FC977CCE18A3DDE99B8DC0FC7DCBD089543687CE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FCA3CE77325E2FAC9D4ABD32C2701F845EC3A183" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FCFF1E41DCC325D01F2F7920D772A89C7B872AD0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FD13CE0CF5CFF6FAD42EF201B1AE1BB61F60F810" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FD15E2CEADBF744D2647E9133B4978A5A03998C0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FDABE104A4312F496126C71158D1EE7927E1E0BD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FDE8A88C90B39995A2FCD6CA6A7D085DD3E65088" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FE613C0946EB5362A454D5355A615BBEC6304B40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FE79353DDDAF2B7D666F2151D679780054570C48" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FE97A8242F3C0F1909AF8B10D6D8D5D1A1EFAB46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FF20A70C88FAA58DC2C4C4AE2F6ADBE24855F04B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FF3E4728EA7189A8972899524493A1307E914C62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sgit/objects/blobs/FFF770F6D5A200AA7ACAA9A4A0EA231691701AEA" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/.sgit/HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/.sgit/INDEX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/.sgit/logs/refs/heads/master" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/.sgit/refs/heads/master" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Add.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Add.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FileHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FileHandler.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/DirectoryHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/DirectoryHandler.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Init.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Init.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/sgit.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/InitTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/InitTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/AddTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/AddTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/.sgit/HEAD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/.sgit/INDEX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/.sgit/logs/refs/heads/master" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/.sgit/refs/heads/master" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Init$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Init$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/sgit.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/sgit_2.13-0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/test-classes/FileHandlerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/test-classes/IndexTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/test-classes/InitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/dumpStructure/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/dumpStructure/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/.sgit/HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/.sgit/INDEX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/.sgit/logs/refs/heads/master" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/.sgit/refs/heads/master" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Add$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Add$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Add.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Add.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/DirectoryHandler$$anonfun$getFilesName$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/DirectoryHandler$$anonfun$getFilesName$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/DirectoryHandler$$anonfun$getFilesName$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/DirectoryHandler$$anonfun$getFilesName$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/DirectoryHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/DirectoryHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Init$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Init$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Init.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Init.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/sgit_2.11-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/sgit_2.11-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/AddTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.11.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.11.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/definedTestNames/data" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/definedTestNames/data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compile/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncSetup/_global/streams/inc_compile_2.11.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncSetup/_global/streams/inc_compile_2.11.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/definedTests/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/exportedProducts/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/fullClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/internalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/internalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/test/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/test/_global/streams/succeeded_tests" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/_global/streams/succeeded_tests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=InitTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=InitTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=AddTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=AddTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/AddTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/AddTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/FileHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/FileHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/IndexTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/IndexTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/InitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/InitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-AddTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-AddTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-FileHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-FileHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-IndexTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-IndexTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-InitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-InitTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_directory/test_file" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -271,7 +1063,7 @@
           <entry key="java" value="1" />
           <entry key="properties" value="1" />
           <entry key="sbt" value="2" />
-          <entry key="scala" value="17" />
+          <entry key="scala" value="20" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
@@ -280,7 +1072,7 @@
           <entry key="Bash" value="1" />
           <entry key="JAVA" value="1" />
           <entry key="Properties" value="1" />
-          <entry key="Scala" value="17" />
+          <entry key="Scala" value="20" />
           <entry key="sbt" value="2" />
         </counts>
       </usages-collector>
@@ -288,8 +1080,8 @@
         <counts>
           <entry key="java" value="11" />
           <entry key="sbt" value="38" />
-          <entry key="sbtShell" value="118" />
-          <entry key="scala" value="5793" />
+          <entry key="sbtShell" value="164" />
+          <entry key="scala" value="7965" />
           <entry key="sh" value="19" />
         </counts>
       </usages-collector>
@@ -297,20 +1089,20 @@
         <counts>
           <entry key="Bash" value="19" />
           <entry key="JAVA" value="11" />
-          <entry key="Scala" value="5793" />
+          <entry key="Scala" value="7965" />
           <entry key="sbt" value="38" />
-          <entry key="sbtShell" value="118" />
+          <entry key="sbtShell" value="164" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/AddTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="97" column="70" selection-start-line="97" selection-start-column="70" selection-end-line="97" selection-end-column="70" />
+            <state relative-caret-position="2074">
+              <caret line="122" column="37" selection-start-line="122" selection-start-column="37" selection-end-line="122" selection-end-column="37" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -331,19 +1123,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.sbt">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Add.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="-11">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Add.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/DirectoryHandler.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -361,28 +1153,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/build.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/FileHandlerTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="170">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Tree.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/FileHandler.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="1476">
+              <caret line="103" column="10" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="10" />
+              <folding>
+                <element signature="e#2#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="17">
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -390,8 +1188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Init.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="263">
+              <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -411,6 +1209,7 @@
       <find>println</find>
       <find>print</find>
       <find>existsI</find>
+      <find>Add.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -426,7 +1225,6 @@
         <option value="$PROJECT_DIR$/src/test/scala/EncryptionTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Encryption.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Blob.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/DirectoryHandler.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/IndexTest.java" />
         <option value="$PROJECT_DIR$/src/test/scala/IndexTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Commit.scala" />
@@ -434,16 +1232,17 @@
         <option value="$PROJECT_DIR$/src/main/scala/Index.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Tree.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/IndexHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Init.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sgit.sh" />
-        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
         <option value="$PROJECT_DIR$/sgit.sh" />
         <option value="$PROJECT_DIR$/src/test/scala/FileHandlerTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/FileHandler.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/InitTest.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
-        <option value="$PROJECT_DIR$/src/main/scala/Add.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/AddTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/DirectoryHandler.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Add.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Init.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
       </list>
     </option>
   </component>
@@ -464,6 +1263,7 @@
     <option name="width" value="1920" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -484,12 +1284,6 @@
             <path>
               <item name="sgit" type="b2602c69:ProjectViewProjectNode" />
               <item name="sgit" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sgit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -502,14 +1296,19 @@
               <item name="sgit" type="b2602c69:ProjectViewProjectNode" />
               <item name="sgit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sgit" type="b2602c69:ProjectViewProjectNode" />
               <item name="sgit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sgit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sgit" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="scala-2.11" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -522,7 +1321,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570724243103" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570751266304" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../testing-2019-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -621,16 +1420,15 @@
       <workItem from="1570289756478" duration="76538000" />
       <workItem from="1570623286865" duration="3665000" />
       <workItem from="1570629695929" duration="12217000" />
-      <workItem from="1570687388899" duration="13357000" />
+      <workItem from="1570687388899" duration="25348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109752000" />
+    <option name="totallyTimeSpent" value="121743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26107383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -647,7 +1445,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3035461" />
-      <window_info active="true" anchor="bottom" id="sbt-shell-toolwindow" order="8" visible="true" weight="0.05815603" />
+      <window_info active="true" anchor="bottom" id="sbt-shell-toolwindow" order="8" visible="true" weight="0.5106383" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32765958" />
@@ -676,13 +1474,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/scala/EncryptionTest.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/Blob.scala">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/DirectoryHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/IndexHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -736,44 +1527,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Init.scala">
+    <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FileHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="103" column="10" lean-forward="true" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="10" />
-          <folding>
-            <element signature="e#2#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/FileHandlerTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/DirectoryHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/AddTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="2074">
+          <caret line="122" column="37" selection-start-line="122" selection-start-column="37" selection-end-line="122" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -799,18 +1583,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Add.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="-11">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/AddTest.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FileHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="97" column="70" selection-start-line="97" selection-start-column="70" selection-end-line="97" selection-end-column="70" />
+        <state relative-caret-position="1476">
+          <caret line="103" column="10" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="10" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#2#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Init.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
         </state>
       </provider>
     </entry>
