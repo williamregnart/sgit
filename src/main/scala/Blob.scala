@@ -17,7 +17,7 @@ class Blob(key:String) {
   def existsBlob(fileList:Array[File],blob_name:String): Boolean = {
       if (fileList.isEmpty) false
       else {
-        if (fileList.head.getName() == blob_name) true
+        if (fileList.head.getName == blob_name) true
         else existsBlob(fileList.tail, blob_name)
     }
   }

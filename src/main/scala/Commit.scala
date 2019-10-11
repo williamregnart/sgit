@@ -1,53 +1,107 @@
 import java.io.File
+import java.text.SimpleDateFormat
+import java.util.Date
 
 object Commit{
 
-  val actualDirectory = new File(System.getProperty("user.dir"))
-  val gitPath = actualDirectory.getPath+"/.sgit"
-  val commitsPath=gitPath+"/objects/commits"
-  val branchPath=gitPath+"refs/heads"
-  val index_file = new IndexHandler(new File(gitPath+"/INDEX"))
-
-  def getCommitContent(tree:String,parent_tree:Option[String]):String={
-    if(parent_tree.isDefined) "tree "+tree+"\n"+"parentTree "+parent_tree.get
-    else "tree "+tree+"\n"+"parentTree None"
+  /**
+    *function generateCommitContent
+    * @param tree : tree to be commit
+    * @param parent_tree : tree of last commit
+    * @return the content the commit should have,
+    *         format : tree <tree_name>
+    *                  parentTree <<parentTree_name> or <None>>
+    *                   <date>
+    */
+  def generateCommitContent(tree:String,parent_tree:Option[String],date:String):String={
+    if(parent_tree.isDefined) "tree "+tree+"\n"+"parentTree "+parent_tree.get+"\n"+date
+    else "tree "+tree+"\n"+"parentTree None"+"\n"+date
   }
 
-  def createCommitFile(tree:String,parent_tree:Option[String]):Unit={
-    val content = getCommitContent(tree,parent_tree)
-    val commit_File = FileHandler(new File(commitsPath+"/"+Encryption.sha1(content)))
+  /**
+    * function createCommitFile : create the commit file in .sgit/objects/commits
+    * @param tree : tree to be commit
+    * @param parent_tree : tree of last commit
+    * @param date : date of today
+    * @param actual_directory : sgit repo
+    */
+  def createCommitFile(tree:String,parent_tree:Option[String],date:String,actual_directory:File):Unit={
+    val content = generateCommitContent(tree,parent_tree,date)
+    val commit_File = FileHandler(new File(actual_directory.getPath+"/.sgit/objects/commits/"+Encryption.sha1(content)))
     commit_File.createFile()
     commit_File.addContent(content,appendContent = false)
   }
 
-  def addCommitToBranch(branch:String,commit:String):Unit={
-    val branch_File = FileHandler(new File(branchPath + "/" + branch))
+  /**
+    * function addCommitToBranch : write in file .sgit/refs/heads/<actual_branch> the commit ref
+    * @param branch : branch where we want to commit
+    * @param commit : commit we want to add to branch
+    * @param actual_directory : sgit repo
+    */
+  def addCommitToBranch(branch:String,commit:String,actual_directory:File):Unit={
+    val branch_File = FileHandler(new File(actual_directory.getPath+"/.sgit/refs/heads/" + branch))
     branch_File.addContent(commit,appendContent = false)
   }
 
-  def getBranchToCommit:String={
-    val head_file = FileHandler(new File(gitPath+"/HEAD"))
+  /**
+    * function getBranchToCommit
+    * @param actual_directory : sgit repo
+    * @return the actual branch, specified in file .sgit/HEAD
+    */
+  def getBranchToCommit(actual_directory:File):String={
+    val head_file = FileHandler(new File(actual_directory.getPath+"/.sgit/HEAD"))
     head_file.getContent
   }
-  def getLastCommitFromBranch(branch:String):String={
-    val branch_File = FileHandler(new File(branchPath + "/" + branch))
+
+  /**
+    * function getLastCommitFromBranch
+    * @param branch : the branch we want the last commit
+    * @param actual_directory : sgit repo
+    * @return the commit ref written in file sgit/refs/heads/<branch>
+    */
+  def getLastCommitFromBranch(branch:String,actual_directory:File):String={
+    val branch_File = FileHandler(new File(actual_directory.getPath+"/.sgit/refs/heads/"+ branch))
     branch_File.getContent
   }
 
-  def getCommit(commit_hash:String):FileHandler={
-    FileHandler(new File(commitsPath+"/"+commit_hash))
+  /**
+    * function getCommit
+    * @param commit_hash : the commit_name we want
+    * @param actual_directory : sgit repo
+    * @return the commit FileHandler, which has path .sgit/objects/commits/<commit_hash>
+    */
+  def getCommit(commit_hash:String,actual_directory:File):FileHandler={
+    FileHandler(new File(actual_directory.getPath+"/.sgit/objects/commits/"+commit_hash))
   }
 
-  def commit(branch:String):Unit={
-    val tree = index_file.getTree("")
+  /**
+    * function getDateToday
+    * @return the string of date of today with format dd-MM-yyyy-hh-mm-ss
+    */
+  def getDateToday:String = {
+    val sdf = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss")
+    sdf.format(new Date)
+  }
 
-    if(getLastCommitFromBranch(branch)==""){
-      createCommitFile(tree,None)
-      addCommitToBranch(branch,Encryption.sha1(getCommitContent(tree,None)))
+  /**
+    * function commit : create the tree from index, create the commit from it and commit (change commit ref in the actual branch)
+    * @param actual_directory : sgit repo
+    */
+  def commit(actual_directory:File):Unit={
+    val index_file = new IndexHandler(new File(actual_directory.getPath+"/.sgit/INDEX"))
+    val tree = index_file.getTree("",actual_directory)
+    val branch = getBranchToCommit(actual_directory)
+    val date = getDateToday
+
+    //if first commit, create commit file without parent tree and add the commit to branch
+    if(getLastCommitFromBranch(branch,actual_directory)==""){
+      createCommitFile(tree,None,date,actual_directory)
+      addCommitToBranch(branch,Encryption.sha1(generateCommitContent(tree,None,date)),actual_directory)
     }
+      //else, create commit file with last commit ref as parent tree and add the commit to branch
     else{
-      createCommitFile(tree,Some(getLastCommitFromBranch(branch)))
-      addCommitToBranch(branch,Encryption.sha1(getCommitContent(tree,Some(getLastCommitFromBranch(branch)))))
+      createCommitFile(tree,Some(getLastCommitFromBranch(branch,actual_directory)),date,actual_directory)
+      addCommitToBranch(branch,Encryption.sha1(generateCommitContent(tree,Some(getLastCommitFromBranch(branch,actual_directory)),date)),actual_directory)
     }
 
   }

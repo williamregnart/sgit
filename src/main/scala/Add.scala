@@ -3,26 +3,42 @@ import java.io.{BufferedReader, File, PrintWriter}
 object Add{
 
 
+  /**
+    * function createBlob
+    * @param file : file from which we create blob
+    * @param actual_directory : sgit repository
+    */
   def createBlob(file:FileHandler,actual_directory:File):Unit ={
     val blobs_path = new File(actual_directory.getPath+"/.sgit/objects/blobs")
+    //blob_name is file content encrypted
     val blob_file = FileHandler(new File(blobs_path+"/"+file.getUniqueKey))
     blob_file.createFile()
     blob_file.addContent(file.getContent,appendContent = false)
   }
 
+  /**
+    * function addFileToIndex
+    * @param file_path_from_dir : path of file we want to add to index
+    * @param actual_directory : sgit repo
+    * @return true if file add to index, else false
+    */
   def addFileToIndex(file_path_from_dir:String,actual_directory:File):Boolean = {
     val indexFile = FileHandler(new File(actual_directory.getPath+"/.sgit/INDEX"))
     val fileToAdd = FileHandler(new File(actual_directory.getPath+"/"+file_path_from_dir))
 
     if(fileToAdd.existFile()) {
+      //file should not be empty to be add to index
       if (!(fileToAdd.getContent == "")) {
+
         createBlob(fileToAdd, actual_directory)
 
-        val lineToAdd = fileToAdd.getPathFromActualDir + " " + fileToAdd.getUniqueKey
+        val lineToAdd = fileToAdd.getPathFromDir(actual_directory) + " " + fileToAdd.getUniqueKey
 
-        if (indexFile.getLineWithPattern(fileToAdd.getPathFromActualDir).isDefined) {
-          indexFile.replaceLineByContent(indexFile.getLineWithPattern(fileToAdd.getPathFromActualDir).get, lineToAdd)
+        // if file path exists in index, replace the blob
+        if (indexFile.getLineWithPattern(fileToAdd.getPathFromDir(actual_directory)).isDefined) {
+          indexFile.replaceLineByContent(indexFile.getLineWithPattern(fileToAdd.getPathFromDir(actual_directory)).get, lineToAdd)
         }
+        //if file with the right blob doesn't exist in index, add it
         if (!indexFile.existPatternInFile(lineToAdd)) {
           indexFile.addContent(lineToAdd + "\n", appendContent = true)
         }
@@ -30,13 +46,20 @@ object Add{
       }
       else false
     }
+      //if file not found
     else{
       println("fatal: pathspec "+file_path_from_dir+" did not match any files")
       false
     }
   }
 
-  def addFilesToIndex(files_path:Array[String],actual_directory:File):Boolean={
+  /**
+    * function addFilesToIndex (case sgit add .)
+    * @param files_path : paths of files to add to index
+    * @param actual_directory : sgit repo
+    * @return true
+    */
+  def addFilesToIndex(actual_directory:File):Boolean={
     def apply(files_path:Array[String],actual_directory:File):Boolean= {
       if (files_path.isEmpty) true
       else {
@@ -45,12 +68,10 @@ object Add{
       }
     }
     val index_file = FileHandler(new File(actual_directory.getPath+"/.sgit/INDEX"))
+    //all files are add, index has to be overwrite
     index_file.clearContent()
-    apply(files_path,actual_directory)
-  }
-
-  def addAllFilesToIndex(actual_directory:File):Boolean = {
+    //create the directoryHandler of sgit repo to have all filesPath
     val directoryHandler = DirectoryHandler(actual_directory)
-    addFilesToIndex(directoryHandler.getAllFilesPath,actual_directory)
+    apply(directoryHandler.getAllFilesPath,actual_directory)
   }
 }

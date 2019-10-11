@@ -28,8 +28,8 @@ case class FileHandler(f: File) {
     file.delete()
   }
 
-  def getPathFromActualDir:String={
-    f.getPath.replace(new File(System.getProperty("user.dir")).getPath,"").replace("\\","/")
+  def getPathFromDir(actual_directory:File):String={
+    getPath.replace(actual_directory.getPath,"").replace("\\","/")
   }
 
   def getUniqueKey: String = {

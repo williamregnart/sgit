@@ -38,7 +38,7 @@ class FileHandlerTest extends FunSpec with Matchers with BeforeAndAfter {
     }
 
     it("should give the path from directory repository"){
-      test_file_handler.getPathFromActualDir shouldBe "/test_directory/test_file"
+      test_file_handler.getPathFromDir(test_directory) shouldBe "/test_file"
     }
 
     it("should give the unique key of file"){

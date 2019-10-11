@@ -11,9 +11,9 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
   val blobs_directory = new File(test_directory.getPath+"/.sgit/objects/blobs")
 
   val directory1 = new File(test_directory.getPath+"/directory1")
-  val file1 = FileHandler(new File(test_directory.getPath+"/file1"))
+  val file1 = FileHandler(new File(test_directory.getPath+"/directory1/file1"))
   val file2 = FileHandler(new File(test_directory.getPath+"/file2"))
-  val file3 = FileHandler(new File(test_directory.getPath+"/directory1/file3"))
+  val file3 = FileHandler(new File(test_directory.getPath+"/file3"))
 
   /**
     * before executing tests :
@@ -51,7 +51,7 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
     }
 
     it("should not createBlob of file1 and not add it to INDEX file because file1 has no content"){
-      Add.addFileToIndex("file1",test_directory)
+      Add.addFileToIndex("directory1/file1",test_directory)
 
       blobs_directory.listFiles() shouldBe Array[String]()
       index_file.getContent shouldBe ""
@@ -60,11 +60,11 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
     it("should createBlob of file1 and add it to INDEX file"){
       file1.addContent("hello darkness my old friend",appendContent = true)
       val blob_expected = new File(blobs_directory.getPath+"/"+file1.getUniqueKey)
-      Add.addFileToIndex("/file1",test_directory)
+      Add.addFileToIndex("directory1/file1",test_directory)
 
       blobs_directory.list() should have size 1
       blob_expected.exists() shouldBe true
-      index_file.getContent shouldBe file1.getPathFromActualDir+" "+file1.getUniqueKey+"\n"
+      index_file.getContent shouldBe file1.getPathFromDir(test_directory)+" "+file1.getUniqueKey+"\n"
     }
 
     it("should create a new blob and modify INDEX when file1 is added, modified, and added again"){
@@ -73,16 +73,16 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
 
       file1.addContent("hello darkness",appendContent = true)
       val blob_expected1 = new File(blobs_directory.getPath+"/"+file1.getUniqueKey)
-      Add.addFileToIndex("file1",test_directory)
+      Add.addFileToIndex("directory1/file1",test_directory)
 
-      index_file.getContent shouldBe file1.getPathFromActualDir+" "+file1.getUniqueKey+"\n"
+      index_file.getContent shouldBe file1.getPathFromDir(test_directory)+" "+file1.getUniqueKey+"\n"
 
 
       //append content to file1 and add it
       file1.addContent(" my old friend",appendContent = true)
       //a new blob is expected
       val blob_expected2 = new File(blobs_directory.getPath+"/"+file1.getUniqueKey)
-      Add.addFileToIndex("file1",test_directory)
+      Add.addFileToIndex("directory1/file1",test_directory)
 
       //we expect two blobs, one for file1 first version, one for it second version
       blobs_directory.list() should have size 2
@@ -90,7 +90,7 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
       blob_expected2.exists() shouldBe true
 
       //index file should have been modified
-      index_file.getContent shouldBe file1.getPathFromActualDir+" "+file1.getUniqueKey+"\n"
+      index_file.getContent shouldBe file1.getPathFromDir(test_directory)+" "+file1.getUniqueKey+"\n"
     }
 
     it("should add all files"){
@@ -99,15 +99,14 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
       file1.addContent("hello darkness",appendContent = true)
       file2.addContent("my old",appendContent = true)
       file3.addContent("friend",appendContent = true)
-      val files = Array[String]("file1","file2","directory1/file3")
-      Add.addFilesToIndex(files,test_directory)
+      Add.addFilesToIndex(test_directory)
 
       //we expect 3 blobs
       blobs_directory.list() should have size 3
 
-      val index_file_line_1_expected = file1.getPathFromActualDir+" "+file1.getUniqueKey
-      val index_file_line_2_expected = file2.getPathFromActualDir+" "+file2.getUniqueKey
-      val index_file_line_3_expected = file3.getPathFromActualDir+" "+file3.getUniqueKey
+      val index_file_line_1_expected = file1.getPathFromDir(test_directory)+" "+file1.getUniqueKey
+      val index_file_line_2_expected = file2.getPathFromDir(test_directory)+" "+file2.getUniqueKey
+      val index_file_line_3_expected = file3.getPathFromDir(test_directory)+" "+file3.getUniqueKey
 
       index_file.getContent shouldBe index_file_line_1_expected+"\n"+index_file_line_2_expected+"\n"+index_file_line_3_expected+"\n"
     }
@@ -119,22 +118,20 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
       file2.addContent("my old",appendContent = true)
       file3.addContent("friend",appendContent = true)
 
-      val files_to_add = Array[String]("file1","file2","directory1/file3")
-      Add.addFilesToIndex(files_to_add,test_directory)
+      Add.addFilesToIndex(test_directory)
 
       //delete file from test_directory
       file1.deleteFile()
 
-      //we add only file 2 and 3 because file 1 doesn't exist anymore
-      val files_to_add_2 = Array[String]("file2","directory1/file3")
+      //we add all file to have the file1 delete from index
 
-      Add.addFilesToIndex(files_to_add_2,test_directory)
+      Add.addFilesToIndex(test_directory)
 
       //blob for file1 should always exist
       blobs_directory.list() should have size 3
 
-      val index_file_line_1_expected = file2.getPathFromActualDir+" "+file2.getUniqueKey
-      val index_file_line_2_expected = file3.getPathFromActualDir+" "+file3.getUniqueKey
+      val index_file_line_1_expected = file2.getPathFromDir(test_directory)+" "+file2.getUniqueKey
+      val index_file_line_2_expected = file3.getPathFromDir(test_directory)+" "+file3.getUniqueKey
 
 
       //index file should have only file 2 and 3

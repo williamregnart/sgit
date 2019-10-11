@@ -11,6 +11,8 @@ object Main extends App {
     command(0) match {
       case "init" => init(command.tail)
       case "add" => add(command.tail)
+      case "commit" => commit(command.tail)
+      case _ => println(command.head+" doesn't exist")
     }
   }
 
@@ -28,7 +30,7 @@ object Main extends App {
         if (!command.isEmpty){
           command(0) match {
             case "." =>
-              Add.addAllFilesToIndex(actual_directory)
+              Add.addFilesToIndex(actual_directory)
             case _ =>
               Add.addFileToIndex(command(0),actual_directory)
           }
@@ -37,5 +39,12 @@ object Main extends App {
       }
     }
     apply(command,firstOption = true)
+  }
+
+  def commit(command:Array[String]):Unit = {
+    if(command.isEmpty){
+      Commit.commit(actual_directory)
+    }
+    else println("sgit commit has no option")
   }
 }
