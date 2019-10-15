@@ -1,0 +1,8 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mPathTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetPathAndSubPath function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should give path and subpath of path given[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m'getAllPathAndSubPath function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should give all path and subpath of the list of paths[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetElementsFromPath[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return all files in path given a list of path[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return all directories of a path given the a list of path and subpaths[0m[0m

@@ -9,7 +9,7 @@ class IndexHandler(override val f:File) extends FileHandler(f) {
     * @return the list of all file paths written in Index file
     */
   def getAllFilesPath:List[String]={
-    linesList.map(e=>e.split(" ")(0))
+    getLinesList.map(e=>e.split(" ")(0))
   }
 
   /**
@@ -61,7 +61,7 @@ class IndexHandler(override val f:File) extends FileHandler(f) {
     * @return the line to insert in a tree, format : tree <tree_name>
     */
   def getTreeLineToInsert(path_dir:String,actual_directory:File):String={
-    "\n"+"tree "+getTree(path_dir.substring(0,path_dir.length-1),actual_directory)
+    "\n"+"tree "+getTree(path_dir.substring(0,path_dir.length-1),actual_directory)+" "+path_dir
   }
 
   /**
@@ -96,14 +96,20 @@ class IndexHandler(override val f:File) extends FileHandler(f) {
   def getTree(path:String,actual_directory:File):String={
     //get the blobs lines to insert in tree
     val blobs_content = getAllBlobsLineToInsert(getFilesFromPath(path),"")
+
+
     //get the trees lines to insert in tree
     val trees_content = getAllTreesLineToInsert(getDirPathFromPath(path),"",actual_directory)
+
     //encrypt the content for tree naming
     val tree_name = Encryption.sha1(blobs_content+trees_content)
     //create the tree file in .sgit/objects/trees
     val tree_file = FileHandler(new File(actual_directory.getPath+"/.sgit/objects/trees/"+tree_name))
-    tree_file.createFile()
-    tree_file.addContent(blobs_content+trees_content,appendContent = false)
+
+    if(!tree_file.existFile()) {
+      tree_file.createFile()
+      tree_file.addContent(blobs_content + trees_content, appendContent = false)
+    }
     tree_name
   }
 

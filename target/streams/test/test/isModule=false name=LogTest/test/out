@@ -1,0 +1,5 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mLogTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetSimpleLog function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have two commits on the result[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have at first a commit with a parentTree and at last a commit without parentTree[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should give the right logs[0m[0m

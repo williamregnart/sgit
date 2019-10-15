@@ -22,7 +22,6 @@ case class DirectoryHandler(f:File) {
           }
             //if file is a file, add it path from actual directory to the list of results
           else {
-            println(FileHandler(files.head).getPathFromDir(dir))
             apply(files.tail, files_path :+ FileHandler(files.head).getPathFromDir(dir))
           }
         }

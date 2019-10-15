@@ -14,10 +14,10 @@ object Index{
     if(listPath.isEmpty) listElements
     else{
       //if the actual path file contains the path
-      if((path.r findFirstIn  listPath.head).isDefined){
+      if(((path+"/").r findFirstIn  listPath.head).isDefined){
         val filePathFromDirPath = listPath.head.replace(path,"")
 
-        if(filePathFromDirPath.split("/").length==2){
+        if(filePathFromDirPath.split("/").length==2 ){
           getElementsFromPath(path,listPath.tail,listElements:+listPath.head)
         }
         else getElementsFromPath(path,listPath.tail,listElements)
@@ -33,7 +33,7 @@ object Index{
     * @return : the path concatenated
     */
   def concatPath(path:List[String],index:Int):String = {
-    if(path.head.isEmpty) ""
+    if(index==0) ""
     else path.head.concat("/"+concatPath(path.tail,index-1))
   }
 
@@ -47,7 +47,7 @@ object Index{
       if(splitIndex==pathSplit.length) listPath
       else apply(pathSplit,listPath:+concatPath(pathSplit,splitIndex),splitIndex+1)
     }
-    apply(path.split("/").toList,List[String](),0)
+    apply(path.split("/").toList,List[String](),1)
   }
 
   /**

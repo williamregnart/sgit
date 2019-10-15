@@ -2,6 +2,8 @@ import java.io.File
 
 import org.scalatest.{BeforeAndAfter, FunSpec, Matchers}
 
+import scala.reflect.io.Directory
+
 
 class FileHandlerTest extends FunSpec with Matchers with BeforeAndAfter {
 
@@ -9,12 +11,13 @@ class FileHandlerTest extends FunSpec with Matchers with BeforeAndAfter {
   val test_file_handler = FileHandler(new File(test_directory.getPath+"/test_file"))
 
   before{
+    test_directory.mkdir()
     test_file_handler.createFile()
     test_file_handler.addContent("hello\ndarkness\nmy\nold\nfriend",appendContent = false)
   }
 
   after{
-    test_file_handler.deleteFile()
+    new Directory(test_directory).deleteRecursively()
   }
 
   describe("a file handler") {

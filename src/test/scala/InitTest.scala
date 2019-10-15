@@ -9,8 +9,11 @@ class InitTest extends FunSpec with Matchers with BeforeAndAfter {
 
   val test_directory = new File(System.getProperty("user.dir")+"/test_directory")
 
+  before{
+    test_directory.mkdir()
+  }
   after{
-    new Directory(new File(test_directory.getPath+"/.sgit")).deleteRecursively()
+    new Directory(test_directory).deleteRecursively()
   }
 
   describe("an init process") {

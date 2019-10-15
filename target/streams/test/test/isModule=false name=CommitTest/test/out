@@ -1,17 +1,14 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mCommitTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mthe trees directory[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should have no tree  before first commit[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should have 2 trees after first commit one for directory1, one for test_directory *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  java.io.FileNotFoundException: C:\Users\willi\Documents\IG5\sgit_project\sgit\test_directory\.sgit\refs\heads\master[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m (La syntaxe du nom de fichier, de répertoire ou de volume est incorrecte)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at java.io.FileInputStream.open0(Native Method)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at java.io.FileInputStream.open(FileInputStream.java:195)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at java.io.FileInputStream.<init>(FileInputStream.java:138)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at java.io.FileReader.<init>(FileReader.java:72)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at FileHandler.getContent(FileHandler.scala:47)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at Commit$.getLastCommitFromBranch(Commit.scala:64)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at Commit$.commit(Commit.scala:97)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at CommitTest$$anonfun$3$$anonfun$apply$mcV$sp$2.apply(CommitTest.scala:51)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at CommitTest$$anonfun$3$$anonfun$apply$mcV$sp$2.apply(CommitTest.scala:50)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have 2 trees after first commit one for directory1, one for test_directory[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have 4 trees after second commit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mthe commits directory[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have 1 commit after first commit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have, after first commit a file with the right commit name[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mbranch file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have the last commit in content[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mthe commit file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have the right content[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mthe second commit process[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not create a new commit if nothing changed[0m[0m

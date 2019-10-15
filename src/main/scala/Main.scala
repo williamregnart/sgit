@@ -47,4 +47,13 @@ object Main extends App {
     }
     else println("sgit commit has no option")
   }
+
+  def log(command:Array[String]):Unit = {
+    if(command.isEmpty){
+      Log.getSimpleLog(actual_directory)
+    }
+    else{
+      println("sgit log has no option")
+    }
+  }
 }

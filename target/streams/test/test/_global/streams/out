@@ -1,21 +1,27 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FileHandlerTest, org.scalatest.tools.Framework$$anon$1@77d8e152, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(InitTest, org.scalatest.tools.Framework$$anon$1@77d8e152, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AddTest, org.scalatest.tools.Framework$$anon$1@77d8e152, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(IndexTest, org.scalatest.tools.Framework$$anon$1@77d8e152, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CommitTest, org.scalatest.tools.Framework$$anon$1@77d8e152, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FileHandlerTest, org.scalatest.tools.Framework$$anon$1@52a5a73f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(InitTest, org.scalatest.tools.Framework$$anon$1@52a5a73f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(TreeHandlerTest, org.scalatest.tools.Framework$$anon$1@52a5a73f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(DiffTest, org.scalatest.tools.Framework$$anon$1@52a5a73f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(IndexHandlerTest, org.scalatest.tools.Framework$$anon$1@52a5a73f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(PathTest, org.scalatest.tools.Framework$$anon$1@52a5a73f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AddTest, org.scalatest.tools.Framework$$anon$1@52a5a73f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(LogTest, org.scalatest.tools.Framework$$anon$1@52a5a73f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CommitTest, org.scalatest.tools.Framework$$anon$1@52a5a73f, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mSummary for ScalaCheck not available.[0m
 [0m[[0m[0minfo[0m] [0m[0mScalaTest[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 1 second, 183 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 16[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 15, failed 1, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
-[0m[[0m[31merror[0m] [0m[0mFailed: Total 16, Failed 1, Errors 0, Passed 15[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 500 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 42[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 9, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 42, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 42, Failed 0, Errors 0, Passed 42[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	FileHandlerTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	InitTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TreeHandlerTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DiffTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	IndexHandlerTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PathTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	AddTest[0m
-[0m[[0m[0mdebug[0m] [0m[0m	IndexTest[0m
-[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	CommitTest[0m
-[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CommitTest[0m

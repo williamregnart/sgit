@@ -21,6 +21,7 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
     * - create 3 files with 1 in a subdirectory
     */
   before{
+    test_directory.mkdir()
     Init.createSgit(test_directory)
     directory1.mkdir()
     file1.createFile()
@@ -34,11 +35,7 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
     * - delete all files and subdirectories
     */
   after{
-    new Directory(new File(test_directory.getPath+"/.sgit")).deleteRecursively()
-    file1.deleteFile()
-    file2.deleteFile()
-    file3.deleteFile()
-    directory1.delete()
+    new Directory(test_directory).deleteRecursively()
   }
 
   describe("an add process") {

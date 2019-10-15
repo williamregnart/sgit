@@ -39,7 +39,8 @@ case class FileHandler(f: File) {
     sha1
   }
   def getContent:String={
-    def apply(bufferedReader: BufferedReader,content:String):String= {
+    @scala.annotation.tailrec
+    def apply(bufferedReader: BufferedReader, content:String):String= {
       val line = bufferedReader.readLine()
       if (line == null) content
       else apply(bufferedReader, content.concat(line + "\n"))
@@ -72,8 +73,9 @@ case class FileHandler(f: File) {
     (pattern.r findFirstIn getContent).isDefined
   }
 
-  def linesList:List[String] = {
-    def apply(bufferedReader: BufferedReader,list:List[String]):List[String]= {
+  def getLinesList:List[String] = {
+    @scala.annotation.tailrec
+    def apply(bufferedReader: BufferedReader, list:List[String]):List[String]= {
       val line = bufferedReader.readLine()
       if (line == null) list
       else apply(bufferedReader, list:+line)
@@ -87,7 +89,8 @@ case class FileHandler(f: File) {
   }
 
   def getLineWithPattern(pattern:String):Option[String] = {
-    def apply(bufferedReader: BufferedReader,pattern:String):Option[String] ={
+    @scala.annotation.tailrec
+    def apply(bufferedReader: BufferedReader, pattern:String):Option[String] ={
       val line = bufferedReader.readLine()
       if(line == null) None
       else{
