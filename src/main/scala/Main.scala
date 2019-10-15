@@ -50,7 +50,7 @@ object Main extends App {
 
   def log(command:Array[String]):Unit = {
     if(command.isEmpty){
-      Log.getSimpleLog(actual_directory)
+      Log.getLog(actual_directory, p = false)
     }
     else{
       println("sgit log has no option")

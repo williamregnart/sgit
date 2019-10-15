@@ -30,4 +30,33 @@ class DiffTest extends FunSpec with Matchers with BeforeAndAfter{
       Diff.getAddedLines(file2.getLinesList,file1.getLinesList) shouldBe List((5,"I"),(6,"love"))
     }
   }
+  describe("getDiffBetweenFiles function"){
+    it("should give the lines deleted from old file and lines added from new file"){
+      val old_file = Some(file2)
+      val new_file = Some(file1)
+      val result = Diff.getDiffBetweenFiles(new_file,"/file1",old_file,"/file2")
+      val expected_result = List[String]("--- a/file2","+++b/file1","","-Line 5 : I","-Line 6 : love","","+Line 4 : old")
+
+      result shouldBe expected_result
+    }
+    it("should give the lines deleted from old file because new file doesn't exist"){
+      file1.addContent("hello\ndarkness",appendContent = false)
+      val old_file = Some(file1)
+      val new_file = None
+      val result = Diff.getDiffBetweenFiles(new_file,"/null",old_file,"/file1")
+      val expected_result = List[String]("--- a/file1","+++b/null","","-Line 1 : hello","-Line 2 : darkness")
+
+      result shouldBe expected_result
+    }
+
+    it("should give the lines added from new file because old file doesn't exist"){
+      file1.addContent("hello\ndarkness",appendContent = false)
+      val new_file = Some(file1)
+      val old_file = None
+      val result = Diff.getDiffBetweenFiles(new_file,"/file1",old_file,"/null")
+      val expected_result = List[String]("--- a/null","+++b/file1","","+Line 1 : hello","+Line 2 : darkness")
+
+      result shouldBe expected_result
+    }
+  }
 }

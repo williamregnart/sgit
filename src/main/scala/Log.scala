@@ -7,19 +7,40 @@ object Log {
     * @param actual_directory : sgit repo
     * @return : all the commits of the branch
     */
-  def getSimpleLog(actual_directory:File): List[String] ={
+  def getLog(actual_directory:File,p:Boolean): List[String] ={
 
-    def apply(parentTree:Option[String],logs:List[String]):List[String] ={
+    @scala.annotation.tailrec
+    def apply(parentTree:Option[String], logs:List[String]):List[String] ={
+      //if it is not the first commit
       if(parentTree.isDefined){
-        val previous_commit = Commit.getCommitFileByName(parentTree.get,actual_directory)
-        val commit_log = "commit "+previous_commit.getName+"\n"+previous_commit.getContent
-        apply(previous_commit.getParentTree,logs:+commit_log)
+        //get the previous commit
+        val commit = Commit.getCommitFileByName(parentTree.get,actual_directory)
+        val commit_log = List[String]("commit "+commit.getName)++commit.getLinesList
+
+        //if log -p and it is not the first commit, we can add the diff add the differences between commit and previous commit
+        if(p && commit.getParentTree.isDefined){
+            val previous_commit = Commit.getCommitFileByName(commit.getParentTree.get,actual_directory)
+            val diff = Diff.getDiffBetweenCommits(commit,previous_commit,actual_directory)
+            apply(commit.getParentTree,logs++commit_log++diff)
+        }
+        else apply(commit.getParentTree,logs++commit_log)
       }
       else logs
     }
+    //get the last commit
     val branch = Commit.getBranchToCommit(actual_directory)
     val last_commit = Commit.getCommitFileByName(Commit.getLastCommitFromBranch(branch,actual_directory),actual_directory)
-    val last_commit_log = "commit "+last_commit.getName+"\n"+last_commit.getContent
-    apply(last_commit.getParentTree,List[String](last_commit_log))
+
+    val last_commit_log = List[String]("commit "+last_commit.getName)++last_commit.getLinesList
+
+    if(p && last_commit.getParentTree.isDefined){
+      val previous_commit = Commit.getCommitFileByName(last_commit.getParentTree.get,actual_directory)
+      val diff = Diff.getDiffBetweenCommits(last_commit,previous_commit,actual_directory)
+      apply(last_commit.getParentTree,last_commit_log++diff)
+    }
+    else apply(last_commit.getParentTree,last_commit_log)
   }
+
+
 }
+

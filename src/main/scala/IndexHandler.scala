@@ -46,6 +46,18 @@ class IndexHandler(override val f:File) extends FileHandler(f) {
   }
 
   /**
+    * function getBlobFileByName
+    * @param name : the name of blob file we are looking for
+    * @param actual_directory : sgit repo
+    * @return None if the file does'nt exist, else Some(<blob_file>)
+    */
+  def getBlobFileByName(name:String,actual_directory:File): Option[FileHandler] = {
+    val blob_file = FileHandler(new File(actual_directory.getPath+"/.sgit/objects/blobs/"+name))
+    if(blob_file.existFile()) Some(blob_file)
+    else None
+  }
+
+  /**
     * function getBlobLineToInsert
     * @param path_file : the path of file we want to insert in tree
     * @return the line to insert in a tree, format : blob <blob_name> <file_name>

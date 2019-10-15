@@ -1,3 +1,5 @@
+import java.io.File
+
 import scala.collection.immutable.TreeMap
 import scala.collection.mutable
 
@@ -74,7 +76,11 @@ object Diff {
     apply(tab,1,List[(Int,String)]())
   }
 
-  def getDiffBetweenFiles(file1:Option[FileHandler],file2:Option[FileHandler]):List[String] = {
+  def getAddedLinesWithoutIndexLine(file1_lines:List[String],file2_lines:List[String]):List[String]={
+    getAddedLines(file1_lines,file2_lines).map(e => e._2)
+  }
+
+  def getDiffBetweenFiles(new_file:Option[FileHandler], new_file_name:String, old_file:Option[FileHandler], old_file_name:String):List[String] = {
 
     def apply(diff_lines_file:List[(Int,String)],added:Boolean, result:List[String]):List[String] = {
 
@@ -91,10 +97,142 @@ object Diff {
         }
       }
     }
-    if(file1.isDefined && file2.isDefined){
-      val lines_added = apply(getAddedLines(file1.get.getLinesList,file2.get.getLinesList),added = true,List[String]())
-      val lines_deleted = apply(getAddedLines(file2.get.getLinesList,file1.get.getLinesList),added = false,List[String]())
-      List[String]("")
+
+
+    if(new_file.isDefined && old_file.isDefined){
+      val lines_added = apply(getAddedLines(new_file.get.getLinesList,old_file.get.getLinesList),added = true,List[String]())
+      val lines_deleted = apply(getAddedLines(old_file.get.getLinesList,new_file.get.getLinesList),added = false,List[String]())
+      List[String]("--- a"+old_file_name,"+++b"+new_file_name,"")++lines_deleted++List[String]("")++lines_added
     }
+    else if(new_file.isDefined){
+      val lines_added = apply(getAddedLines(new_file.get.getLinesList,List[String]("")),added = true,List[String]())
+      List[String]("--- a/null","+++b"+new_file_name,"")++lines_added
+    }
+    else if(old_file.isDefined){
+      val lines_deleted = apply(getAddedLines(old_file.get.getLinesList,List[String]("")),added = false,List[String]())
+      List[String]("--- a"+old_file_name,"+++b/null","")++lines_deleted
+    }
+    else{
+      Nil
+    }
+  }
+
+  /**
+    * function getDiffBetweenIndexes
+    * @param new_index : actual index file
+    * @param old_index : old index file
+    * @param actual_directory : sgit repo
+    * @return list of modifications between old and new index
+    */
+  def getDiffBetweenIndexes(new_index:IndexHandler,old_index:IndexHandler,actual_directory:File):List[String]={
+
+    //retrieve the modified,added, and deleted lines between old and new index
+    val lines_modified_new_index = Diff.getAddedLinesWithoutIndexLine(new_index.getLinesList,old_index.getLinesList)
+    val lines_modified_old_index = Diff.getAddedLinesWithoutIndexLine(old_index.getLinesList,new_index.getLinesList)
+
+    /**
+      * function getAddedAndModifiedFiles
+      *
+      * @param lines_modified_new_index : lines in new index which not exists or have been modified in old index
+      * @param result :
+      * @return list of addition and modification between new and old index
+      */
+    @scala.annotation.tailrec
+    def getAddedAndModifiedFiles(lines_modified_new_index:List[String],result : List[String]):List[String] = {
+
+      if(lines_modified_new_index.isEmpty) result
+      else{
+
+        //the file path of the line in new index
+        val file_in_new_index = lines_modified_new_index.head.split(" ")(0)
+        //blob name of this file
+        val blob_name_in_new_index = lines_modified_new_index.head.split(" ")(1)
+        //blob file of this file
+        val blob_file_new_index = new_index.getBlobFileByName(blob_name_in_new_index,actual_directory)
+
+        //if file is not added but modified (exist in old index)
+        if(old_index.getLineWithPattern(file_in_new_index).isDefined){
+          //get the blob of file in old index
+          val blob_name_in_old_index = old_index.getBlobFromFilePath(file_in_new_index)
+          val blob_file_old_index = old_index.getBlobFileByName(blob_name_in_old_index,actual_directory)
+
+          //get the modifications between the blobs from new and old index
+          val modification = Diff.getDiffBetweenFiles(blob_file_new_index,file_in_new_index,blob_file_old_index,file_in_new_index)
+
+          getAddedAndModifiedFiles(lines_modified_new_index.tail,result++modification:+"")
+        }
+        //if file is added (not exists in old index)
+        else{
+          val modification = Diff.getDiffBetweenFiles(blob_file_new_index,file_in_new_index,None,"null")
+          getAddedAndModifiedFiles(lines_modified_new_index.tail,result++modification:+"")
+        }
+      }
+    }
+
+    /**
+      * function getDeletedFiles
+      * @param lines_modified_old_index : lines in old index which not exists or have been modified in new index
+      * @param result
+      * @return list of suppression between new and old index
+      */
+    def getDeletedFiles(lines_modified_old_index:List[String],result:List[String]) : List[String] = {
+      if (lines_modified_old_index.isEmpty) result
+      else {
+        val file_in_old_index = lines_modified_old_index.head.split(" ")(0)
+        //if file in old index exists in new index, it has been modified and is not handled by the function
+        if (new_index.getLineWithPattern(file_in_old_index).isDefined) getDeletedFiles(lines_modified_old_index.tail, result)
+
+        else {
+          val blob_name_in_old_index = lines_modified_old_index.head.split(" ")(1)
+          //blob file of this file
+          val blob_file_old_index = old_index.getBlobFileByName(blob_name_in_old_index, actual_directory)
+
+          val suppression = Diff.getDiffBetweenFiles(None, "null", blob_file_old_index, file_in_old_index)
+          getDeletedFiles(lines_modified_old_index.tail, result ++ suppression :+ "")
+        }
+      }
+    }
+
+    val addition_and_modifications = getAddedAndModifiedFiles(lines_modified_new_index,List[String]())
+    val suppressions = getDeletedFiles(lines_modified_old_index,List[String]())
+
+    addition_and_modifications++suppressions
+  }
+
+  /**
+    * function getDiffBetweenCommits
+    * @param new_commit : new commit file
+    * @param old_commit : old commit file
+    * @param actual_directory : sgit repo
+    * @return the list of modifications between the two commits
+    */
+  def getDiffBetweenCommits(new_commit: CommitHandler,old_commit:CommitHandler,actual_directory:File):List[String]={
+
+    //get the trees of new and last commits
+    val new_tree_name = new_commit.getTree
+    val new_tree_file = new TreeHandler(new File(actual_directory.getPath+"/.sgit/objects/trees/"+new_tree_name))
+    val old_tree_name = old_commit.getTree
+    val old_tree_file = new TreeHandler(new File(actual_directory.getPath+"/.sgit/objects/trees/"+old_tree_name))
+
+    //get the index content of trees
+    val new_index_content = new_tree_file.getIndex("",actual_directory)
+    val old_index_content = old_tree_file.getIndex("",actual_directory)
+
+    //create new and old index files with their content
+    val new_index_file = new IndexHandler(new File(actual_directory.getPath+"/.sgit/NEW_INDEX"))
+    new_index_file.createFile()
+    new_index_file.addContent(new_index_content,appendContent = false)
+
+    val old_index_file = new IndexHandler(new File(actual_directory.getPath+"/.sgit/OLD_INDEX"))
+    old_index_file.addContent(old_index_content,appendContent = false)
+    old_index_file.createFile()
+
+    //get the diff between indexes
+    val diff = getDiffBetweenIndexes(new_index_file,old_index_file,actual_directory)
+
+    new_index_file.deleteFile()
+    old_index_file.deleteFile()
+
+    diff
   }
 }

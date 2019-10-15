@@ -54,8 +54,6 @@ class TreeHandlerTest extends FunSpec with Matchers with BeforeAndAfter{
       val index_of_tree = new IndexHandler(new File(test_directory.getPath+"/NEWINDEX"))
       index_of_tree.createFile()
       index_of_tree.addContent(tree_file.getIndex("",test_directory),appendContent = true)
-      println("---------------NEW INDEX-------------")
-      println(index_of_tree.getContent)
       Diff.getAddedLines(index_of_tree.getLinesList,index_file.getLinesList) should have size 0
       Diff.getAddedLines(index_file.getLinesList,index_of_tree.getLinesList) should have size 0
     }

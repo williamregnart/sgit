@@ -35,14 +35,16 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
     new Directory(test_directory).deleteRecursively()
   }
 
-  describe("getSimpleLog function"){
+  describe("getLog function without option -p"){
     it("should have two commits on the result"){
       file4.createFile()
       file4.addContent("for new commit",appendContent = false)
       Add.addFilesToIndex(test_directory)
       Commit.commit(test_directory)
+      val commit_size = 4
+      val nb_commit = 2
 
-      Log.getSimpleLog(test_directory) should have size 2
+      Log.getLog(test_directory,p = false) should have size commit_size * nb_commit
     }
     it("should have at first a commit with a parentTree and at last a commit without parentTree"){
       file4.createFile()
@@ -50,9 +52,11 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       Add.addFilesToIndex(test_directory)
       Commit.commit(test_directory)
 
-      val log_result = Log.getSimpleLog(test_directory)
-      val first_commit = log_result.head
-      val last_commit = log_result.last
+      val log_result = Log.getLog(test_directory,p = false)
+      val commit_size = 4
+      val line_parent_tree = 2
+      val first_commit = log_result(line_parent_tree)
+      val last_commit = log_result(line_parent_tree+commit_size)
 
       "parentTree None".r findFirstIn first_commit shouldBe None
       "parentTree None".r findFirstIn last_commit should not be None
@@ -71,10 +75,49 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       val first_commit_file = FileHandler(new File(test_directory.getPath+"/.sgit/objects/commits/"+first_commit_name))
       val second_commit_file = FileHandler(new File(test_directory.getPath+"/.sgit/objects/commits/"+second_commit_name))
 
-      val first_commit_log = "commit "+first_commit_name+"\n"+first_commit_file.getContent
-      val second_commit_log = "commit "+second_commit_name+"\n"+second_commit_file.getContent
+      val first_commit_log = List[String]("commit "+first_commit_name)++first_commit_file.getLinesList
+      val second_commit_log = List[String]("commit "+second_commit_name)++second_commit_file.getLinesList
 
-      Log.getSimpleLog(test_directory) shouldBe List[String](second_commit_log,first_commit_log)
+      Log.getLog(test_directory,p = false) shouldBe second_commit_log++first_commit_log
+    }
+  }
+
+  describe("getDiffBetweenIndexes function"){
+    it("should return the difference between files in old and new index"){
+      file2.deleteFile()
+      file1.addContent(" darkness\nmy old friend",appendContent = true)
+      val file5 = FileHandler(new File(test_directory.getPath+"/file5"))
+      file5.createFile()
+      file5.addContent("new\nfile",appendContent = true)
+      Add.addFilesToIndex(test_directory)
+
+
+      val commit_name = Commit.getLastCommitFromBranch("master",test_directory)
+      val commit_file = new CommitHandler(new File(commits_directory.getPath+"/"+commit_name))
+      val tree_name = commit_file.getTree
+      val tree_file = new TreeHandler(new File(trees_directory.getPath+"/"+tree_name))
+      val index_of_tree = new IndexHandler(new File(test_directory.getPath+"/NEWINDEX"))
+      index_of_tree.createFile()
+      index_of_tree.addContent(tree_file.getIndex("",test_directory),appendContent = true)
+
+      val logp = Diff.getDiffBetweenIndexes(index_file,index_of_tree,test_directory)
+
+      val modif_file1_expected = List[String]("--- a/directory1/file1", "+++b/directory1/file1","","-Line 1 : hello","","+Line 1 : hello darkness","+Line 2 : my old friend","")
+      val add_file5_expected = List[String]("--- a/null","+++b/file5","","+Line 1 : new","+Line 2 : file","")
+      val delete_file2_expected = List[String]("--- a/file2","+++b/null","","-Line 1 : darkness","")
+
+      logp shouldBe modif_file1_expected++add_file5_expected++delete_file2_expected
+    }
+  }
+
+  describe("getLog function with option -p") {
+    it("should have two commits on the result") {
+      file4.createFile()
+      file4.addContent("for new commit", appendContent = true)
+      Add.addFilesToIndex(test_directory)
+      Commit.commit(test_directory)
+
+      println(Log.getLog(test_directory, p = true))
     }
   }
 }
