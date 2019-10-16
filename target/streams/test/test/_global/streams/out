@@ -1,20 +1,21 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FileHandlerTest, org.scalatest.tools.Framework$$anon$1@66d0b1c9, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(InitTest, org.scalatest.tools.Framework$$anon$1@66d0b1c9, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(TreeHandlerTest, org.scalatest.tools.Framework$$anon$1@66d0b1c9, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(DiffTest, org.scalatest.tools.Framework$$anon$1@66d0b1c9, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(IndexHandlerTest, org.scalatest.tools.Framework$$anon$1@66d0b1c9, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(PathTest, org.scalatest.tools.Framework$$anon$1@66d0b1c9, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AddTest, org.scalatest.tools.Framework$$anon$1@66d0b1c9, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(LogTest, org.scalatest.tools.Framework$$anon$1@66d0b1c9, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CommitTest, org.scalatest.tools.Framework$$anon$1@66d0b1c9, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FileHandlerTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(InitTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(TreeHandlerTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(DiffTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(IndexHandlerTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(PathTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AddTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(LogTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(StatusTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CommitTest, org.scalatest.tools.Framework$$anon$1@851d46f, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mSummary for ScalaCheck not available.[0m
 [0m[[0m[0minfo[0m] [0m[0mScalaTest[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 3 seconds, 389 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 47[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 9, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 47, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 755 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 49[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 10, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 49, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0mPassed: Total 47, Failed 0, Errors 0, Passed 47[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 49, Failed 0, Errors 0, Passed 49[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	FileHandlerTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	InitTest[0m
@@ -24,4 +25,5 @@
 [0m[[0m[0mdebug[0m] [0m[0m	PathTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	AddTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	LogTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StatusTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	CommitTest[0m

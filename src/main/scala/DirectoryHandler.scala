@@ -1,14 +1,14 @@
 import java.io.File
 
-case class DirectoryHandler(f:File) {
+class DirectoryHandler(f:File) {
   private val dir = f
 
   /**
     * function getAllFilesPath
     * @return paths of files in the directory and all subdirectories, except in .sgit
     */
-  def getAllFilesPath:Array[String] = {
-    def apply(files:Array[File],files_path:Array[String]):Array[String] = {
+  def getAllFilesPath:List[String] = {
+    def apply(files:Array[File],files_path:List[String]):List[String] = {
       if (files.isEmpty) files_path
       else {
         //if file is .sgit directory, ignore it
@@ -18,7 +18,7 @@ case class DirectoryHandler(f:File) {
         else {
           //if file is a directory, add all it paths files by applying the same function
           if (files.head.isDirectory) {
-            apply(files.tail, files_path ++: apply(files.head.listFiles(), Array[String]()))
+            apply(files.tail, files_path ++: apply(files.head.listFiles(), List[String]()))
           }
             //if file is a file, add it path from actual directory to the list of results
           else {
@@ -27,7 +27,7 @@ case class DirectoryHandler(f:File) {
         }
       }
     }
-    apply(dir.listFiles(),Array[String]())
+    apply(dir.listFiles(),List[String]())
   }
 
   /**

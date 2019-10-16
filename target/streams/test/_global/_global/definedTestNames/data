@@ -1,1 +1,1 @@
-["FileHandlerTest","InitTest","TreeHandlerTest","DiffTest","IndexHandlerTest","PathTest","AddTest","LogTest","CommitTest"]
+["FileHandlerTest","InitTest","TreeHandlerTest","DiffTest","IndexHandlerTest","PathTest","AddTest","LogTest","StatusTest","CommitTest"]

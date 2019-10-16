@@ -60,7 +60,7 @@ object Add{
     * @return true
     */
   def addFilesToIndex(actual_directory:File):Boolean={
-    def apply(files_path:Array[String],actual_directory:File):Boolean= {
+    def apply(files_path:List[String],actual_directory:File):Boolean= {
       if (files_path.isEmpty) true
       else {
         addFileToIndex(files_path.head.replaceAll("\\\\", "/"), actual_directory)
@@ -71,7 +71,7 @@ object Add{
     //all files are add, index has to be overwrite
     index_file.clearContent()
     //create the directoryHandler of sgit repo to have all filesPath
-    val directoryHandler = DirectoryHandler(actual_directory)
+    val directoryHandler = new DirectoryHandler(actual_directory)
     apply(directoryHandler.getAllFilesPath,actual_directory)
   }
 }

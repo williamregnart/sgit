@@ -30,6 +30,19 @@ class IndexHandler(override val f:File) extends FileHandler(f) {
     getElementsFromPath(path,getAllPathAndSubPath(getAllFilesPath),List[String]())
   }
 
+  def getPathAndBlob:Map[String,String]={
+    @scala.annotation.tailrec
+    def apply(lines:List[String], result:Map[String,String]):Map[String,String] = {
+      if (lines.isEmpty) result
+      else{
+        val path = lines.last.split(" ")(0)
+        val blob = lines.last.split(" ")(1)
+        apply(lines.init,result+(path -> blob))
+      }
+    }
+    apply(getLinesList,Map())
+  }
+
   /**
     * function getBlobFromFilePath
     * @param path : the file path we want the blob
@@ -43,6 +56,11 @@ class IndexHandler(override val f:File) extends FileHandler(f) {
       line_blob.get.split(" ")(1)
     }
     else ""
+  }
+
+  def getFileFromPath(path:String):Option[String]={
+    val files_list =getAllFilesPath.filter(element => element == path)
+    files_list.headOption
   }
 
   /**
