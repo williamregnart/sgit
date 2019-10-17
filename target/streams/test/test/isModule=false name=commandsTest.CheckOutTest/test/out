@@ -1,0 +1,8 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mCheckOutTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mchangeBranch function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should switch in branch slave and the repo should be unchanged[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a new file in master branch and when we go on slave branch, it doesn't exist anymore[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mexecuteCheckOutCommand function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should checkout on the commit referenced by the tag[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should checkout on the commit given[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should forbid the checkout with uncommitted files[0m[0m

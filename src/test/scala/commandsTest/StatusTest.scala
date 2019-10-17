@@ -60,10 +60,8 @@ class StatusTest extends FunSpec with Matchers with BeforeAndAfter {
   }
   describe("printUntrackedFiles function"){
     it("should print in console the files untracked in repo which have not been added"){
-      println("-----------------------------")
       Status.printUntrackedFiles(test_directory)
       Status.printUncommittedFiles(test_directory)
-      println("-----------------------------")
     }
   }
 }

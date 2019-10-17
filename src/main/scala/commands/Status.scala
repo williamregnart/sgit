@@ -190,6 +190,7 @@ object Status {
     //if nothing to commit
     if(get_added_uncommitted_files.isEmpty && get_deleted_uncommitted_files.isEmpty && get_modified_uncommitted_files.isEmpty){
       println("No changes to be committed")
+      print(Console.WHITE)
       false
     }
     else{
@@ -198,6 +199,7 @@ object Status {
       printElements(get_added_uncommitted_files,"new file",added = true)
       printElements(get_deleted_uncommitted_files,"deleted",added = true)
       printElements(get_modified_uncommitted_files,"modified",added = true)
+      print(Console.WHITE)
       true
     }
   }

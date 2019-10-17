@@ -1,0 +1,29 @@
+[0m[[0m[0mdebug[0m] [0m[0mOther repositories:[0m
+[0m[[0m[0mdebug[0m] [0m[0mDefault repositories:[0m
+[0m[[0m[31merror[0m] [0m[0mlmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:[0m
+[0m[[0m[31merror[0m] [0m[0mfile://C:/Users/willi/.IntelliJIdea2018.2/config/plugins/Scala/repo/org.jetbrains/sbt-idea-shell/scala_2.12/sbt_1.0/2017.2/srcs/sbt-idea-shell-sources.jar: not found: C:\Users\willi\.IntelliJIdea2018.2\config\plugins\Scala\repo\org.jetbrains\sbt-idea-shell\scala_2.12\sbt_1.0\2017.2\srcs\sbt-idea-shell-sources.jar[0m
+[0m[[0m[31merror[0m] [0m[0mfile://C:/Users/willi/.IntelliJIdea2018.2/config/plugins/Scala/repo/org.jetbrains/sbt-structure-extractor/scala_2.12/sbt_1.0/2018.2/srcs/sbt-structure-extractor-sources.jar: not found: C:\Users\willi\.IntelliJIdea2018.2\config\plugins\Scala\repo\org.jetbrains\sbt-structure-extractor\scala_2.12\sbt_1.0\2018.2\srcs\sbt-structure-extractor-sources.jar[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m	at lmcoursier.internal.shaded.coursier.Artifacts$.$anonfun$fetchArtifacts$8(Artifacts.scala:359)[0m
+[0m[[0m[31merror[0m] [0m[0m	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$2(Task.scala:14)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:748)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: lmcoursier.internal.shaded.coursier.cache.ArtifactError$NotFound: not found: C:\Users\willi\.IntelliJIdea2018.2\config\plugins\Scala\repo\org.jetbrains\sbt-idea-shell\scala_2.12\sbt_1.0\2017.2\srcs\sbt-idea-shell-sources.jar[0m
+[0m[[0m[31merror[0m] [0m[0m	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$61(FileCache.scala:610)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Success.$anonfun$map$1(Try.scala:255)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Success.map(Try.scala:213)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:748)[0m
+[0m[[0m[31merror[0m] [0m[0m([31mupdateSbtClassifiers[0m) lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:[0m
+[0m[[0m[31merror[0m] [0m[0mfile://C:/Users/willi/.IntelliJIdea2018.2/config/plugins/Scala/repo/org.jetbrains/sbt-idea-shell/scala_2.12/sbt_1.0/2017.2/srcs/sbt-idea-shell-sources.jar: not found: C:\Users\willi\.IntelliJIdea2018.2\config\plugins\Scala\repo\org.jetbrains\sbt-idea-shell\scala_2.12\sbt_1.0\2017.2\srcs\sbt-idea-shell-sources.jar[0m
+[0m[[0m[31merror[0m] [0m[0mfile://C:/Users/willi/.IntelliJIdea2018.2/config/plugins/Scala/repo/org.jetbrains/sbt-structure-extractor/scala_2.12/sbt_1.0/2018.2/srcs/sbt-structure-extractor-sources.jar: not found: C:\Users\willi\.IntelliJIdea2018.2\config\plugins\Scala\repo\org.jetbrains\sbt-structure-extractor\scala_2.12\sbt_1.0\2018.2\srcs\sbt-structure-extractor-sources.jar[0m

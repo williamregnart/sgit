@@ -75,9 +75,9 @@ class TreeHandler(f:File) extends FileHandler(f) {
       else if(lines_tree.head._1 == "blob") {
 
         //get the entire path of the file
-        val file_path = actual_path + lines_tree.head._3
+        val file_path = actual_path +"/" +lines_tree.head._3
         //get it content
-        val blob_file = new FileHandler(new File(actual_directory.getPath + "/.sgit/objects/blobs" + lines_tree.head._2))
+        val blob_file = new FileHandler(new File(actual_directory.getPath + "/.sgit/objects/blobs/" + lines_tree.head._2))
         val file_content = blob_file.getContent.replace("\n", "")
 
         //create the file with it content

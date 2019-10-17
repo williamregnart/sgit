@@ -2,7 +2,7 @@ package commands
 
 import java.io.File
 
-import files.FileHandler
+import files.{DirectoryHandler, FileHandler}
 
 object Branch {
 
@@ -46,6 +46,28 @@ object Branch {
       //create the branch
       createBranch(new_branch_name,actual_branch_file,actual_repository)
       println("branch "+new_branch_name+" has been created with success (use \"sgit checkout "+new_branch_name+"\" to go on this branch)")
+    }
+  }
+
+  /**
+    * function getActualBranch
+    * @param actual_directory : sgit repo
+    * @return the actual branch_name which is referenced in HEAD file
+    */
+  def getActualBranch(actual_directory : File):String = {
+    val head_file = new FileHandler(new File(actual_directory.getPath+"/.sgit/HEAD"))
+    head_file.getContent.replace("\n","")
+  }
+
+  def getAllBranches(actual_directory : File):List[String] = {
+    val branches_directory = new DirectoryHandler(new File(actual_directory.getPath+"/.sgit/refs/heads"))
+    branches_directory.getFilesName
+  }
+
+  def printAllBranches(branches : List[String]):Unit = {
+    if(branches.nonEmpty){
+      println(branches.head)
+      printAllBranches(branches.tail)
     }
   }
 }

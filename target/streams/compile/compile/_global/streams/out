@@ -1,4 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\Main.scala:53:11: value getSimpleLog is not a member of object Log[0m
-[0m[[0m[31merror[0m] [0m[0m      Log.getSimpleLog(actual_directory)[0m
-[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\Main.scala:70:17: not enough arguments for method getLog: (actual_directory: java.io.File, p: Boolean, stat: Boolean)List[String].[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter stat.[0m
+[0m[[0m[31merror[0m] [0m[0m      Log.getLog(actual_directory, p = false)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

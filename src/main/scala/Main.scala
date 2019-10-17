@@ -1,6 +1,6 @@
 import java.io.File
 
-import commands.{Add, Commit, Init, Log}
+import commands._
 
 object Main extends App {
 
@@ -10,11 +10,20 @@ object Main extends App {
   else execute(args)
 
   def execute(command: Array[String]): Unit = {
-    command(0) match {
-      case "init" => init(command.tail)
-      case "add" => add(command.tail)
-      case "commit" => commit(command.tail)
-      case _ => println(command.head+" doesn't exist")
+    if(command.isEmpty) println(Console.RED+"sgit should have arguments"+Console.WHITE)
+    else {
+      command.head match {
+        case "init" => init(command.tail)
+        case "add" => add(command.tail)
+        case "remove" => remove(command.tail)
+        case "commit" => commit(command.tail)
+        case "log" => tag(command.tail)
+        case "status" => status(command.tail)
+        case "tag" => tag(command.tail)
+        case "branch" => branch(command.tail)
+        case "checkout" => checkout(command.tail)
+        case _ => println(command.head + " doesn't exist")
+      }
     }
   }
 
@@ -67,10 +76,48 @@ object Main extends App {
 
   def log(command:Array[String]):Unit = {
     if(command.isEmpty){
-      Log.getLog(actual_directory, p = false)
+      Log.printLog(actual_directory, p = false, stat = false)
     }
+    else if(command.tail.nonEmpty) println(Console.RED+"sgit log has only one argument (-p or -stat)"+Console.WHITE)
+
     else{
+      command.head match {
+        case "-p" => Log.printLog(actual_directory, p = true, stat = false)
+        case "-stat" => Log.printLog(actual_directory,p = false, stat = true)
+        case _ =>println(Console.RED+"sgit log "+command(0)+" doesn't exist"+Console.WHITE)
+      }
       println("sgit log has no option")
     }
+  }
+
+  def status(command:Array[String]):Unit = {
+    if(command.nonEmpty) println(Console.RED+"sgit status has no option"+Console.WHITE)
+    else{
+      Status.printUntrackedFiles(actual_directory)
+      println()
+      Status.printUncommittedFiles(actual_directory)
+    }
+  }
+
+  def tag(command:Array[String]):Unit = {
+    if(command.isEmpty) Tag.printAllTags(actual_directory)
+    else if(command.tail.nonEmpty) println(Console.RED+"sgit tag should have only one tag name in argument"+Console.WHITE)
+    else Tag.addTag(command(0),actual_directory)
+  }
+
+  def branch(command:Array[String]):Unit = {
+    if(command.isEmpty){
+      val branches_list = Branch.getAllBranches(actual_directory)
+      Branch.printAllBranches(branches_list)
+    }
+    else if(command.tail.nonEmpty) println(Console.RED+"sgit branch should have 0 (list of branches) or 1 (create branch) argument"+Console.WHITE)
+
+    else Branch.executeBranchCommand(command.head,actual_directory)
+  }
+
+  def checkout(command:Array[String]):Unit = {
+    if(command.isEmpty) println(Console.RED+"sgit checkout should have a branch/tag/commit in argument"+Console.WHITE)
+    if(command.tail.nonEmpty) println(Console.RED+"sgit checkout should have only 1 argument (branch/tag/commit name)"+Console.WHITE)
+    else CheckOut.executeCheckOutCommand(command.head,actual_directory)
   }
 }

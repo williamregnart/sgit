@@ -73,35 +73,30 @@ class FileHandler(f: File) {
 
   def getLinesList:List[String] = {
     @scala.annotation.tailrec
-    def apply(bufferedReader: BufferedReader, list:List[String]):List[String]= {
-      val line = bufferedReader.readLine()
-      if (line == null) list
-      else apply(bufferedReader, list:+line)
+    def apply(scanner: Scanner, list:List[String]):List[String]= {
+      if (!scanner.hasNextLine) list
+      else apply(scanner, list:+scanner.nextLine())
     }
-    val fileReader = new FileReader(file)
-    val bufferedReader = new BufferedReader(fileReader)
-    val result = apply(bufferedReader,List[String]())
-    bufferedReader.close()
-    fileReader.close()
+    val scanner = new Scanner(file)
+    val result = apply(scanner,List[String]())
+    scanner.close()
     result
   }
 
   def getLineWithPattern(pattern:String):Option[String] = {
     @scala.annotation.tailrec
-    def apply(bufferedReader: BufferedReader, pattern:String):Option[String] ={
-      val line = bufferedReader.readLine()
-      if(line == null) None
+    def apply(scanner:Scanner, pattern:String):Option[String] ={
+      if(!scanner.hasNextLine) None
       else{
+        val line = scanner.nextLine()
         if ((pattern.r findFirstIn line).isDefined)
           Some(line)
-        else apply(bufferedReader,pattern)
+        else apply(scanner,pattern)
       }
     }
-    val fileReader = new FileReader(file)
-    val bufferedReader = new BufferedReader(fileReader)
-    val result = apply(bufferedReader,pattern)
-    bufferedReader.close()
-    fileReader.close()
+    val scanner = new Scanner(file)
+    val result = apply(scanner,pattern)
+    scanner.close()
     result
   }
 

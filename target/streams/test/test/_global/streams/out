@@ -1,29 +1,31 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.AddTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.StatusTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.LogTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(othersTest.PathTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.CommitTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(filesTest.DirectoryHandlerTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.InitTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(filesTest.TreeHandlerTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.BranchTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(filesTest.IndexHandlerTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(filesTest.FileHandlerTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.DiffTest, org.scalatest.tools.Framework$$anon$1@3c0bfcd, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.AddTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.StatusTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.LogTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(othersTest.PathTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.CommitTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.CheckOutTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(filesTest.DirectoryHandlerTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.InitTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(filesTest.TreeHandlerTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.BranchTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(filesTest.IndexHandlerTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(filesTest.FileHandlerTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(commandsTest.DiffTest, org.scalatest.tools.Framework$$anon$1@10938684, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mSummary for ScalaCheck not available.[0m
 [0m[[0m[0minfo[0m] [0m[0mScalaTest[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 4 seconds, 173 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 57[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 12, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 57, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 5 seconds, 389 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 62[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 13, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 62, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0mPassed: Total 57, Failed 0, Errors 0, Passed 57[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 62, Failed 0, Errors 0, Passed 62[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	commandsTest.AddTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	commandsTest.StatusTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	commandsTest.LogTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	othersTest.PathTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	commandsTest.CommitTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commandsTest.CheckOutTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	filesTest.DirectoryHandlerTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	commandsTest.InitTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	filesTest.TreeHandlerTest[0m

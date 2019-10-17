@@ -14,27 +14,27 @@ object CheckOut {
   def changeBranch(branch_name:String, actual_repository:File):Unit = {
 
     //overwrite on HEAD file the actual branch name by branch name where we checkout
-    val head_file = new FileHandler(new File(actual_repository.getPath+"/.sgit/HEAD"))
-    head_file.addContent(branch_name,appendContent = false)
+    val head_file = new FileHandler(new File(actual_repository.getPath + "/.sgit/HEAD"))
+    head_file.addContent(branch_name, appendContent = false)
 
     //get the commit of the branch where we checkout
-    val branch_file = new FileHandler(new File(actual_repository.getPath+"/.sgit/refs/heads/"+branch_name))
-    val last_commit_name = branch_file.getContent.replace("\n","")
-    val last_commit_file = new CommitHandler(new File(actual_repository.getPath+"/objects/commits/"+last_commit_name))
+    val branch_file = new FileHandler(new File(actual_repository.getPath + "/.sgit/refs/heads/" + branch_name))
+    val last_commit_name = branch_file.getContent.replace("\n", "")
+    val last_commit_file = new CommitHandler(new File(actual_repository.getPath + "/.sgit/objects/commits/" + last_commit_name))
 
     //get the tree of this commit
     val branch_tree_name = last_commit_file.getTree
-    val branch_tree_file = new TreeHandler(new File(actual_repository.getPath+"/.sgit/objects/trees/"+branch_tree_name))
+    val branch_tree_file = new TreeHandler(new File(actual_repository.getPath + "/.sgit/objects/trees/" + branch_tree_name))
 
     //delete and recreate the repository from tree
     val actual_repository_handler = new DirectoryHandler(actual_repository)
     actual_repository_handler.deleteFilesExcept(List[String](".sgit"))
-    branch_tree_file.createDirectoryFromTree(actual_repository.getPath,actual_repository)
+    branch_tree_file.createDirectoryFromTree(actual_repository.getPath, actual_repository)
 
     //overwrite the index with the index of branch tree
-    val index_branch_content = branch_tree_file.getIndex("",actual_repository)
-    val index_file = new FileHandler(new File(actual_repository.getPath+"/.sgit/INDEX"))
-    index_file.addContent(index_branch_content,appendContent = false)
+    val index_branch_content = branch_tree_file.getIndex("", actual_repository)
+    val index_file = new FileHandler(new File(actual_repository.getPath + "/.sgit/INDEX"))
+    index_file.addContent(index_branch_content, appendContent = false)
   }
 
   /**

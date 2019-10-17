@@ -48,7 +48,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       val commit_size = 4
       val nb_commit = 2
 
-      Log.getLog(test_directory,p = false) should have size commit_size * nb_commit
+      Log.getLog(test_directory,p = false, stat = false) should have size commit_size * nb_commit
     }
     it("should have at first a commit with a parentTree and at last a commit without parentTree"){
       file4.createFile()
@@ -56,7 +56,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       Add.addFilesToIndex(test_directory)
       Commit.commit(test_directory)
 
-      val log_result = Log.getLog(test_directory,p = false)
+      val log_result = Log.getLog(test_directory,p = false,stat = false)
       val commit_size = 4
       val line_parent_tree = 2
       val first_commit = log_result(line_parent_tree)
@@ -82,7 +82,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       val first_commit_log = List[String]("commit "+first_commit_name)++first_commit_file.getLinesList
       val second_commit_log = List[String]("commit "+second_commit_name)++second_commit_file.getLinesList
 
-      Log.getLog(test_directory,p = false) shouldBe second_commit_log++first_commit_log
+      Log.getLog(test_directory,p = false, stat = false) shouldBe second_commit_log++first_commit_log
     }
   }
 
@@ -104,7 +104,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       index_of_tree.createFile()
       index_of_tree.addContent(tree_file.getIndex("",test_directory),appendContent = true)
 
-      val logp = Diff.getDiffBetweenIndexes(index_file,index_of_tree,test_directory)
+      val logp = Diff.getDiffBetweenIndexes(index_file,index_of_tree,test_directory, stat = false)
 
       val modif_file1_expected = List[String]("--- a/directory1/file1", "+++b/directory1/file1","","-Line 1 : hello","","+Line 1 : hello darkness","+Line 2 : my old friend","")
       val add_file5_expected = List[String]("--- a/null","+++b/file5","","+Line 1 : new","+Line 2 : file","")
@@ -121,7 +121,9 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       Add.addFilesToIndex(test_directory)
       Commit.commit(test_directory)
 
-      println(Log.getLog(test_directory, p = true))
+      println(Log.getLog(test_directory, p = true, stat = false))
+      println(Log.getLog(test_directory, p = false, stat = true))
+
     }
   }
 }
