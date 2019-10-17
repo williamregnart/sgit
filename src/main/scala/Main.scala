@@ -1,5 +1,7 @@
 import java.io.File
 
+import commands.{Add, Commit, Init, Log}
+
 object Main extends App {
 
   val actual_directory = new File(System.getProperty("user.dir"))
@@ -34,6 +36,21 @@ object Main extends App {
             case _ =>
               Add.addFileToIndex(command(0),actual_directory)
           }
+          apply(command.tail,firstOption = false)
+        }
+      }
+    }
+    apply(command,firstOption = true)
+  }
+
+  def remove(command: Array[String]): Unit = {
+    def apply(command: Array[String],firstOption:Boolean): Unit = {
+      if (command.isEmpty && firstOption) {
+        println("Nothing specified, nothing added.")
+      }
+      else {
+        if (!command.isEmpty){
+          Add.removeFileToIndex("/"+command(0),actual_directory)
           apply(command.tail,firstOption = false)
         }
       }

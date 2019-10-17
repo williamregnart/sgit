@@ -1,0 +1,4 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mDirectoryHandlerTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mdeleteFilesExcept function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete all files and directories in test_directory[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete all files and directories in test_directory except .sgit[0m[0m

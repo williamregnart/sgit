@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\LogTest.scala:55:7: missing arguments for method apply in class ItWord;[0m
-[0m[[0m[31merror[0m] [0m[0mfollow this method with `_' if you want to treat it as a partially applied function[0m
-[0m[[0m[31merror[0m] [0m[0m    it("")[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\AddTest.scala:154:3: Missing closing brace `}' assumed here[0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -1,0 +1,5 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mStatusTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetNewFilesUntracked function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should give the new files in repo which have not been added[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mprintUntrackedFiles function[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should print in console the files untracked in repo which have not been added[0m[0m

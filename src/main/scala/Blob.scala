@@ -1,5 +1,7 @@
 import java.io.{BufferedReader, File, FileReader}
 
+import files.FileHandler
+
 class Blob(key:String) {
   private val blob_name = key
   private val file = new FileHandler(new File(System.getProperty("user.dir")+"/.git/objects/blobs/"+blob_name))
