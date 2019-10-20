@@ -20,7 +20,7 @@ class IndexHandler(f:File) extends FileHandler(f) {
     * @return a list of path : all the files path in path in param
     */
   def getFilesFromPath(path:String):List[String]={
-    Index.getElementsFromPath(path,getAllFilesPath,List[String]())
+    Path.getElementsFromPath(path,getAllFilesPath,List[String]())
   }
 
   /**
@@ -29,7 +29,7 @@ class IndexHandler(f:File) extends FileHandler(f) {
     * @return a list of path : all the directories path in path in param
     */
   def getDirPathFromPath(path:String):List[String]={
-    Index.getElementsFromPath(path,Index.getAllPathAndSubPath(getAllFilesPath),List[String]())
+    Path.getElementsFromPath(path,Path.getAllPathAndSubPath(getAllFilesPath),List[String]())
   }
 
   def getPathAndBlob:Map[String,String]={

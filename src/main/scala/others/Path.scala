@@ -1,14 +1,16 @@
 package others
 
-object Index{
+object Path{
 
   /**
     * function getElementsFromPath
+    *
     * @param path : the path we want the elements (directories and files)
     * @param listPath : the list of paths where we are looking the path
     * @param listElements : the elements which have to be returned
     * @return : the list of elements found in path
     */
+  @scala.annotation.tailrec
   def getElementsFromPath(path:String,listPath:List[String],listElements:List[String]):List[String] ={
     if(listPath.isEmpty) listElements
     else{
@@ -42,7 +44,8 @@ object Index{
     * @return a list of paths : the path and its sub paths
     */
   def getPathAndSubPath(path:String):List[String] = {
-    def apply(pathSplit:List[String],listPath:List[String],splitIndex:Int):List[String] = {
+    @scala.annotation.tailrec
+    def apply(pathSplit:List[String], listPath:List[String], splitIndex:Int):List[String] = {
       if(splitIndex==pathSplit.length) listPath
       else apply(pathSplit,listPath:+concatPath(pathSplit,splitIndex),splitIndex+1)
     }
@@ -55,7 +58,8 @@ object Index{
     * @return list of paths : all the sub paths from paths of the list
     */
   def getAllPathAndSubPath(listPath:List[String]):List[String]={
-    def apply(listPath: List[String],listAllPath:List[String]):List[String]={
+    @scala.annotation.tailrec
+    def apply(listPath: List[String], listAllPath:List[String]):List[String]={
       if(listPath.isEmpty) listAllPath.distinct
       else apply(listPath.tail,listAllPath++getPathAndSubPath(listPath.head))
     }

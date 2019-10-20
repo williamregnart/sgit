@@ -35,8 +35,7 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
 
   /**
     * after executing tests :
-    * - delete .sgit directory
-    * - delete all files and subdirectories
+    * - delete all
     */
   after{
     new Directory(test_directory).deleteRecursively()
