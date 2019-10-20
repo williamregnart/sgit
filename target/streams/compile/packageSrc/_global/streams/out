@@ -1,7 +1,5 @@
 [debug] Packaging C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\sgit_2.11-0.1-sources.jar ...
 [debug] Input file mappings:
-[debug] 	Blob.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\Blob.scala
 [debug] 	Main.scala
 [debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\Main.scala
 [debug] 	commands\Add.scala
@@ -34,8 +32,6 @@
 [debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\files\TreeHandler.scala
 [debug] 	others\Encryption.scala
 [debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\others\Encryption.scala
-[debug] 	others\Index.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\others\Index.scala
-[debug] 	pure_files\CommitFile.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\pure_files\CommitFile.scala
+[debug] 	others\Path.scala
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\others\Path.scala
 [debug] Done packaging.

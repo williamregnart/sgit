@@ -51,12 +51,14 @@ object CheckOut {
     */
   def executeCheckOutCommand(input:String,actual_directory_path:String):Unit = {
     val opt_input_type_and_ref = getTypeAndRefByInput(input,actual_directory_path)
+    val last_commit = Commit.getLastCommitFromBranch(Branch.getActualBranch(actual_directory_path),actual_directory_path)
 
     //if the input does not match a branch, commit or tag print error
     if(opt_input_type_and_ref.isEmpty) println(Console.RED+"ERROR : branch/tag/commit " + input + " doesn't exist")
 
-    //if files have been uncommitted, forbid the change
-    else if(Status.printUncommittedFiles(actual_directory_path)) println(Console.YELLOW+"Please commit files before checkout")
+    //if files have been uncommitted (and if a commit exists), forbid the change
+
+    else if(last_commit!="") if(Status.printUncommittedFiles(actual_directory_path)) println(Console.YELLOW+"Please commit files before checkout")
 
     else{
       //the checkout will be done, if we are on detached branch, we will delete it

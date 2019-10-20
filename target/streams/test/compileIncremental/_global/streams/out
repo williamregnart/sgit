@@ -1,3 +1,10 @@
+[debug] The others.Index$ has the following regular definitions changed:
+[debug] 	UsedName(==,[Default]), UsedName(concatPath,[Default]), UsedName($isInstanceOf,[Default]), UsedName(wait,[Default]), UsedName(hashCode,[Default]), UsedName(getPathAndSubPath,[Default]), UsedName(finalize,[Default]), UsedName(isInstanceOf,[Default]), UsedName(eq,[Default]), UsedName(ne,[Default]), UsedName(!=,[Default]), UsedName(notifyAll,[Default]), UsedName(##,[Default]), UsedName(notify,[Default]), UsedName($asInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(getClass,[Default]), UsedName(asInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(getAllPathAndSubPath,[Default]), UsedName(clone,[Default]), UsedName(getElementsFromPath,[Default]), UsedName(Index,[Default]), UsedName(toString,[Default]).
+[debug] All member reference dependencies will be considered within this context.
+[debug] Files invalidated by inheriting from (external) others.Index$: Set(); now invalidating by inheritance (internally).
+[debug] Getting direct dependencies of all classes transitively invalidated by inheritance.
+[debug] Getting classes that directly depend on (external) others.Index$.
+[debug] The following modified names cause invalidation of othersTest.PathTest: Set(UsedName(getPathAndSubPath,[Default]), UsedName(getAllPathAndSubPath,[Default]), UsedName(getElementsFromPath,[Default]), UsedName(Index,[Default]))
 [debug] The commands.Status$ has the following regular definitions changed:
 [debug] 	UsedName(getAddedUncommittedFiles,[Default]), UsedName(getModifiedUncommittedFiles,[Default]), UsedName(printElements,[Default]), UsedName(getDeletedUncommittedFiles,[Default]).
 [debug] All member reference dependencies will be considered within this context.
@@ -13,4 +20,37 @@
 [debug] Getting classes that directly depend on (external) commands.Branch$.
 [debug] None of the modified names appears in source file of commandsTest.CheckOutTest. This dependency is not being considered for invalidation.
 [debug] None of the modified names appears in source file of commandsTest.BranchTest. This dependency is not being considered for invalidation.
-[debug] No changes
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(C:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\commandsTest\AddTest.scala, C:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\othersTest\PathTest.scala)
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set(NamesChange(others.Index$,ModifiedNames(changes = UsedName(==,[Default]), UsedName(concatPath,[Default]), UsedName($isInstanceOf,[Default]), UsedName(wait,[Default]), UsedName(hashCode,[Default]), UsedName(getPathAndSubPath,[Default]), UsedName(finalize,[Default]), UsedName(isInstanceOf,[Default]), UsedName(eq,[Default]), UsedName(ne,[Default]), UsedName(!=,[Default]), UsedName(notifyAll,[Default]), UsedName(##,[Default]), UsedName(notify,[Default]), UsedName($asInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(getClass,[Default]), UsedName(asInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(getAllPathAndSubPath,[Default]), UsedName(clone,[Default]), UsedName(getElementsFromPath,[Default]), UsedName(Index,[Default]), UsedName(toString,[Default]))), NamesChange(commands.Status$,ModifiedNames(changes = UsedName(getAddedUncommittedFiles,[Default]), UsedName(getModifiedUncommittedFiles,[Default]), UsedName(printElements,[Default]), UsedName(getDeletedUncommittedFiles,[Default]))), NamesChange(commands.Branch$,ModifiedNames(changes = UsedName(getAllBranches,[Default]), UsedName(printAllBranches,[Default]), UsedName(createBranch,[Default]))))
+[debug] Modified binary dependencies: Set(C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes)
+[debug] Initial directly invalidated classes: Set(commandsTest.AddTest, othersTest.PathTest)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set(othersTest.PathTest)
+[debug] All initially invalidated classes: Set(commandsTest.AddTest, othersTest.PathTest)
+[debug] All initially invalidated sources:Set(C:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\commandsTest\AddTest.scala, C:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\othersTest\PathTest.scala)
+[debug] Initial set of included nodes: commandsTest.AddTest, othersTest.PathTest
+[info] Compiling 2 Scala sources to C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\test-classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.11:1.3.0:compile for Scala 2.11.6
+[debug] Getting org.scala-sbt:compiler-bridge_2.11:1.3.0:compile for Scala 2.11.6
+[debug] [zinc] Running cached compiler 91116db for Scala compiler version 2.11.6
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.11.6\scala-library-2.11.6.jar
+[debug] 	-classpath
+[debug] 	C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\test-classes;C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-macros_2.11\2.0.0\cats-macros_2.11-2.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.11.6\scala-reflect-2.11.6.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\test-interface\1.0\test-interface-1.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-kernel_2.11\2.0.0\cats-kernel_2.11-2.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalacheck\scalacheck_2.11\1.14.1\scalacheck_2.11-1.14.1.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-xml_2.11\1.2.0\scala-xml_2.11-1.2.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-core_2.11\2.0.0\cats-core_2.11-2.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\mockito\mockito-core\3.0.0\mockito-core-3.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest_2.11\3.0.8\scalatest_2.11-3.0.8.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\mockito\mockito-scala_2.11\1.5.18\mockito-scala_2.11-1.5.18.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ru\vyarus\generics-resolver\3.0.0\generics-resolver-3.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_2.11\3.0.8\scalactic_2.11-3.0.8.jar
+[debug] Scala compilation took 3.9170906 s
+[info] Done compiling.
+[debug] New invalidations:
+[debug] 	Set()
+[debug] Initial set of included nodes: 
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] 	Set()
+[debug] No classes were invalidated.

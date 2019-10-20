@@ -2,8 +2,6 @@
 [debug] Input file mappings:
 [debug] 	
 [debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api
-[debug] 	Blob.html
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\Blob.html
 [debug] 	commands
 [debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\commands
 [debug] 	commands\Add$.html
@@ -216,16 +214,10 @@
 [debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\others
 [debug] 	others\Encryption$.html
 [debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\others\Encryption$.html
-[debug] 	others\Index$.html
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\others\Index$.html
 [debug] 	others\package.html
 [debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\others\package.html
+[debug] 	others\Path$.html
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\others\Path$.html
 [debug] 	package.html
 [debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\package.html
-[debug] 	pure_files
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\pure_files
-[debug] 	pure_files\CommitFile.html
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\pure_files\CommitFile.html
-[debug] 	pure_files\package.html
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\api\pure_files\package.html
 [debug] Done packaging.
