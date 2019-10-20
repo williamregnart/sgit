@@ -13,3 +13,8 @@ libraryDependencies += "org.mockito" %% "mockito-scala" % "1.5.18"
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.0.0"
 
 parallelExecution in Test := false
+
+lazy val sgit = (project in file("."))
+  .enablePlugins(JavaAppPackaging)
+
+maintainer := "your.name@company.org"

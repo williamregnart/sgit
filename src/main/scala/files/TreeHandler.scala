@@ -8,12 +8,13 @@ class TreeHandler(f:File) extends FileHandler(f) {
   /**
     * function getIndex
     * @param actual_path : path of the actual tree
-    * @param actual_directory : sgit repo
+    * @param actual_directory_path : sgit repo
     * @return the content of tree transformed in index
     */
-  def getIndex(actual_path:String,actual_directory:File):String = {
+  def getIndex(actual_path:String, actual_directory_path:String):String = {
 
-    def apply(lines_tree:List[(String,String,String)],result:String):String = {
+    @scala.annotation.tailrec
+    def apply(lines_tree:List[(String,String,String)], result:String):String = {
       if(lines_tree.isEmpty) result
 
       //if the line of the tree is a blob
@@ -38,10 +39,10 @@ class TreeHandler(f:File) extends FileHandler(f) {
         //get the subtree file
         val tree_name = lines_tree.head._2
         val path_of_tree = lines_tree.head._3
-        val tree_file = new TreeHandler(new File(actual_directory.getPath+"/.sgit/objects/trees/"+tree_name))
+        val tree_file = new TreeHandler(new File(actual_directory_path+"/.sgit/objects/trees/"+tree_name))
 
         //we call apply on next line and we add to result the transformation of subtree into index
-        apply(lines_tree.tail,result+tree_file.getIndex(actual_path+path_of_tree,actual_directory))
+        apply(lines_tree.tail,result+tree_file.getIndex(actual_path+path_of_tree,actual_directory_path))
       }
     }
     apply(getLinesTree,"")
@@ -52,6 +53,7 @@ class TreeHandler(f:File) extends FileHandler(f) {
     * @return the list of lines split into 3 strings, one for element type, one for element name, one for element file path
     */
   def getLinesTree:List[(String,String,String)] = {
+    @scala.annotation.tailrec
     def apply(listLines: List[String], result: List[(String, String, String)]): List[(String, String, String)] = {
       if (listLines.isEmpty) result
       else{
@@ -65,9 +67,9 @@ class TreeHandler(f:File) extends FileHandler(f) {
   /**
     * function createDirectoryFromTree : recreate the repo based on tree
     * @param actual_path : path of actual tree
-    * @param actual_directory : sgit repo
+    * @param actual_directory_path : sgit repo
     */
-  def createDirectoryFromTree(actual_path:String, actual_directory:File):Unit = {
+  def createDirectoryFromTree(actual_path:String, actual_directory_path:String):Unit = {
     def apply(lines_tree:List[(String,String,String)]): Boolean = {
       if(lines_tree.isEmpty) true
 
@@ -77,7 +79,7 @@ class TreeHandler(f:File) extends FileHandler(f) {
         //get the entire path of the file
         val file_path = actual_path +"/" +lines_tree.head._3
         //get it content
-        val blob_file = new FileHandler(new File(actual_directory.getPath + "/.sgit/objects/blobs/" + lines_tree.head._2))
+        val blob_file = new FileHandler(new File(actual_directory_path + "/.sgit/objects/blobs/" + lines_tree.head._2))
         val file_content = blob_file.getContent.replace("\n", "")
 
         //create the file with it content
@@ -97,10 +99,10 @@ class TreeHandler(f:File) extends FileHandler(f) {
 
         //get the subtree file
         val tree_name = lines_tree.head._2
-        val tree_file = new TreeHandler(new File(actual_directory.getPath+"/.sgit/objects/trees/"+tree_name))
+        val tree_file = new TreeHandler(new File(actual_directory_path+"/.sgit/objects/trees/"+tree_name))
 
         //create the new subdirectory
-        tree_file.createDirectoryFromTree(dir_path,actual_directory)
+        tree_file.createDirectoryFromTree(dir_path,actual_directory_path)
 
         apply(lines_tree.tail)
       }

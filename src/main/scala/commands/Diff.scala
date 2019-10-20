@@ -47,7 +47,8 @@ object Diff {
   }
 
   def getLineTab(tab:Map[(Int,Int),Int],line:Int):List[Int]= {
-    def apply(tab:Map[(Int,Int),Int],result: List[Int]): List[Int] = {
+    @scala.annotation.tailrec
+    def apply(tab:Map[(Int,Int),Int], result: List[Int]): List[Int] = {
       if (tab.isEmpty) result
       else if (tab.head._1._1 == line) apply(tab.tail, result :+ tab.head._2)
       else apply(tab.tail, result)
@@ -62,7 +63,8 @@ object Diff {
     * @return the lines in file 1 which are not in file 2
     */
   def getAddedLines(file1_lines:List[String],file2_lines:List[String]):List[(Int,String)]={
-    def apply(tab:Map[(Int,Int),Int],line:Int,result:List[(Int,String)]):List[(Int,String)] ={
+    @scala.annotation.tailrec
+    def apply(tab:Map[(Int,Int),Int], line:Int, result:List[(Int,String)]):List[(Int,String)] ={
 
       //if we have visited all the file 1 lines, return result
       if(line == file1_lines.length+1) result
@@ -83,9 +85,10 @@ object Diff {
     getAddedLines(file1_lines,file2_lines).map(e => e._2)
   }
 
-  def getDiffBetweenFiles(new_file:Option[FileHandler], new_file_name:String, old_file:Option[FileHandler], old_file_name:String):List[String] = {
+  def getDiffBetweenFiles(new_file_lines:List[String], new_file_name:String, old_file_lines:List[String], old_file_name:String):List[String] = {
 
-    def apply(diff_lines_file:List[(Int,String)],added:Boolean, result:List[String]):List[String] = {
+    @scala.annotation.tailrec
+    def apply(diff_lines_file:List[(Int,String)], added:Boolean, result:List[String]):List[String] = {
 
       if(diff_lines_file.isEmpty) result
 
@@ -101,18 +104,17 @@ object Diff {
       }
     }
 
-
-    if(new_file.isDefined && old_file.isDefined){
-      val lines_added = apply(getAddedLines(new_file.get.getLinesList,old_file.get.getLinesList),added = true,List[String]())
-      val lines_deleted = apply(getAddedLines(old_file.get.getLinesList,new_file.get.getLinesList),added = false,List[String]())
+    if(new_file_lines.nonEmpty && old_file_lines.nonEmpty){
+      val lines_added = apply(getAddedLines(new_file_lines,old_file_lines),added = true,List[String]())
+      val lines_deleted = apply(getAddedLines(old_file_lines,new_file_lines),added = false,List[String]())
       List[String]("--- a"+old_file_name,"+++b"+new_file_name,"")++lines_deleted++List[String]("")++lines_added
     }
-    else if(new_file.isDefined){
-      val lines_added = apply(getAddedLines(new_file.get.getLinesList,List[String]("")),added = true,List[String]())
+    else if(new_file_lines.nonEmpty){
+      val lines_added = apply(getAddedLines(new_file_lines,List[String]("")),added = true,List[String]())
       List[String]("--- a/null","+++b"+new_file_name,"")++lines_added
     }
-    else if(old_file.isDefined){
-      val lines_deleted = apply(getAddedLines(old_file.get.getLinesList,List[String]("")),added = false,List[String]())
+    else if(old_file_lines.nonEmpty){
+      val lines_deleted = apply(getAddedLines(old_file_lines,List[String]("")),added = false,List[String]())
       List[String]("--- a"+old_file_name,"+++b/null","")++lines_deleted
     }
     else{
@@ -120,25 +122,24 @@ object Diff {
     }
   }
 
-  def getStatDiffBetweenFiles(new_file:Option[FileHandler], new_file_name:String, old_file:Option[FileHandler], old_file_name:String): String = {
-    if(new_file.isDefined && old_file.isDefined){
-      val lines_added = getAddedLines(new_file.get.getLinesList,old_file.get.getLinesList)
-      val lines_deleted = getAddedLines(old_file.get.getLinesList,new_file.get.getLinesList)
+  def getStatDiffBetweenFiles(new_file_lines:List[String], new_file_name:String, old_file_lines:List[String], old_file_name:String): String = {
+    if(new_file_lines.nonEmpty && old_file_lines.nonEmpty){
+      val lines_added = getAddedLines(new_file_lines,old_file_lines)
+      val lines_deleted = getAddedLines(old_file_lines,new_file_lines)
       new_file_name+" | "+lines_added.length+" (+) , "+lines_deleted.length+" (-)"
     }
-    else if(new_file.isDefined){
-      val lines_added = getAddedLines(new_file.get.getLinesList,List[String](""))
+    else if(new_file_lines.nonEmpty){
+      val lines_added = getAddedLines(new_file_lines,List[String](""))
       new_file_name+" | "+lines_added.length+" (+) , 0 (-)"
     }
-    else if(old_file.isDefined){
-      val lines_deleted = getAddedLines(old_file.get.getLinesList,List[String](""))
+    else if(old_file_lines.nonEmpty){
+      val lines_deleted = getAddedLines(old_file_lines,List[String](""))
       new_file_name+" | 0 (+) , "+lines_deleted.length+" (-)"
     }
     else{
       ""
     }
   }
-
 
   /**
     * function getDiffBetweenIndexes
@@ -147,7 +148,7 @@ object Diff {
     * @param actual_directory : sgit repo
     * @return list of modifications between old and new index
     */
-  def getDiffBetweenIndexes(new_index:IndexHandler,old_index:IndexHandler,actual_directory:File,stat:Boolean):List[String]={
+  def getDiffBetweenIndexes(new_index:IndexHandler,old_index:IndexHandler,actual_directory:String,stat:Boolean):List[String]={
 
     //retrieve the modified,added, and deleted lines between old and new index
     val lines_modified_new_index = Diff.getAddedLinesWithoutIndexLine(new_index.getLinesList,old_index.getLinesList)
@@ -160,7 +161,8 @@ object Diff {
       * @param result : the result
       * @return list of addition and modification between new and old index
       */
-    def getAddedAndModifiedFiles(lines_modified_new_index:List[String],result : List[String]):List[String] = {
+    @scala.annotation.tailrec
+    def getAddedAndModifiedFiles(lines_modified_new_index:List[String], result : List[String]):List[String] = {
 
       if(lines_modified_new_index.isEmpty) result
       else{
@@ -181,23 +183,23 @@ object Diff {
           //get the modifications between the blobs from new and old index
 
           if(stat){
-            val modification = Diff.getStatDiffBetweenFiles(blob_file_new_index,file_in_new_index,blob_file_old_index,file_in_new_index)
+            val modification = Diff.getStatDiffBetweenFiles(blob_file_new_index.get.getLinesList,file_in_new_index,blob_file_old_index.get.getLinesList,file_in_new_index)
 
             getAddedAndModifiedFiles(lines_modified_new_index.tail,result++List[String](modification,""))
           }
           else {
-            val modification = Diff.getDiffBetweenFiles(blob_file_new_index, file_in_new_index, blob_file_old_index, file_in_new_index)
+            val modification = Diff.getDiffBetweenFiles(blob_file_new_index.get.getLinesList, file_in_new_index, blob_file_old_index.get.getLinesList, file_in_new_index)
             getAddedAndModifiedFiles(lines_modified_new_index.tail, result ++ modification :+ "")
           }
         }
         //if file is added (not exists in old index)
         else{
           if(stat){
-            val modification = Diff.getStatDiffBetweenFiles(blob_file_new_index,file_in_new_index,None,"null")
+            val modification = Diff.getStatDiffBetweenFiles(blob_file_new_index.get.getLinesList,file_in_new_index,List(),"null")
             getAddedAndModifiedFiles(lines_modified_new_index.tail,result++List[String](modification,""))
           }
           else{
-            val modification = Diff.getDiffBetweenFiles(blob_file_new_index,file_in_new_index,None,"null")
+            val modification = Diff.getDiffBetweenFiles(blob_file_new_index.get.getLinesList,file_in_new_index,List(),"null")
             getAddedAndModifiedFiles(lines_modified_new_index.tail,result++modification:+"")
           }
         }
@@ -223,10 +225,10 @@ object Diff {
           val blob_file_old_index = old_index.getBlobFileByName(blob_name_in_old_index, actual_directory)
 
           if(stat){
-            val suppression = Diff.getStatDiffBetweenFiles(None, "null", blob_file_old_index, file_in_old_index)
+            val suppression = Diff.getStatDiffBetweenFiles(List(), "null", blob_file_old_index.get.getLinesList, file_in_old_index)
             getDeletedFiles(lines_modified_old_index.tail, result ++ List[String](suppression,""))
           }
-          val suppression = Diff.getDiffBetweenFiles(None, "null", blob_file_old_index, file_in_old_index)
+          val suppression = Diff.getDiffBetweenFiles(List(), "null", blob_file_old_index.get.getLinesList, file_in_old_index)
           getDeletedFiles(lines_modified_old_index.tail, result ++ suppression :+ "")
         }
       }
@@ -238,6 +240,7 @@ object Diff {
     addition_and_modifications++suppressions
   }
 
+
   /**
     * function getDiffBetweenCommits
     * @param new_commit : new commit file
@@ -245,24 +248,24 @@ object Diff {
     * @param actual_directory : sgit repo
     * @return the list of modifications between the two commits
     */
-  def getDiffBetweenCommits(new_commit: CommitHandler,old_commit:CommitHandler,actual_directory:File,stat:Boolean):List[String]={
+  def getDiffBetweenCommits(new_commit: CommitHandler,old_commit:CommitHandler,actual_directory:String,stat:Boolean):List[String]={
 
     //get the trees of new and last commits
     val new_tree_name = new_commit.getTree
-    val new_tree_file = new TreeHandler(new File(actual_directory.getPath+"/.sgit/objects/trees/"+new_tree_name))
+    val new_tree_file = new TreeHandler(new File(actual_directory+"/.sgit/objects/trees/"+new_tree_name))
     val old_tree_name = old_commit.getTree
-    val old_tree_file = new TreeHandler(new File(actual_directory.getPath+"/.sgit/objects/trees/"+old_tree_name))
+    val old_tree_file = new TreeHandler(new File(actual_directory+"/.sgit/objects/trees/"+old_tree_name))
 
     //get the index content of trees
     val new_index_content = new_tree_file.getIndex("",actual_directory)
     val old_index_content = old_tree_file.getIndex("",actual_directory)
 
     //create new and old index files with their content
-    val new_index_file = new IndexHandler(new File(actual_directory.getPath+"/.sgit/NEW_INDEX"))
+    val new_index_file = new IndexHandler(new File(actual_directory+"/.sgit/NEW_INDEX"))
     new_index_file.createFile()
     new_index_file.addContent(new_index_content,appendContent = false)
 
-    val old_index_file = new IndexHandler(new File(actual_directory.getPath+"/.sgit/OLD_INDEX"))
+    val old_index_file = new IndexHandler(new File(actual_directory+"/.sgit/OLD_INDEX"))
     old_index_file.addContent(old_index_content,appendContent = false)
     old_index_file.createFile()
 

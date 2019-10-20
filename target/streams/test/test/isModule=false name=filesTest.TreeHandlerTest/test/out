@@ -1,3 +1,3 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mTreeHandlerTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetIndex function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return the same content as index file[0m[0m
+[info] TreeHandlerTest:
+[info] getIndex function
+[info] - should return the same content as index file

@@ -1,5 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\Main.scala:70:17: not enough arguments for method getLog: (actual_directory: java.io.File, p: Boolean, stat: Boolean)List[String].[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter stat.[0m
-[0m[[0m[31merror[0m] [0m[0m      Log.getLog(actual_directory, p = false)[0m
-[0m[[0m[31merror[0m] [0m[0m                ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[debug] Acquiring lock on file C:\Users\willi\Documents\IG5\sgit_project\sgit\project\target\.sbt-compilation-infos\sgit-compile\.sbt-idea-lock ...
+[debug] Releasing lock on file C:\Users\willi\Documents\IG5\sgit_project\sgit\project\target\.sbt-compilation-infos\sgit-compile\.sbt-idea-lock.

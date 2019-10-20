@@ -1,14 +1,14 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mCommitTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mthe trees directory[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should have no tree  before first commit[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should have 2 trees after first commit one for directory1, one for test_directory[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should have 4 trees after second commit[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mthe commits directory[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should have 1 commit after first commit[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should have, after first commit a file with the right commit name[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mbranch file[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should have the last commit in content[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mthe commit file[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should have the right content[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mthe second commit process[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should not create a new commit if nothing changed[0m[0m
+[info] CommitTest:
+[info] the trees directory
+[info] - should have no tree  before first commit
+[info] - should have 2 trees after first commit one for directory1, one for test_directory
+[info] - should have 4 trees after second commit
+[info] the commits directory
+[info] - should have 1 commit after first commit
+[info] - should have, after first commit a file with the right commit name
+[info] branch file
+[info] - should have the last commit in content
+[info] the commit file
+[info] - should have the right content
+[info] the second commit process
+[info] - should not create a new commit if nothing changed

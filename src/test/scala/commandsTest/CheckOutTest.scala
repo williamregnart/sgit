@@ -37,9 +37,9 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
     file2.addContent("darkness",appendContent = false)
     file3.createFile()
     file3.addContent("my old friend",appendContent = false)
-    Add.addFilesToIndex(test_directory)
-    Commit.commit(test_directory)
-    Branch.executeBranchCommand("slave",test_directory)
+    Add.addFilesToIndex(test_directory.getPath)
+    Commit.commit(test_directory.getPath)
+    Branch.executeBranchCommand("slave",test_directory.getPath)
   }
 
   /**
@@ -58,7 +58,7 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
 
       val files_in_branch_master = test_directory_handler.getAllFilesPath
       val content_file_2 = "darkness\n"
-      CheckOut.changeBranch("slave",test_directory)
+      CheckOut.changeBranch("slave",test_directory.getPath)
 
       head_file.getContent shouldBe "slave\n"
       test_directory_handler.getAllFilesPath shouldBe files_in_branch_master
@@ -69,18 +69,18 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
       val file4 = new FileHandler(new File(test_directory.getPath+"/file4"))
       file4.addContent("I've come to talk with you again",appendContent = false)
 
-      Add.addFileToIndex("file4",test_directory)
-      Commit.commit(test_directory)
+      Add.addFileToIndex("file4",test_directory.getPath)
+      Commit.commit(test_directory.getPath)
       val files_in_branch_master = test_directory_handler.getAllFilesPath
 
       file4.existFile() shouldBe true
-      CheckOut.changeBranch("slave",test_directory)
+      CheckOut.changeBranch("slave",test_directory.getPath)
       file4.existFile() shouldBe false
 
       files_in_branch_master should have size 4
       test_directory_handler.getAllFilesPath should have size 3
 
-      CheckOut.changeBranch("master",test_directory)
+      CheckOut.changeBranch("master",test_directory.getPath)
       file4.existFile() shouldBe true
       file4.getContent shouldBe "I've come to talk with you again\n"
     }
@@ -88,32 +88,32 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
   }
   describe("executeCheckOutCommand function"){
     it("should checkout on the commit referenced by the tag"){
-      Tag.addTag("first_commit",test_directory)
+      Tag.addTag("first_commit",test_directory.getPath)
 
       val file4 = new FileHandler(new File(test_directory.getPath+"/file4"))
       file4.addContent("I've come to talk with you again",appendContent = false)
 
-      Add.addFileToIndex("file4",test_directory)
-      Commit.commit(test_directory)
+      Add.addFileToIndex("file4",test_directory.getPath)
+      Commit.commit(test_directory.getPath)
 
       file4.existFile() shouldBe true
 
-      CheckOut.executeCheckOutCommand("first_commit",test_directory)
+      CheckOut.executeCheckOutCommand("first_commit",test_directory.getPath)
 
-      val actual_branch = Branch.getActualBranch(test_directory)
+      val actual_branch = Branch.getActualBranch(test_directory.getPath)
 
       actual_branch shouldBe "detached"
 
       file4.existFile() shouldBe false
     }
     it("should checkout on the commit given"){
-      val first_commit = Commit.getLastCommitFromBranch("master",test_directory)
+      val first_commit = Commit.getLastCommitFromBranch("master",test_directory.getPath)
 
       val file4 = new FileHandler(new File(test_directory.getPath+"/file4"))
       file4.addContent("I've come to talk with you again",appendContent = false)
 
-      Add.addFileToIndex("file4",test_directory)
-      Commit.commit(test_directory)
+      Add.addFileToIndex("file4",test_directory.getPath)
+      Commit.commit(test_directory.getPath)
 
       file4.existFile() shouldBe true
 
@@ -121,17 +121,17 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
 
       detached_branch.exists() shouldBe false
 
-      CheckOut.executeCheckOutCommand(first_commit,test_directory)
+      CheckOut.executeCheckOutCommand(first_commit,test_directory.getPath)
 
       detached_branch.exists() shouldBe true
 
-      val actual_branch = Branch.getActualBranch(test_directory)
+      val actual_branch = Branch.getActualBranch(test_directory.getPath)
 
       actual_branch shouldBe "detached"
 
       file4.existFile() shouldBe false
 
-      CheckOut.executeCheckOutCommand("master",test_directory)
+      CheckOut.executeCheckOutCommand("master",test_directory.getPath)
 
       detached_branch.exists() shouldBe false
 
@@ -143,9 +143,9 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
       val file4 = new FileHandler(new File(test_directory.getPath+"/file4"))
       file4.addContent("I've come to talk with you again",appendContent = false)
 
-      Add.addFileToIndex("file4",test_directory)
+      Add.addFileToIndex("file4",test_directory.getPath)
 
-      CheckOut.executeCheckOutCommand("slave",test_directory)
+      CheckOut.executeCheckOutCommand("slave",test_directory.getPath)
 
       head_file.getContent shouldBe actual_branch
     }

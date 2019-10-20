@@ -31,8 +31,8 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
     file3.createFile()
     file3.addContent("my old friend",appendContent = false)
 
-    Add.addFilesToIndex(test_directory)
-    Commit.commit(test_directory)
+    Add.addFilesToIndex(test_directory.getPath)
+    Commit.commit(test_directory.getPath)
   }
 
   after{
@@ -43,20 +43,20 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
     it("should have two commits on the result"){
       file4.createFile()
       file4.addContent("for new commit",appendContent = false)
-      Add.addFilesToIndex(test_directory)
-      Commit.commit(test_directory)
+      Add.addFilesToIndex(test_directory.getPath)
+      Commit.commit(test_directory.getPath)
       val commit_size = 4
       val nb_commit = 2
 
-      Log.getLog(test_directory,p = false, stat = false) should have size commit_size * nb_commit
+      Log.getLog(test_directory.getPath,p = false, stat = false) should have size commit_size * nb_commit
     }
     it("should have at first a commit with a parentTree and at last a commit without parentTree"){
       file4.createFile()
       file4.addContent("for new commit",appendContent = false)
-      Add.addFilesToIndex(test_directory)
-      Commit.commit(test_directory)
+      Add.addFilesToIndex(test_directory.getPath)
+      Commit.commit(test_directory.getPath)
 
-      val log_result = Log.getLog(test_directory,p = false,stat = false)
+      val log_result = Log.getLog(test_directory.getPath,p = false,stat = false)
       val commit_size = 4
       val line_parent_tree = 2
       val first_commit = log_result(line_parent_tree)
@@ -67,14 +67,14 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
     }
     it("should give the right logs"){
 
-      val first_commit_name = Commit.getLastCommitFromBranch("master",test_directory)
+      val first_commit_name = Commit.getLastCommitFromBranch("master",test_directory.getPath)
 
       file4.createFile()
       file4.addContent("for new commit",appendContent = false)
-      Add.addFilesToIndex(test_directory)
-      Commit.commit(test_directory)
+      Add.addFilesToIndex(test_directory.getPath)
+      Commit.commit(test_directory.getPath)
 
-      val second_commit_name = Commit.getLastCommitFromBranch("master",test_directory)
+      val second_commit_name = Commit.getLastCommitFromBranch("master",test_directory.getPath)
 
       val first_commit_file = new FileHandler(new File(test_directory.getPath+"/.sgit/objects/commits/"+first_commit_name))
       val second_commit_file = new FileHandler(new File(test_directory.getPath+"/.sgit/objects/commits/"+second_commit_name))
@@ -82,7 +82,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       val first_commit_log = List[String]("commit "+first_commit_name)++first_commit_file.getLinesList
       val second_commit_log = List[String]("commit "+second_commit_name)++second_commit_file.getLinesList
 
-      Log.getLog(test_directory,p = false, stat = false) shouldBe second_commit_log++first_commit_log
+      Log.getLog(test_directory.getPath,p = false, stat = false) shouldBe second_commit_log++first_commit_log
     }
   }
 
@@ -93,18 +93,17 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       val file5 = new FileHandler(new File(test_directory.getPath+"/file5"))
       file5.createFile()
       file5.addContent("new\nfile",appendContent = true)
-      Add.addFilesToIndex(test_directory)
+      Add.addFilesToIndex(test_directory.getPath)
 
-
-      val commit_name = Commit.getLastCommitFromBranch("master",test_directory)
+      val commit_name = Commit.getLastCommitFromBranch("master",test_directory.getPath)
       val commit_file = new CommitHandler(new File(commits_directory.getPath+"/"+commit_name))
       val tree_name = commit_file.getTree
       val tree_file = new TreeHandler(new File(trees_directory.getPath+"/"+tree_name))
       val index_of_tree = new IndexHandler(new File(test_directory.getPath+"/NEWINDEX"))
       index_of_tree.createFile()
-      index_of_tree.addContent(tree_file.getIndex("",test_directory),appendContent = true)
+      index_of_tree.addContent(tree_file.getIndex("",test_directory.getPath),appendContent = true)
 
-      val logp = Diff.getDiffBetweenIndexes(index_file,index_of_tree,test_directory, stat = false)
+      val logp = Diff.getDiffBetweenIndexes(index_file,index_of_tree,test_directory.getPath, stat = false)
 
       val modif_file1_expected = List[String]("--- a/directory1/file1", "+++b/directory1/file1","","-Line 1 : hello","","+Line 1 : hello darkness","+Line 2 : my old friend","")
       val add_file5_expected = List[String]("--- a/null","+++b/file5","","+Line 1 : new","+Line 2 : file","")
@@ -114,15 +113,15 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
     }
   }
 
-  describe("getLog function with option -p") {
+   describe("getLog function with option -p") {
     it("should have two commits on the result") {
       file4.createFile()
       file4.addContent("for new commit", appendContent = true)
-      Add.addFilesToIndex(test_directory)
-      Commit.commit(test_directory)
+      Add.addFilesToIndex(test_directory.getPath)
+      Commit.commit(test_directory.getPath)
 
-      println(Log.getLog(test_directory, p = true, stat = false))
-      println(Log.getLog(test_directory, p = false, stat = true))
+      println(Log.getLog(test_directory.getPath, p = true, stat = false))
+      println(Log.getLog(test_directory.getPath, p = false, stat = true))
 
     }
   }

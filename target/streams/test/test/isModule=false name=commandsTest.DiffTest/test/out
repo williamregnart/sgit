@@ -1,7 +1,7 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mDiffTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetTabFilesDiff function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give the good matrix of int for the difference between file 1 and 2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetDiffBetweenFiles function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give the lines deleted from old file and lines added from new file[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give the lines deleted from old file because new file doesn't exist[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give the lines added from new file because old file doesn't exist[0m[0m
+[info] DiffTest:
+[info] getTabFilesDiff function
+[info] - should give the good matrix of int for the difference between file 1 and 2
+[info] getDiffBetweenFiles function
+[info] - should give the lines deleted from old file and lines added from new file
+[info] - should give the lines deleted from old file because new file doesn't exist
+[info] - should give the lines added from new file because old file doesn't exist

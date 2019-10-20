@@ -7,6 +7,8 @@ import scala.reflect.io.Directory
 class DirectoryHandler(f:File) {
   private val dir = f
 
+  def getPath:String = f.getPath
+
   /**
     * function getAllFilesPath
     * @return paths of files in the directory and all subdirectories, except in .sgit
@@ -22,11 +24,11 @@ class DirectoryHandler(f:File) {
         else {
           //if file is a directory, add all it paths files by applying the same function
           if (files.head.isDirectory) {
-            apply(files.tail, files_path ++: apply(files.head.listFiles(), List[String]()))
+            apply(files.tail, files_path ++ apply(files.head.listFiles(), List[String]()))
           }
             //if file is a file, add it path from actual directory to the list of results
           else {
-            apply(files.tail, files_path :+ new FileHandler(files.head).getPathFromDir(dir))
+            apply(files.tail, files_path :+ new FileHandler(files.head).getPathFromDir(dir.getPath))
           }
         }
       }
@@ -44,6 +46,20 @@ class DirectoryHandler(f:File) {
 
   def getFiles:List[File] = {
     f.listFiles().toList
+  }
+
+  def getDirectories:List[String] = {
+    @scala.annotation.tailrec
+    def apply(list_files:List[File], result : List[String]):List[String] = {
+      if(list_files.isEmpty) result
+      else if(list_files.head.isFile) apply(list_files.tail,result)
+      else apply(list_files.tail,result:+list_files.head.getName)
+    }
+    apply(getFiles,List())
+  }
+
+  def existsSubDirectory(subdirectory:String):Boolean = {
+    getDirectories.contains(subdirectory)
   }
 
   /**

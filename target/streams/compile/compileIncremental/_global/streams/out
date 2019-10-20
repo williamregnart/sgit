@@ -1,34 +1,34 @@
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\Main.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Main.class, C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Main$delayedInit$body.class, C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Diff$$anonfun$getAddedLinesWithoutIndexLine$1.class, C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Branch.class, C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Log$.class, C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Branch$.class, C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Main$.class, C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Diff.class, C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Diff$.class, C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Log.class)[0m
-[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Main)[0m
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set(C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Diff.scala, C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Log.scala, C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\Main.scala, C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Branch.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Main)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\Main.scala, C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Diff.scala, C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Log.scala, C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Branch.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Main[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 4 Scala sources to C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.11:1.3.0:compile for Scala 2.11.6[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.11:1.3.0:compile for Scala 2.11.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 538d0720 for Scala compiler version 2.11.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.11.6\scala-library-2.11.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-macros_2.11\2.0.0\cats-macros_2.11-2.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.11.6\scala-reflect-2.11.6.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-kernel_2.11\2.0.0\cats-kernel_2.11-2.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-core_2.11\2.0.0\cats-core_2.11-2.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\mockito\mockito-core\3.0.0\mockito-core-3.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\mockito\mockito-scala_2.11\1.5.18\mockito-scala_2.11-1.5.18.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ru\vyarus\generics-resolver\3.0.0\generics-resolver-3.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_2.11\3.0.8\scalactic_2.11-3.0.8.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 7.0135176 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mDone compiling.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
-[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\CheckOut.scala)
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(commands.CheckOut)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set(commands.CheckOut)
+[debug] All initially invalidated sources:Set(C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\CheckOut.scala)
+[debug] Initial set of included nodes: commands.CheckOut
+[info] Compiling 1 Scala source to C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.11:1.3.0:compile for Scala 2.11.6
+[debug] Getting org.scala-sbt:compiler-bridge_2.11:1.3.0:compile for Scala 2.11.6
+[debug] [zinc] Running cached compiler 70ce2e43 for Scala compiler version 2.11.6
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.11.6\scala-library-2.11.6.jar
+[debug] 	-classpath
+[debug] 	C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-macros_2.11\2.0.0\cats-macros_2.11-2.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.11.6\scala-reflect-2.11.6.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-kernel_2.11\2.0.0\cats-kernel_2.11-2.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-core_2.11\2.0.0\cats-core_2.11-2.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\mockito\mockito-core\3.0.0\mockito-core-3.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\mockito\mockito-scala_2.11\1.5.18\mockito-scala_2.11-1.5.18.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ru\vyarus\generics-resolver\3.0.0\generics-resolver-3.0.0.jar;C:\Users\willi\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_2.11\3.0.8\scalactic_2.11-3.0.8.jar
+[debug] Scala compilation took 1.9258591 s
+[info] Done compiling.
+[debug] New invalidations:
+[debug] 	Set()
+[debug] Initial set of included nodes: 
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] 	Set()
+[debug] No classes were invalidated.

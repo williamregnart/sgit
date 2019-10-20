@@ -91,14 +91,14 @@ class IndexHandlerTest extends FunSpec with Matchers with BeforeAndAfter {
     it("should give tree for a path without subtree"){
       Init.createSgit(test_directory)
       val content_tree_expected="\nblob blob2 file2\nblob blob3 file3"
-      index_file.getTree("/dir1/subdir1",test_directory) shouldBe Encryption.sha1(content_tree_expected)
+      index_file.getTree("/dir1/subdir1",test_directory.getPath) shouldBe Encryption.sha1(content_tree_expected)
     }
     it("should give tree for a path with blobs and subtrees"){
       Init.createSgit(test_directory)
       val content_blob_expected="\nblob blob4 file4\nblob blob5 file5"
-      val content_tree_expected="\ntree "+index_file.getTree("/dir1/subdir1",test_directory)+" /dir1/subdir1/"
+      val content_tree_expected="\ntree "+index_file.getTree("/dir1/subdir1",test_directory.getPath)+" /dir1/subdir1/"
       val content_expected = content_blob_expected+content_tree_expected
-      index_file.getTree("/dir1",test_directory) shouldBe Encryption.sha1(content_expected)
+      index_file.getTree("/dir1",test_directory.getPath) shouldBe Encryption.sha1(content_expected)
     }
     it("should have create trees in .sgit/objects/trees"){
       Init.createSgit(test_directory)
@@ -107,7 +107,7 @@ class IndexHandlerTest extends FunSpec with Matchers with BeforeAndAfter {
       new File(test_directory.getPath+"/.sgit/objects/trees/"+Encryption.sha1(content_expected_tree_2)).exists() shouldBe false
 
       val content_blob_expected="\nblob blob4 file4\nblob blob5 file5"
-      val content_tree_expected="\ntree "+index_file.getTree("/dir1/subdir1",test_directory)+" /dir1/subdir1/"
+      val content_tree_expected="\ntree "+index_file.getTree("/dir1/subdir1",test_directory.getPath)+" /dir1/subdir1/"
       val content_expected_tree_1 = content_blob_expected+content_tree_expected
 
 
@@ -115,7 +115,7 @@ class IndexHandlerTest extends FunSpec with Matchers with BeforeAndAfter {
       new File(test_directory.getPath+"/.sgit/objects/trees/"+Encryption.sha1(content_expected_tree_1)).exists() shouldBe false
 
 
-      index_file.getTree("/dir1",test_directory)
+      index_file.getTree("/dir1",test_directory.getPath)
 
       val trees_directory = new File(test_directory.getPath+"/.sgit/objects/trees")
       trees_directory.list() should have size 2

@@ -27,7 +27,7 @@ class BranchTest extends FunSpec with Matchers with BeforeAndAfter{
     Init.createSgit(test_directory)
     file1.createFile()
     file1.addContent("hello darkness my old friend",appendContent = false)
-    Add.addFilesToIndex(test_directory)
+    Add.addFilesToIndex(test_directory.getPath)
   }
 
   /**
@@ -48,12 +48,12 @@ class BranchTest extends FunSpec with Matchers with BeforeAndAfter{
 
   describe("after branchCommand function"){
     it("should exist two branches in /.sgit/refs/heads with the right name"){
-      executeBranchCommand("darkness",test_directory)
+      executeBranchCommand("darkness",test_directory.getPath)
       branches_directory.listFiles() should have size 2
       branches_directory.list() shouldBe List[String]("darkness","master")
     }
     it("file of new branch should have the commit of actual branch (here nothing)"){
-      executeBranchCommand("darkness",test_directory)
+      executeBranchCommand("darkness",test_directory.getPath)
 
       val actual_branch_file = new FileHandler(new File(branches_directory.getPath+"/master"))
       val new_branch_file = new FileHandler(new File(branches_directory.getPath+"/darkness"))
@@ -61,8 +61,8 @@ class BranchTest extends FunSpec with Matchers with BeforeAndAfter{
       new_branch_file.getContent shouldBe actual_branch_file.getContent
     }
     it("file of new branch should have the commit of actual branch (after a first commit)"){
-      Commit.commit(test_directory)
-      executeBranchCommand("darkness",test_directory)
+      Commit.commit(test_directory.getPath)
+      executeBranchCommand("darkness",test_directory.getPath)
 
       val actual_branch_file = new FileHandler(new File(branches_directory.getPath+"/master"))
       val new_branch_file = new FileHandler(new File(branches_directory.getPath+"/darkness"))

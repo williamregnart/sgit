@@ -1,47 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbce937e-cc33-45da-a562-3de7d1d69753" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/commands/Tag.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/commandsTest/CheckOutTest.scala" afterDir="false" />
+    <list default="true" id="7268ba84-f2ae-48a0-a52e-f8b3e7cf00b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/pure_files/CommitFile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/willi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/willi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hydra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sgit-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/sgit-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/sgit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/sgit.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/active.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59c1dccb59ad77a0461e$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59c1dccb59ad77a0461e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$59c1dccb59ad77a0461e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$76c48cc3055241376b51$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$76c48cc3055241376b51.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$76c48cc3055241376b51.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$99cc1df6c9c50a73f9f6$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$99cc1df6c9c50a73f9f6.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$99cc1df6c9c50a73f9f6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b2f1220dd0312e2db61e$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b2f1220dd0312e2db61e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b2f1220dd0312e2db61e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b9ada09e2464da43e11a$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b9ada09e2464da43e11a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b9ada09e2464da43e11a.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d01be77f25211bb63c9c$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d01be77f25211bb63c9c.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d01be77f25211bb63c9c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d65ac26e9c0d7c051714$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d65ac26e9c0d7c051714.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d65ac26e9c0d7c051714.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d6dfdb64f4d032033800$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d6dfdb64f4d032033800.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d6dfdb64f4d032033800.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e0af00224f1da5e336d6$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e0af00224f1da5e336d6.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e0af00224f1da5e336d6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Add.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Add.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Branch.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Branch.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/commands/CheckOut.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/CheckOut.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Commit.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Commit.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Diff.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Diff.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Init.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Init.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Log.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Log.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Status.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Status.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Tag.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Tag.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/files/DirectoryHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/files/DirectoryHandler.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/files/FileHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/files/FileHandler.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/files/IndexHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/files/IndexHandler.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/files/TreeHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/files/TreeHandler.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/commandsTest/AddTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/commandsTest/AddTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/commandsTest/BranchTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/commandsTest/BranchTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/commandsTest/CheckOutTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/commandsTest/CheckOutTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/commandsTest/CommitTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/commandsTest/CommitTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/commandsTest/DiffTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/commandsTest/DiffTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/commandsTest/LogTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/commandsTest/LogTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/commandsTest/StatusTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/commandsTest/StatusTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/filesTest/FileHandlerTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/filesTest/FileHandlerTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/filesTest/IndexHandlerTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/filesTest/IndexHandlerTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/filesTest/TreeHandlerTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/filesTest/TreeHandlerTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Main$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Main$delayedInit$body.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Add$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Add$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Add.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Add.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Branch$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Branch$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Branch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/CheckOut$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/CheckOut$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/CheckOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/CheckOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Commit$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Commit$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Commit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Commit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Diff$$anonfun$getAddedLinesWithoutIndexLine$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Diff$$anonfun$getAddedLinesWithoutIndexLine$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Diff$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Diff$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Diff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Diff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Init$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Init$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Init.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Init.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Log$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Log$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Status$$anonfun$getModifiedUncommittedFiles$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Status$$anonfun$getModifiedUncommittedFiles$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Status$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Status$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Tag$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Tag$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/commands/Tag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/files/DirectoryHandler$$anonfun$getFilesName$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/files/DirectoryHandler$$anonfun$getFilesName$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/files/DirectoryHandler$$anonfun$getFilesName$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/files/DirectoryHandler$$anonfun$getFilesName$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/files/DirectoryHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/files/DirectoryHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/files/FileHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/files/FileHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/files/IndexHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/files/IndexHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/files/TreeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/files/TreeHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.11/sgit_2.11-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/sgit_2.11-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$3$$anonfun$apply$mcV$sp$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$4$$anonfun$apply$mcV$sp$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/AddTest$$anonfun$4$$anonfun$apply$mcV$sp$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/BranchTest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/BranchTest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/BranchTest$$anonfun$4$$anonfun$apply$mcV$sp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/BranchTest$$anonfun$4$$anonfun$apply$mcV$sp$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/BranchTest$$anonfun$4$$anonfun$apply$mcV$sp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/BranchTest$$anonfun$4$$anonfun$apply$mcV$sp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/BranchTest$$anonfun$4$$anonfun$apply$mcV$sp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/BranchTest$$anonfun$4$$anonfun$apply$mcV$sp$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$3$$anonfun$apply$mcV$sp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$3$$anonfun$apply$mcV$sp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$3$$anonfun$apply$mcV$sp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$3$$anonfun$apply$mcV$sp$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$4$$anonfun$apply$mcV$sp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$4$$anonfun$apply$mcV$sp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$4$$anonfun$apply$mcV$sp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$4$$anonfun$apply$mcV$sp$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$4$$anonfun$apply$mcV$sp$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CheckOutTest$$anonfun$4$$anonfun$apply$mcV$sp$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$3$$anonfun$apply$mcV$sp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$3$$anonfun$apply$mcV$sp$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$4$$anonfun$apply$mcV$sp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$4$$anonfun$apply$mcV$sp$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$4$$anonfun$apply$mcV$sp$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$4$$anonfun$apply$mcV$sp$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$5$$anonfun$apply$mcV$sp$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$5$$anonfun$apply$mcV$sp$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$6$$anonfun$apply$mcV$sp$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$6$$anonfun$apply$mcV$sp$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$7$$anonfun$apply$mcV$sp$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/CommitTest$$anonfun$7$$anonfun$apply$mcV$sp$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/DiffTest$$anonfun$4$$anonfun$apply$mcV$sp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/DiffTest$$anonfun$4$$anonfun$apply$mcV$sp$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/DiffTest$$anonfun$4$$anonfun$apply$mcV$sp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/DiffTest$$anonfun$4$$anonfun$apply$mcV$sp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/DiffTest$$anonfun$4$$anonfun$apply$mcV$sp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/DiffTest$$anonfun$4$$anonfun$apply$mcV$sp$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$3$$anonfun$apply$mcV$sp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$3$$anonfun$apply$mcV$sp$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$3$$anonfun$apply$mcV$sp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$3$$anonfun$apply$mcV$sp$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$4$$anonfun$apply$mcV$sp$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$4$$anonfun$apply$mcV$sp$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$5$$anonfun$apply$mcV$sp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$5$$anonfun$apply$mcV$sp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/LogTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/StatusTest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/StatusTest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/StatusTest$$anonfun$4$$anonfun$apply$mcV$sp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/commandsTest/StatusTest$$anonfun$4$$anonfun$apply$mcV$sp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/FileHandlerTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/FileHandlerTest$$anonfun$3$$anonfun$apply$mcV$sp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/IndexHandlerTest$$anonfun$8$$anonfun$apply$mcV$sp$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/IndexHandlerTest$$anonfun$8$$anonfun$apply$mcV$sp$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/IndexHandlerTest$$anonfun$8$$anonfun$apply$mcV$sp$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/IndexHandlerTest$$anonfun$8$$anonfun$apply$mcV$sp$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/IndexHandlerTest$$anonfun$8$$anonfun$apply$mcV$sp$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/IndexHandlerTest$$anonfun$8$$anonfun$apply$mcV$sp$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/TreeHandlerTest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/TreeHandlerTest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/TreeHandlerTest$$anonfun$3$$anonfun$apply$mcV$sp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/filesTest/TreeHandlerTest$$anonfun$3$$anonfun$apply$mcV$sp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/update/update_cache_2.11/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/ivyConfiguration/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.11/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.11/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.11/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.11/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateSbtClassifiers/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateSbtClassifiers/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.11.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.11.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/definedTestNames/data" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/definedTestNames/data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compile/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncSetup/_global/streams/inc_compile_2.11.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncSetup/_global/streams/inc_compile_2.11.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/copyResources/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/definedTests/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/loadedTestFrameworks/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/loadedTestFrameworks/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/test/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/test/_global/streams/succeeded_tests" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/_global/streams/succeeded_tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.AddTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.AddTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.BranchTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.BranchTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.CheckOutTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.CheckOutTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.CommitTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.CommitTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.DiffTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.DiffTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.InitTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.InitTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.LogTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.LogTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.StatusTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.StatusTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=filesTest.DirectoryHandlerTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=filesTest.DirectoryHandlerTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=filesTest.FileHandlerTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=filesTest.FileHandlerTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=filesTest.IndexHandlerTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=filesTest.IndexHandlerTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=filesTest.TreeHandlerTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=filesTest.TreeHandlerTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=othersTest.PathTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=othersTest.PathTest/test/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.AddTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.AddTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.BranchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.BranchTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.CheckOutTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.CheckOutTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.CommitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.CommitTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.DiffTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.DiffTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.InitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.InitTest.xml" afterDir="false" />
@@ -54,6 +217,7 @@
       <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-othersTest.PathTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-othersTest.PathTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.AddTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.AddTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.BranchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.BranchTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.CheckOutTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.CheckOutTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.CommitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.CommitTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.DiffTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.DiffTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.InitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.InitTest.xml" afterDir="false" />
@@ -65,21 +229,14 @@
       <change beforePath="$PROJECT_DIR$/target/test-reports/filesTest.TreeHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/filesTest.TreeHandlerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/othersTest.PathTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/othersTest.PathTest.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/project/project/target/" />
-    <ignored path="$PROJECT_DIR$/project/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/sgit$Main.ic" NAME="Main Coverage Results" MODIFIED="1570702307661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="206" />
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -101,377 +258,33 @@
     </projectState>
   </component>
   <component name="ExternalProjectsManager">
-    <system id="SBT">
+    <system id="GRADLE">
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sgit" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1702163853">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="properties" value="2" />
-          <entry key="sbt" value="2" />
-          <entry key="scala" value="21" />
-          <entry key="sh" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="2" />
-          <entry key="Scala" value="21" />
-          <entry key="sbt" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="properties" value="1" />
-          <entry key="sbt" value="3" />
-          <entry key="sbtShell" value="130" />
-          <entry key="scala" value="13488" />
-          <entry key="sh" value="88" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="88" />
-          <entry key="Properties" value="1" />
-          <entry key="Scala" value="13488" />
-          <entry key="sbt" value="3" />
-          <entry key="sbtShell" value="130" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-1180599397">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="3" />
-          <entry key="properties" value="1" />
-          <entry key="sbt" value="6" />
-          <entry key="scala" value="181" />
-          <entry key="sh" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Bash" value="2" />
-          <entry key="JAVA" value="3" />
-          <entry key="Properties" value="1" />
-          <entry key="Scala" value="181" />
-          <entry key="sbt" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="5" />
-          <entry key="java" value="26" />
-          <entry key="sbt" value="92" />
-          <entry key="sbtShell" value="209" />
-          <entry key="scala" value="62985" />
-          <entry key="sh" value="19" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Bash" value="19" />
-          <entry key="JAVA" value="26" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Scala" value="62985" />
-          <entry key="sbt" value="92" />
-          <entry key="sbtShell" value="209" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Add.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sgit.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Status.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Diff.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="237" column="11" lean-forward="true" selection-start-line="237" selection-start-column="11" selection-end-line="237" selection-end-column="11" />
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/DiffTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Tag.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Branch.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/StatusTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/LogTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Scala Script" />
-        <option value="Class" />
-        <option value="Scala Class" />
-        <option value="Scala Object" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>print</find>
-      <find>existsI</find>
-      <find>Add.</find>
-      <find>con</find>
-      <find>println</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/sgit.sh" />
-        <option value="$PROJECT_DIR$/src/main/scala/Init.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Blob.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/PathTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/CommitHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Commit.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/diff_match_patch.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/diff_match_patch.java" />
-        <option value="$PROJECT_DIR$/build.sbt" />
-        <option value="$PROJECT_DIR$/src/main/scala/Tree.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Diff.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Log.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/DirectoryHandler.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/IndexHandlerTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/IndexHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Add.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/FileHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Branch.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/CheckOut.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/TreeHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Status.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/commands/Add.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Index.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Encryption.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/others/Index.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/commands/Commit.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/commands/Init.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/files/IndexHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/files/CommitHandler.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/AddTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/CommitTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/DiffTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/FileHandlerTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/InitTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/LogTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/StatusTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/TreeHandlerTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/BranchTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/files/DirectoryHandler.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/filesTest/DirectoryHandlerTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/files/FileHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/files/TreeHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/commands/Status.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/commands/Tag.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/commandsTest/CheckOutTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/commands/CheckOut.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/commands/Log.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/commands/Branch.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/commandsTest/LogTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/commands/Diff.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
-      </list>
-    </option>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="55" />
-    <option name="width" value="1920" />
-    <option name="height" value="980" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="sgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sgit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sgit" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sgit" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1SLPHlIF38VpBxA9mnDQHVXXGFd" />
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571338732772" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\willi\Documents\IG5\sgit_project\sgit" />
-      <recent name="C:\Users\willi\Documents\IG5\sgit_project\sgit\src" />
+      <recent name="C:\Users\willi\Documents\IG5\sgit_project\sgit\project" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -485,32 +298,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Add" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="commands.Add" />
-      <module name="sgit" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="sgit" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Add" />
-      <item itemvalue="Application.Main" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Add" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
     <option name="availableProjects">
@@ -529,7 +316,7 @@
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value="sgit-build [file:/C:/Users/willi/Documents/IG5/sgit_project/sgit/]" />
+                <option name="name" value="sgit-build" />
                 <option name="path" value="$PROJECT_DIR$/project" />
               </ExternalProjectPojo>
             </list>
@@ -539,8 +326,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/build.sbt" value="3323290497" />
-        <entry key="$PROJECT_DIR$/project/build.properties" value="2014896044" />
+        <entry key="$PROJECT_DIR$" value="4713079756421" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="152116279" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="2868604264" />
+        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="2776281405" />
       </map>
     </option>
   </component>
@@ -549,533 +338,30 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bbce937e-cc33-45da-a562-3de7d1d69753" name="Default Changelist" comment="" />
-      <created>1570132570806</created>
+      <changelist id="7268ba84-f2ae-48a0-a52e-f8b3e7cf00b8" name="Default Changelist" comment="" />
+      <created>1571339816322</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570132570806</updated>
-      <workItem from="1570132575804" duration="3975000" />
-      <workItem from="1570289756478" duration="76538000" />
-      <workItem from="1570623286865" duration="3665000" />
-      <workItem from="1570629695929" duration="12217000" />
-      <workItem from="1570687388899" duration="40237000" />
-      <workItem from="1570899453102" duration="52345000" />
-      <workItem from="1571126764892" duration="91804000" />
+      <updated>1571339816322</updated>
+      <workItem from="1571339822763" duration="20598000" />
+      <workItem from="1571510651942" duration="8643000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280781000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26912752" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35602838" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49932885" weight="0.3035461" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" sideWeight="0.4986577" weight="0.81560284" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013423" side_tool="true" weight="0.39858156" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.2567376" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3295302" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="sbt" order="6" weight="0.3299458" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Database" order="9" weight="0.3295302" />
-      <window_info anchor="right" id="Maven Projects" order="10" weight="0.32885906" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/scala/EncryptionTest.scala" />
-    <entry file="file://$PROJECT_DIR$/project/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Blob.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Init.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="57" column="6" lean-forward="true" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/IndexTest.scala" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.8/scalatest_2.11-3.0.8-sources.jar!/org/scalatest/OutcomeOf.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/diff_match_patch.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Diff.java" />
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Log.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Commit.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Diff.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1396">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Add.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FileHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#2#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Branch.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/CheckOut.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Status.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3247">
-          <caret line="191" column="47" selection-start-line="191" selection-start-column="47" selection-end-line="191" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Index.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Encryption.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/others/Encryption.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Commit.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="108" column="40" lean-forward="true" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/others/Index.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/files/IndexHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-          <folding>
-            <element signature="e#15#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/filesTest/IndexHandlerTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/filesTest/TreeHandlerTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="e#19#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/BranchTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/InitTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/othersTest/PathTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <element signature="e#20#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/filesTest/FileHandlerTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/filesTest/DirectoryHandlerTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="67" />
-          <folding>
-            <element signature="e#19#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/files/CommitHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/files/DirectoryHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
-          <folding>
-            <element signature="e#15#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/files/TreeHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Init.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/files/FileHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/AddTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/CommitTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/commands/CheckOut.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/CheckOutTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="147" column="38" lean-forward="true" selection-start-line="147" selection-start-column="38" selection-end-line="147" selection-end-column="38" />
-          <folding>
-            <element signature="e#22#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Log.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="58" column="43" lean-forward="true" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Add.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Tag.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Status.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Branch.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/StatusTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/LogTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/commandsTest/DiffTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/commands/Diff.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="237" column="11" lean-forward="true" selection-start-line="237" selection-start-column="11" selection-end-line="237" selection-end-column="11" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgit.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.12.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>sgit-build</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>sbt: net.bytebuddy:byte-buddy-agent:1.9.10:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

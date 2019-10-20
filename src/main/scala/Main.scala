@@ -1,10 +1,13 @@
 import java.io.File
 
 import commands._
+import files.DirectoryHandler
 
 object Main extends App {
 
   val actual_directory = new File(System.getProperty("user.dir"))
+  val directory = new DirectoryHandler(actual_directory)
+  val exist_sgit = directory.existsSubDirectory(".sgit")
 
   if (args.length == 0) println("You must specify an action")
   else execute(args)
@@ -17,7 +20,7 @@ object Main extends App {
         case "add" => add(command.tail)
         case "remove" => remove(command.tail)
         case "commit" => commit(command.tail)
-        case "log" => tag(command.tail)
+        case "log" => log(command.tail)
         case "status" => status(command.tail)
         case "tag" => tag(command.tail)
         case "branch" => branch(command.tail)
@@ -33,7 +36,8 @@ object Main extends App {
   }
 
   def add(command: Array[String]): Unit = {
-    def apply(command: Array[String],firstOption:Boolean): Unit = {
+    @scala.annotation.tailrec
+    def apply(command: Array[String], firstOption:Boolean): Unit = {
       if (command.isEmpty && firstOption) {
         println("Nothing specified, nothing added.")
       }
@@ -41,49 +45,54 @@ object Main extends App {
         if (!command.isEmpty){
           command(0) match {
             case "." =>
-              Add.addFilesToIndex(actual_directory)
+              Add.addFilesToIndex(actual_directory.getPath)
             case _ =>
-              Add.addFileToIndex(command(0),actual_directory)
+              Add.addFileToIndex(command(0),actual_directory.getPath)
           }
           apply(command.tail,firstOption = false)
         }
       }
     }
-    apply(command,firstOption = true)
+    if(exist_sgit) apply(command,firstOption = true)
+    else println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
   }
 
   def remove(command: Array[String]): Unit = {
-    def apply(command: Array[String],firstOption:Boolean): Unit = {
+    @scala.annotation.tailrec
+    def apply(command: Array[String], firstOption:Boolean): Unit = {
       if (command.isEmpty && firstOption) {
         println("Nothing specified, nothing added.")
       }
       else {
         if (!command.isEmpty){
-          Add.removeFileToIndex("/"+command(0),actual_directory)
+          Add.removeFileToIndex("/"+command(0),actual_directory.getPath)
           apply(command.tail,firstOption = false)
         }
       }
     }
-    apply(command,firstOption = true)
+    if(exist_sgit) apply(command,firstOption = true)
+    else println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
   }
 
   def commit(command:Array[String]):Unit = {
-    if(command.isEmpty){
-      Commit.commit(actual_directory)
+    if(!exist_sgit) println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
+    else if(command.isEmpty){
+      Commit.commit(actual_directory.getPath)
     }
     else println("sgit commit has no option")
   }
 
   def log(command:Array[String]):Unit = {
-    if(command.isEmpty){
-      Log.printLog(actual_directory, p = false, stat = false)
+    if(!exist_sgit) println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
+    else if(command.isEmpty){
+      Log.printLog(actual_directory.getPath, p = false, stat = false)
     }
     else if(command.tail.nonEmpty) println(Console.RED+"sgit log has only one argument (-p or -stat)"+Console.WHITE)
 
     else{
       command.head match {
-        case "-p" => Log.printLog(actual_directory, p = true, stat = false)
-        case "-stat" => Log.printLog(actual_directory,p = false, stat = true)
+        case "-p" => Log.printLog(actual_directory.getPath, p = true, stat = false)
+        case "--stat" => Log.printLog(actual_directory.getPath,p = false, stat = true)
         case _ =>println(Console.RED+"sgit log "+command(0)+" doesn't exist"+Console.WHITE)
       }
       println("sgit log has no option")
@@ -91,33 +100,41 @@ object Main extends App {
   }
 
   def status(command:Array[String]):Unit = {
-    if(command.nonEmpty) println(Console.RED+"sgit status has no option"+Console.WHITE)
+    if(!exist_sgit) println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
+    else if(command.nonEmpty) println(Console.RED+"sgit status has no option"+Console.WHITE)
     else{
-      Status.printUntrackedFiles(actual_directory)
+      Status.printUntrackedFiles(actual_directory.getPath)
       println()
-      Status.printUncommittedFiles(actual_directory)
+      Status.printUncommittedFiles(actual_directory.getPath)
     }
   }
 
   def tag(command:Array[String]):Unit = {
-    if(command.isEmpty) Tag.printAllTags(actual_directory)
+    if(!exist_sgit) println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
+    else if(command.isEmpty) println(Console.RED+"sgit tag should have 1 argument (tag name)"+Console.WHITE)
     else if(command.tail.nonEmpty) println(Console.RED+"sgit tag should have only one tag name in argument"+Console.WHITE)
-    else Tag.addTag(command(0),actual_directory)
+    else Tag.addTag(command(0),actual_directory.getPath)
   }
 
   def branch(command:Array[String]):Unit = {
-    if(command.isEmpty){
-      val branches_list = Branch.getAllBranches(actual_directory)
-      Branch.printAllBranches(branches_list)
-    }
+    if(!exist_sgit) println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
+    else if(command.isEmpty) println(Console.RED+"sgit branch should have 1 argument (a branch name to create a new branch, or \"-av\" to print list of branches and tags)"+Console.WHITE)
     else if(command.tail.nonEmpty) println(Console.RED+"sgit branch should have 0 (list of branches) or 1 (create branch) argument"+Console.WHITE)
-
-    else Branch.executeBranchCommand(command.head,actual_directory)
+    else if(command.head == "-av") {
+      val branches_list = Branch.getAllBranches(actual_directory.getPath)
+      println("Branches : ")
+      Branch.printAllBranches(branches_list)
+      println()
+      println("Tags : ")
+      Tag.printAllTags(actual_directory.getPath)
+    }
+    else Branch.executeBranchCommand(command.head,actual_directory.getPath)
   }
 
   def checkout(command:Array[String]):Unit = {
-    if(command.isEmpty) println(Console.RED+"sgit checkout should have a branch/tag/commit in argument"+Console.WHITE)
-    if(command.tail.nonEmpty) println(Console.RED+"sgit checkout should have only 1 argument (branch/tag/commit name)"+Console.WHITE)
-    else CheckOut.executeCheckOutCommand(command.head,actual_directory)
+    if(!exist_sgit) println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
+    else if(command.isEmpty) println(Console.RED+"sgit checkout should have a branch/tag/commit in argument"+Console.WHITE)
+    else if(command.tail.nonEmpty) println(Console.RED+"sgit checkout should have only 1 argument (branch/tag/commit name)"+Console.WHITE)
+    else CheckOut.executeCheckOutCommand(command.head,actual_directory.getPath)
   }
 }

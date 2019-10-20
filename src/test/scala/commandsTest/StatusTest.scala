@@ -31,13 +31,13 @@ class StatusTest extends FunSpec with Matchers with BeforeAndAfter {
     file2.createFile()
     file2.addContent("darkness",appendContent = false)
 
-    Add.addFilesToIndex(test_directory)
-    Commit.commit(test_directory)
+    Add.addFilesToIndex(test_directory.getPath)
+    Commit.commit(test_directory.getPath)
 
     file3.createFile()
     file3.addContent("friend",appendContent = false)
 
-    Add.addFileToIndex("file3",test_directory)
+    Add.addFileToIndex("file3",test_directory.getPath)
     file2.addContent("my old",appendContent = true)
     file1.deleteFile()
 
@@ -60,8 +60,8 @@ class StatusTest extends FunSpec with Matchers with BeforeAndAfter {
   }
   describe("printUntrackedFiles function"){
     it("should print in console the files untracked in repo which have not been added"){
-      Status.printUntrackedFiles(test_directory)
-      Status.printUncommittedFiles(test_directory)
+      Status.printUntrackedFiles(test_directory.getPath)
+      Status.printUncommittedFiles(test_directory.getPath)
     }
   }
 }

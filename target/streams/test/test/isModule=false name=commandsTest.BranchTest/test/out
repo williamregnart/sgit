@@ -1,7 +1,7 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mBranchTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mbefore branchCommand function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should exist one branch in /.sgit/refs/heads which is master[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mafter branchCommand function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should exist two branches in /.sgit/refs/heads with the right name[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- file of new branch should have the commit of actual branch (here nothing)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- file of new branch should have the commit of actual branch (after a first commit)[0m[0m
+[info] BranchTest:
+[info] before branchCommand function
+[info] - should exist one branch in /.sgit/refs/heads which is master
+[info] after branchCommand function
+[info] - should exist two branches in /.sgit/refs/heads with the right name
+[info] - file of new branch should have the commit of actual branch (here nothing)
+[info] - file of new branch should have the commit of actual branch (after a first commit)

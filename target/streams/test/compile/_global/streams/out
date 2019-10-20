@@ -1,5 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\willi\Documents\IG5\sgit_project\sgit\src\test\scala\commandsTest\LogTest.scala:107:44: not enough arguments for method getDiffBetweenIndexes: (new_index: files.IndexHandler, old_index: files.IndexHandler, actual_directory: java.io.File, stat: Boolean)List[String].[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter stat.[0m
-[0m[[0m[31merror[0m] [0m[0m      val logp = Diff.getDiffBetweenIndexes(index_file,index_of_tree,test_directory)[0m
-[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[debug] Acquiring lock on file C:\Users\willi\Documents\IG5\sgit_project\sgit\project\target\.sbt-compilation-infos\sgit-test\.sbt-idea-lock ...
+[debug] Releasing lock on file C:\Users\willi\Documents\IG5\sgit_project\sgit\project\target\.sbt-compilation-infos\sgit-test\.sbt-idea-lock.

@@ -1,81 +1,89 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\sgit_2.11-0.1.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Blob.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Blob.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Add$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Add$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Add.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Add.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Branch$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Branch$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Branch.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Branch.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\CheckOut$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\CheckOut$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\CheckOut.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\CheckOut.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Commit$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Commit$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Commit.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Commit.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Diff$$anonfun$getAddedLinesWithoutIndexLine$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Diff$$anonfun$getAddedLinesWithoutIndexLine$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Diff$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Diff$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Diff.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Diff.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Init$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Init$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Init.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Init.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Log$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Log$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Log.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Log.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Status$$anonfun$getModifiedUncommittedFiles$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Status$$anonfun$getModifiedUncommittedFiles$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Status$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Status$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	commands\Status.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Status.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files\CommitHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\CommitHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files\DirectoryHandler$$anonfun$getFilesName$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\DirectoryHandler$$anonfun$getFilesName$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files\DirectoryHandler$$anonfun$getFilesName$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\DirectoryHandler$$anonfun$getFilesName$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files\DirectoryHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\DirectoryHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files\FileHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\FileHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files\IndexHandler$$anonfun$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\IndexHandler$$anonfun$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files\IndexHandler$$anonfun$getAllFilesPath$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\IndexHandler$$anonfun$getAllFilesPath$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files\IndexHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\IndexHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	files\TreeHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\TreeHandler.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Main$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	others[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others[0m
-[0m[[0m[0mdebug[0m] [0m[0m	others\Encryption$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others\Encryption$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	others\Encryption.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others\Encryption.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	others\Index$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others\Index$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	others\Index.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others\Index.class[0m
-[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
+[debug] Packaging C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\sgit_2.11-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes
+[debug] 	Blob.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Blob.class
+[debug] 	commands
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands
+[debug] 	commands\Add$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Add$.class
+[debug] 	commands\Add.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Add.class
+[debug] 	commands\Branch$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Branch$.class
+[debug] 	commands\Branch.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Branch.class
+[debug] 	commands\CheckOut$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\CheckOut$.class
+[debug] 	commands\CheckOut.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\CheckOut.class
+[debug] 	commands\Commit$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Commit$.class
+[debug] 	commands\Commit.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Commit.class
+[debug] 	commands\Diff$$anonfun$getAddedLinesWithoutIndexLine$1.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Diff$$anonfun$getAddedLinesWithoutIndexLine$1.class
+[debug] 	commands\Diff$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Diff$.class
+[debug] 	commands\Diff.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Diff.class
+[debug] 	commands\Init$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Init$.class
+[debug] 	commands\Init.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Init.class
+[debug] 	commands\Log$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Log$.class
+[debug] 	commands\Log.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Log.class
+[debug] 	commands\Status$$anonfun$getModifiedUncommittedFiles$1.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Status$$anonfun$getModifiedUncommittedFiles$1.class
+[debug] 	commands\Status$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Status$.class
+[debug] 	commands\Status.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Status.class
+[debug] 	commands\Tag$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Tag$.class
+[debug] 	commands\Tag.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\commands\Tag.class
+[debug] 	files
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files
+[debug] 	files\CommitHandler.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\CommitHandler.class
+[debug] 	files\DirectoryHandler$$anonfun$getFilesName$1.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\DirectoryHandler$$anonfun$getFilesName$1.class
+[debug] 	files\DirectoryHandler$$anonfun$getFilesName$2.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\DirectoryHandler$$anonfun$getFilesName$2.class
+[debug] 	files\DirectoryHandler.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\DirectoryHandler.class
+[debug] 	files\FileHandler.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\FileHandler.class
+[debug] 	files\IndexHandler$$anonfun$1.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\IndexHandler$$anonfun$1.class
+[debug] 	files\IndexHandler$$anonfun$getAllFilesPath$1.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\IndexHandler$$anonfun$getAllFilesPath$1.class
+[debug] 	files\IndexHandler.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\IndexHandler.class
+[debug] 	files\TreeHandler.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\files\TreeHandler.class
+[debug] 	Main$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Main$.class
+[debug] 	Main$delayedInit$body.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Main$delayedInit$body.class
+[debug] 	Main.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\Main.class
+[debug] 	others
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others
+[debug] 	others\Encryption$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others\Encryption$.class
+[debug] 	others\Encryption.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others\Encryption.class
+[debug] 	others\Index$.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others\Index$.class
+[debug] 	others\Index.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\others\Index.class
+[debug] 	pure_files
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\pure_files
+[debug] 	pure_files\CommitFile.class
+[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\classes\pure_files\CommitFile.class
+[debug] Done packaging.

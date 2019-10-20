@@ -1,21 +1,21 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mIndexHandlerTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetAllFilesPath function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give the paths of content added[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetFilesFromPath function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give empty list if path has no files[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give a list of files path[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetDirPathFromPath function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give the directories in path given[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetBlobFromFilePath function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give the blob of file path[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give empty string if path doesn't exist[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetBlobLineToInsert function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give blob line to insert in tree from path[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetAllBlobsLineToInsert function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give all blobs lines to insert[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetTreeFunction return[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give tree for a path without subtree[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give tree for a path with blobs and subtrees[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should have create trees in .sgit/objects/trees[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetLinesWithoutPath[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return index content without path line[0m[0m
+[info] IndexHandlerTest:
+[info] getAllFilesPath function
+[info] - should give the paths of content added
+[info] getFilesFromPath function
+[info] - should give empty list if path has no files
+[info] - should give a list of files path
+[info] getDirPathFromPath function
+[info] - should give the directories in path given
+[info] getBlobFromFilePath function
+[info] - should give the blob of file path
+[info] - should give empty string if path doesn't exist
+[info] getBlobLineToInsert function
+[info] - should give blob line to insert in tree from path
+[info] getAllBlobsLineToInsert function
+[info] - should give all blobs lines to insert
+[info] getTreeFunction return
+[info] - should give tree for a path without subtree
+[info] - should give tree for a path with blobs and subtrees
+[info] - should have create trees in .sgit/objects/trees
+[info] getLinesWithoutPath
+[info] - should return index content without path line

@@ -29,8 +29,8 @@ class FileHandler(f: File) {
     file.delete()
   }
 
-  def getPathFromDir(actual_directory:File):String={
-    getPath.replace(actual_directory.getPath,"").replace("\\","/")
+  def getPathFromDir(actual_directory_path:String):String={
+    getPath.replace(actual_directory_path,"").replace("\\","/")
   }
 
   def getUniqueKey: String = {

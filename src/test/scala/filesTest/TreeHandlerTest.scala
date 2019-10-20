@@ -36,8 +36,8 @@ class TreeHandlerTest extends FunSpec with Matchers with BeforeAndAfter{
     file2.addContent("darkness",appendContent = false)
     file3.createFile()
     file3.addContent("my old friend",appendContent = false)
-    Add.addFilesToIndex(test_directory)
-    Commit.commit(test_directory)
+    Add.addFilesToIndex(test_directory.getPath)
+    Commit.commit(test_directory.getPath)
   }
 
   /**
@@ -51,13 +51,13 @@ class TreeHandlerTest extends FunSpec with Matchers with BeforeAndAfter{
 
   describe("getIndex function"){
     it("should return the same content as index file"){
-      val commit_name = Commit.getLastCommitFromBranch("master",test_directory)
+      val commit_name = Commit.getLastCommitFromBranch("master",test_directory.getPath)
       val commit_file = new CommitHandler(new File(commits_directory.getPath+"/"+commit_name))
       val tree_name = commit_file.getTree
       val tree_file = new TreeHandler(new File(trees_directory.getPath+"/"+tree_name))
       val index_of_tree = new IndexHandler(new File(test_directory.getPath+"/NEWINDEX"))
       index_of_tree.createFile()
-      index_of_tree.addContent(tree_file.getIndex("",test_directory),appendContent = true)
+      index_of_tree.addContent(tree_file.getIndex("",test_directory.getPath),appendContent = true)
       Diff.getAddedLines(index_of_tree.getLinesList,index_file.getLinesList) should have size 0
       Diff.getAddedLines(index_file.getLinesList,index_of_tree.getLinesList) should have size 0
     }

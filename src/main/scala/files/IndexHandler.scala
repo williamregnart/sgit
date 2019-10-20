@@ -66,7 +66,8 @@ class IndexHandler(f:File) extends FileHandler(f) {
   }
 
   def getLinesWithoutPath(path:String):String = {
-    def apply(lines:List[String],result:String):String = {
+    @scala.annotation.tailrec
+    def apply(lines:List[String], result:String):String = {
       if(lines.isEmpty) result
       else if(lines.head.split(" ")(0)==path) apply(lines.tail,result)
       else apply(lines.tail,result+lines.head+"\n")
@@ -77,11 +78,11 @@ class IndexHandler(f:File) extends FileHandler(f) {
   /**
     * function getBlobFileByName
     * @param name : the name of blob file we are looking for
-    * @param actual_directory : sgit repo
+    * @param actual_directory_path : sgit repo path
     * @return None if the file does'nt exist, else Some(<blob_file>)
     */
-  def getBlobFileByName(name:String,actual_directory:File): Option[FileHandler] = {
-    val blob_file = new FileHandler(new File(actual_directory.getPath+"/.sgit/objects/blobs/"+name))
+  def getBlobFileByName(name:String, actual_directory_path:String): Option[FileHandler] = {
+    val blob_file = new FileHandler(new File(actual_directory_path+"/.sgit/objects/blobs/"+name))
     if(blob_file.existFile()) Some(blob_file)
     else None
   }
@@ -98,11 +99,11 @@ class IndexHandler(f:File) extends FileHandler(f) {
   /**
     * function getTreeLineToInsert
     * @param path_dir : the path of directory (which will be a tree) we want to insert in tree
-    * @param actual_directory : the repository of sgit
+    * @param actual_directory_path : the repository of sgit
     * @return the line to insert in a tree, format : tree <tree_name>
     */
-  def getTreeLineToInsert(path_dir:String,actual_directory:File):String={
-    "\n"+"tree "+getTree(path_dir.substring(0,path_dir.length-1),actual_directory)+" "+path_dir
+  def getTreeLineToInsert(path_dir:String, actual_directory_path:String):String={
+    "\n"+"tree "+getTree(path_dir.substring(0,path_dir.length-1),actual_directory_path)+" "+path_dir
   }
 
   /**
@@ -120,32 +121,32 @@ class IndexHandler(f:File) extends FileHandler(f) {
     * function getAllTreesLineToInsert
     * @param list_dir : all paths of directories to insert (as tree) in tree
     * @param contentTree : the trees content in the tree which have to be returned
-    * @param actual_directory : the repository of sgit
+    * @param actual_directory_path : the repository of sgit
     * @return
     */
-  def getAllTreesLineToInsert(list_dir:List[String],contentTree:String,actual_directory:File):String={
+  def getAllTreesLineToInsert(list_dir:List[String],contentTree:String,actual_directory_path:String):String={
     if(list_dir.isEmpty) contentTree
-    else getAllTreesLineToInsert(list_dir.tail,contentTree+getTreeLineToInsert(list_dir.head,actual_directory),actual_directory)
+    else getAllTreesLineToInsert(list_dir.tail,contentTree+getTreeLineToInsert(list_dir.head,actual_directory_path),actual_directory_path)
   }
 
   /**
     * function getTree
     * @param path : the path from which we want to get the tree
-    * @param actual_directory : the repository of sgit
+    * @param actual_directory_path : the repository of sgit
     * @return the tree name which is it content encryption
     */
-  def getTree(path:String,actual_directory:File):String={
+  def getTree(path:String, actual_directory_path:String):String={
     //get the blobs lines to insert in tree
     val blobs_content = getAllBlobsLineToInsert(getFilesFromPath(path),"")
 
 
     //get the trees lines to insert in tree
-    val trees_content = getAllTreesLineToInsert(getDirPathFromPath(path),"",actual_directory)
+    val trees_content = getAllTreesLineToInsert(getDirPathFromPath(path),"",actual_directory_path)
 
     //encrypt the content for tree naming
     val tree_name = Encryption.sha1(blobs_content+trees_content)
     //create the tree file in .sgit/objects/trees
-    val tree_file = new FileHandler(new File(actual_directory.getPath+"/.sgit/objects/trees/"+tree_name))
+    val tree_file = new FileHandler(new File(actual_directory_path+"/.sgit/objects/trees/"+tree_name))
 
     if(!tree_file.existFile()) {
       tree_file.createFile()

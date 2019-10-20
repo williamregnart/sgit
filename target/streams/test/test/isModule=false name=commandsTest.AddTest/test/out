@@ -1,11 +1,11 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mAddTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32man add process[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should have initially an empty INDEX[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should not add a file with a wrong path[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should not createBlob of file1 and not add it to INDEX file because file1 has no content[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should createBlob of file1 and add it to INDEX file[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should create a new blob and modify INDEX when file1 is added, modified, and added again[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should add all files[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should remove file1 from index when deleted but keep the blob[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mremove function[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should remove file1 from index when deleted but keep the blob[0m[0m
+[info] AddTest:
+[info] an add process
+[info] - should have initially an empty INDEX
+[info] - should not add a file with a wrong path
+[info] - should not createBlob of file1 and not add it to INDEX file because file1 has no content
+[info] - should createBlob of file1 and add it to INDEX file
+[info] - should create a new blob and modify INDEX when file1 is added, modified, and added again
+[info] - should add all files
+[info] - should remove file1 from index when deleted but keep the blob
+[info] remove function
+[info] - should remove file1 from index when deleted but keep the blob

@@ -1,8 +1,8 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mFileHandlerTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32ma file handler[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should create file[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should in order, in File, create it, write content, write at the end, overwrite, [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give the path from directory repository[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give the unique key of file[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should replace line by content[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should give line with pattern in parameter[0m[0m
+[info] FileHandlerTest:
+[info] a file handler
+[info] - should create file
+[info] - should in order, in File, create it, write content, write at the end, overwrite, 
+[info] - should give the path from directory repository
+[info] - should give the unique key of file
+[info] - should replace line by content
+[info] - should give line with pattern in parameter
