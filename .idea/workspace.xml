@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7268ba84-f2ae-48a0-a52e-f8b3e7cf00b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/commands/CheckOut.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/CheckOut.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Branch.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Branch.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571339816322</updated>
       <workItem from="1571339822763" duration="20598000" />
-      <workItem from="1571510651942" duration="12938000" />
+      <workItem from="1571510651942" duration="13737000" />
     </task>
     <servers />
   </component>

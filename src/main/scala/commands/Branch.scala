@@ -44,9 +44,7 @@ object Branch {
         val actual_branch_file = new FileHandler(new File(actual_directory_path+"/.sgit/refs/heads/"+actual_branch_name))
         //get the last commit of actual branch
         val last_commit = actual_branch_file.getContent.replace("\n","")
-
-        //create the branch
-        createBranch(new_branch_name,last_commit,actual_directory_path)
+        if(last_commit!="") createBranch(new_branch_name,last_commit,actual_directory_path)
       }
       else createBranch(new_branch_name,"",actual_directory_path)
       println("branch "+new_branch_name+" has been created with success (use \"sgit checkout "+new_branch_name+"\" to go on this branch)")
