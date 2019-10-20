@@ -45,6 +45,7 @@ object Branch {
         //get the last commit of actual branch
         val last_commit = actual_branch_file.getContent.replace("\n","")
         if(last_commit!="") createBranch(new_branch_name,last_commit,actual_directory_path)
+        else println(Console.RED+"ERROR : You need to make first commit before creating a new branch"+Console.WHITE)
       }
       else createBranch(new_branch_name,"",actual_directory_path)
       println("branch "+new_branch_name+" has been created with success (use \"sgit checkout "+new_branch_name+"\" to go on this branch)")
