@@ -2,7 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7268ba84-f2ae-48a0-a52e-f8b3e7cf00b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/commands/Branch.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/commands/Branch.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/commandsTest/BranchTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/commandsTest/BranchTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/definedTests/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/_global/streams/succeeded_tests" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/_global/streams/succeeded_tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.BranchTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=commandsTest.BranchTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.AddTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.AddTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.BranchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.BranchTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.CheckOutTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.CheckOutTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.CommitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.CommitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.DiffTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.DiffTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.InitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.InitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.LogTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.LogTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.StatusTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-commandsTest.StatusTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-filesTest.DirectoryHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-filesTest.DirectoryHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-filesTest.FileHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-filesTest.FileHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-filesTest.IndexHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-filesTest.IndexHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-filesTest.TreeHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-filesTest.TreeHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-othersTest.PathTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-othersTest.PathTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.AddTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.AddTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.BranchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.BranchTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.CheckOutTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.CheckOutTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.CommitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.CommitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.DiffTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.DiffTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.InitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.InitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.LogTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.LogTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/commandsTest.StatusTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/commandsTest.StatusTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/filesTest.DirectoryHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/filesTest.DirectoryHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/filesTest.FileHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/filesTest.FileHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/filesTest.IndexHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/filesTest.IndexHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/filesTest.TreeHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/filesTest.TreeHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/othersTest.PathTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/othersTest.PathTest.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571339816322</updated>
       <workItem from="1571339822763" duration="20598000" />
-      <workItem from="1571510651942" duration="14246000" />
+      <workItem from="1571510651942" duration="15309000" />
     </task>
     <servers />
   </component>

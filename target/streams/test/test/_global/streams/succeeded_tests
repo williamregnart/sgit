@@ -1,27 +1,27 @@
 #Successful Tests
-#Sun Oct 20 20:06:25 CEST 2019
+#Sun Oct 20 20:47:27 CEST 2019
 IndexTest=1571033831326
-commandsTest.InitTest=1571594784638
-commandsTest.BranchTest=1571594784962
-filesTest.TreeHandlerTest=1571594784779
+commandsTest.InitTest=1571597247014
+commandsTest.BranchTest=1571597247337
+filesTest.TreeHandlerTest=1571597247116
 FileHandlerTest=1571267483721
-commandsTest.CheckOutTest=1571594784410
+commandsTest.CheckOutTest=1571597246925
 AddTest=1571267485952
-commandsTest.DiffTest=1571594785450
+commandsTest.DiffTest=1571597247633
 TreeHandlerTest=1571267484114
-othersTest.PathTest=1571594782932
-filesTest.FileHandlerTest=1571594785382
-commandsTest.AddTest=1571594781687
-filesTest.DirectoryHandlerTest=1571594784558
+othersTest.PathTest=1571597245701
+filesTest.FileHandlerTest=1571597247569
+commandsTest.AddTest=1571597244952
+filesTest.DirectoryHandlerTest=1571597246974
 StatusTest=1571267486781
-commandsTest.LogTest=1571594782849
-commandsTest.StatusTest=1571594782091
+commandsTest.LogTest=1571597245582
+commandsTest.StatusTest=1571597245084
 PathTest=1571267485139
 CommitTest=1571267487473
 DiffTest=1571267484428
 IndexHandlerTest=1571267485030
-commandsTest.CommitTest=1571594783641
+commandsTest.CommitTest=1571597246181
 InitTest=1571267483890
 LogTest=1571267486608
-filesTest.IndexHandlerTest=1571594785200
+filesTest.IndexHandlerTest=1571597247511
 BranchTest=1571267485445

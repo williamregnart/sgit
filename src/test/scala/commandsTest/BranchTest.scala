@@ -28,6 +28,7 @@ class BranchTest extends FunSpec with Matchers with BeforeAndAfter{
     file1.createFile()
     file1.addContent("hello darkness my old friend",appendContent = false)
     Add.addFilesToIndex(test_directory.getPath)
+    Commit.commit(test_directory.getPath)
   }
 
   /**
