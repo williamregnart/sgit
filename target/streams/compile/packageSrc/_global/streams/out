@@ -1,37 +1,37 @@
-[debug] Packaging C:\Users\willi\Documents\IG5\sgit_project\sgit\target\scala-2.11\sgit_2.11-0.1-sources.jar ...
+[debug] Packaging D:\sgit\target\scala-2.11\sgit_2.11-0.1-sources.jar ...
 [debug] Input file mappings:
 [debug] 	Main.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\Main.scala
+[debug] 	  D:\sgit\src\main\scala\Main.scala
 [debug] 	commands\Add.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Add.scala
+[debug] 	  D:\sgit\src\main\scala\commands\Add.scala
 [debug] 	commands\Branch.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Branch.scala
+[debug] 	  D:\sgit\src\main\scala\commands\Branch.scala
 [debug] 	commands\CheckOut.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\CheckOut.scala
+[debug] 	  D:\sgit\src\main\scala\commands\CheckOut.scala
 [debug] 	commands\Commit.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Commit.scala
+[debug] 	  D:\sgit\src\main\scala\commands\Commit.scala
 [debug] 	commands\Diff.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Diff.scala
+[debug] 	  D:\sgit\src\main\scala\commands\Diff.scala
 [debug] 	commands\Init.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Init.scala
+[debug] 	  D:\sgit\src\main\scala\commands\Init.scala
 [debug] 	commands\Log.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Log.scala
+[debug] 	  D:\sgit\src\main\scala\commands\Log.scala
 [debug] 	commands\Status.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Status.scala
+[debug] 	  D:\sgit\src\main\scala\commands\Status.scala
 [debug] 	commands\Tag.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\commands\Tag.scala
+[debug] 	  D:\sgit\src\main\scala\commands\Tag.scala
 [debug] 	files\CommitHandler.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\files\CommitHandler.scala
+[debug] 	  D:\sgit\src\main\scala\files\CommitHandler.scala
 [debug] 	files\DirectoryHandler.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\files\DirectoryHandler.scala
+[debug] 	  D:\sgit\src\main\scala\files\DirectoryHandler.scala
 [debug] 	files\FileHandler.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\files\FileHandler.scala
+[debug] 	  D:\sgit\src\main\scala\files\FileHandler.scala
 [debug] 	files\IndexHandler.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\files\IndexHandler.scala
+[debug] 	  D:\sgit\src\main\scala\files\IndexHandler.scala
 [debug] 	files\TreeHandler.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\files\TreeHandler.scala
+[debug] 	  D:\sgit\src\main\scala\files\TreeHandler.scala
 [debug] 	others\Encryption.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\others\Encryption.scala
+[debug] 	  D:\sgit\src\main\scala\others\Encryption.scala
 [debug] 	others\Path.scala
-[debug] 	  C:\Users\willi\Documents\IG5\sgit_project\sgit\src\main\scala\others\Path.scala
+[debug] 	  D:\sgit\src\main\scala\others\Path.scala
 [debug] Done packaging.

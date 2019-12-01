@@ -18,9 +18,9 @@ object Commit{
     *                  parentTree <<parentTree_name> or <None>>
     *                   <date>
     */
-  def generateCommitContent(tree:String,parent_tree:Option[String],date:String):String={
-    if(parent_tree.isDefined) "tree "+tree+"\n"+"parentTree "+parent_tree.get+"\n"+date
-    else "tree "+tree+"\n"+"parentTree None"+"\ndate "+date
+  def generateCommitContent(tree:String,parent_tree:Option[String],date:String,message:String):String={
+    if(parent_tree.isDefined) "tree "+tree+"\n"+"parentTree "+parent_tree.get+"\n"+date+"\n "+message
+    else "tree "+tree+"\n"+"parentTree None"+"\ndate "+date+"\n "+message
   }
 
   /**
@@ -30,8 +30,8 @@ object Commit{
     * @param date : date of today
     * @param actual_directory_path : sgit repo path
     */
-  def createCommitFile(tree:String,parent_tree:Option[String],date:String,actual_directory_path:String):Unit={
-    val content = generateCommitContent(tree,parent_tree,date)
+  def createCommitFile(tree:String,parent_tree:Option[String],date:String,message:String,actual_directory_path:String):Unit={
+    val content = generateCommitContent(tree,parent_tree,date,message)
     val commit_File = new FileHandler(new File(actual_directory_path+"/.sgit/objects/commits/"+Encryption.sha1(content)))
     commit_File.createFile()
     commit_File.addContent(content,appendContent = false)
@@ -96,7 +96,7 @@ object Commit{
     * function commit : create the tree from index, create the commit from it and commit (change commit ref in the actual branch)
     * @param actual_directory_path : sgit repo
     */
-  def commit(actual_directory_path:String):Unit={
+  def commit(actual_directory_path:String,message:String):Unit={
     val index_file = new IndexHandler(new File(actual_directory_path+"/.sgit/INDEX"))
     val tree = index_file.getTree("",actual_directory_path)
     val branch = getBranchToCommit(actual_directory_path)
@@ -104,14 +104,14 @@ object Commit{
 
     //if first commit, create commit file without parent tree and add the commit to branch
     if(getLastCommitFromBranch(branch,actual_directory_path)==""){
-      createCommitFile(tree,None,date,actual_directory_path)
-      addCommitToBranch(branch,Encryption.sha1(generateCommitContent(tree,None,date)),actual_directory_path)
+      createCommitFile(tree,None,date,message,actual_directory_path)
+      addCommitToBranch(branch,Encryption.sha1(generateCommitContent(tree,None,date,message)),actual_directory_path)
     }
       //else, create commit file with last commit ref as parent tree and add the commit to branch
     else {
       if (getCommitFileByName(getLastCommitFromBranch(branch,actual_directory_path), actual_directory_path).getTree != tree) {
-        createCommitFile(tree, Some(getLastCommitFromBranch(branch, actual_directory_path)), date, actual_directory_path)
-        addCommitToBranch(branch, Encryption.sha1(generateCommitContent(tree, Some(getLastCommitFromBranch(branch, actual_directory_path)), date)), actual_directory_path)
+        createCommitFile(tree, Some(getLastCommitFromBranch(branch, actual_directory_path)), date, message, actual_directory_path)
+        addCommitToBranch(branch, Encryption.sha1(generateCommitContent(tree, Some(getLastCommitFromBranch(branch, actual_directory_path)), date,message)), actual_directory_path)
 
       }
     }

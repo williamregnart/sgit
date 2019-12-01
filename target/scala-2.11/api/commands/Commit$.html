@@ -205,36 +205,36 @@
               
         </dd></dl></div>
     </li><li name="commands.Commit#commit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="commit(actual_directory_path:String):Unit"></a>
-      <a id="commit(String):Unit"></a>
+      <a id="commit(actual_directory_path:String,message:String):Unit"></a>
+      <a id="commit(String,String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">commit</span><span class="params">(<span name="actual_directory_path">actual_directory_path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">commit</span><span class="params">(<span name="actual_directory_path">actual_directory_path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#commands.Commit$@commit(actual_directory_path:String):Unit" title="Permalink" target="_top">
+      <a href="../index.html#commands.Commit$@commit(actual_directory_path:String,message:String):Unit" title="Permalink" target="_top">
         <img src="../lib/permalink.png" />
       </a>
     </span>
       <p class="shortcomment cmt">function commit : create the tree from index, create the commit from it and commit (change commit ref in the actual branch)</p><div class="fullcomment"><div class="comment cmt"><p>function commit : create the tree from index, create the commit from it and commit (change commit ref in the actual branch)</p></div><dl class="paramcmts block"><dt class="param">actual_directory_path</dt><dd class="cmt"><p>: sgit repo
 </p></dd></dl></div>
     </li><li name="commands.Commit#createCommitFile" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="createCommitFile(tree:String,parent_tree:Option[String],date:String,actual_directory_path:String):Unit"></a>
-      <a id="createCommitFile(String,Option[String],String,String):Unit"></a>
+      <a id="createCommitFile(tree:String,parent_tree:Option[String],date:String,message:String,actual_directory_path:String):Unit"></a>
+      <a id="createCommitFile(String,Option[String],String,String,String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">createCommitFile</span><span class="params">(<span name="tree">tree: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="parent_tree">parent_tree: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="date">date: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="actual_directory_path">actual_directory_path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">createCommitFile</span><span class="params">(<span name="tree">tree: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="parent_tree">parent_tree: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="date">date: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="actual_directory_path">actual_directory_path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#commands.Commit$@createCommitFile(tree:String,parent_tree:Option[String],date:String,actual_directory_path:String):Unit" title="Permalink" target="_top">
+      <a href="../index.html#commands.Commit$@createCommitFile(tree:String,parent_tree:Option[String],date:String,message:String,actual_directory_path:String):Unit" title="Permalink" target="_top">
         <img src="../lib/permalink.png" />
       </a>
     </span>
@@ -298,18 +298,18 @@
               
         </dd></dl></div>
     </li><li name="commands.Commit#generateCommitContent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="generateCommitContent(tree:String,parent_tree:Option[String],date:String):String"></a>
-      <a id="generateCommitContent(String,Option[String],String):String"></a>
+      <a id="generateCommitContent(tree:String,parent_tree:Option[String],date:String,message:String):String"></a>
+      <a id="generateCommitContent(String,Option[String],String,String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">generateCommitContent</span><span class="params">(<span name="tree">tree: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="parent_tree">parent_tree: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="date">date: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">generateCommitContent</span><span class="params">(<span name="tree">tree: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="parent_tree">parent_tree: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="date">date: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#commands.Commit$@generateCommitContent(tree:String,parent_tree:Option[String],date:String):String" title="Permalink" target="_top">
+      <a href="../index.html#commands.Commit$@generateCommitContent(tree:String,parent_tree:Option[String],date:String,message:String):String" title="Permalink" target="_top">
         <img src="../lib/permalink.png" />
       </a>
     </span>

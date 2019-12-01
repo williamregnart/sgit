@@ -2,7 +2,7 @@ package commands
 
 import java.io.File
 
-import files.{CommitHandler, FileHandler, IndexHandler, TreeHandler}
+import files.{CommitHandler, DirectoryHandler, FileHandler, IndexHandler, TreeHandler}
 
 import scala.collection.immutable.TreeMap
 
@@ -83,6 +83,50 @@ object Diff {
 
   def getAddedLinesWithoutIndexLine(file1_lines:List[String],file2_lines:List[String]):List[String]={
     getAddedLines(file1_lines,file2_lines).map(e => e._2)
+  }
+
+  def diffRepoIndex(actual_directory:String):List[String] = {
+
+    @scala.annotation.tailrec
+    def apply2(files_repo:List[String], index_file:(String,String),result:List[String]):List[String] = {
+      if(files_repo.isEmpty) result
+      else{
+        val actual_repo_file = new FileHandler(new File(files_repo.head.replaceFirst("/","")))
+        if(actual_repo_file.getName==index_file._1.replaceFirst("/","")){
+          val blob_file = new FileHandler(new File(actual_directory+"/.sgit/objects/blobs/"+index_file._2))
+          val blob_file_repo = actual_repo_file.getUniqueKey
+          val diff = getDiffBetweenFiles(actual_repo_file.getLinesList,"/"+actual_repo_file.getName,blob_file.getLinesList,index_file._1)
+          if(index_file._2 != blob_file_repo) apply2(files_repo.tail,index_file,result++diff)
+          else apply2(files_repo.tail,index_file,result)
+        }
+        else{
+          apply2(files_repo.tail,index_file,result)
+        }
+      }
+    }
+
+    @scala.annotation.tailrec
+    def apply(files_repo:List[String], index_files:Map[String,String],result:List[String]):List[String] = {
+      if(index_files.isEmpty) result
+      else{
+        apply(files_repo,index_files.tail,result++apply2(files_repo,index_files.head,List()))
+      }
+    }
+    val directory = new DirectoryHandler(new File(actual_directory))
+    val index = new IndexHandler(new File(actual_directory+"/.sgit/INDEX"))
+    apply(directory.getAllFilesPath,index.getPathAndBlob,List())
+  }
+
+  def printDiff(actualDirectory:String):Unit = {
+    @scala.annotation.tailrec
+    def apply(result:List[String]):Boolean = {
+      if(result.isEmpty) true
+      else {
+        println(result.head)
+        apply(result.tail)
+      }
+    }
+    apply(diffRepoIndex(actualDirectory))
   }
 
   def getDiffBetweenFiles(new_file_lines:List[String], new_file_name:String, old_file_lines:List[String], old_file_name:String):List[String] = {
@@ -169,6 +213,7 @@ object Diff {
 
         //the file path of the line in new index
         val file_in_new_index = lines_modified_new_index.head.split(" ")(0)
+
         //blob name of this file
         val blob_name_in_new_index = lines_modified_new_index.head.split(" ")(1)
         //blob file of this file

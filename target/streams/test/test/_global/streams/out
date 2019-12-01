@@ -1,24 +1,24 @@
-[debug] Running TaskDef(commandsTest.AddTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(commandsTest.StatusTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(commandsTest.LogTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(othersTest.PathTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(commandsTest.CommitTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(commandsTest.CheckOutTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(filesTest.DirectoryHandlerTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(commandsTest.InitTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(filesTest.TreeHandlerTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(commandsTest.BranchTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(filesTest.IndexHandlerTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(filesTest.FileHandlerTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
-[debug] Running TaskDef(commandsTest.DiffTest, org.scalatest.tools.Framework$$anon$1@1fd8238c, false, [SuiteSelector])
+[debug] Running TaskDef(commandsTest.AddTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(commandsTest.StatusTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(commandsTest.LogTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(othersTest.PathTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(commandsTest.CommitTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(commandsTest.CheckOutTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(filesTest.DirectoryHandlerTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(commandsTest.InitTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(filesTest.TreeHandlerTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(commandsTest.BranchTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(filesTest.IndexHandlerTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(filesTest.FileHandlerTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
+[debug] Running TaskDef(commandsTest.DiffTest, org.scalatest.tools.Framework$$anon$1@92abddc, false, [SuiteSelector])
 [debug] Summary for ScalaCheck not available.
 [info] ScalaTest
-[info] Run completed in 3 seconds, 303 milliseconds.
-[info] Total number of tests run: 62
+[info] Run completed in 4 seconds, 335 milliseconds.
+[info] Total number of tests run: 61
 [info] Suites: completed 13, aborted 0
-[info] Tests: succeeded 62, failed 0, canceled 0, ignored 0, pending 0
+[info] Tests: succeeded 61, failed 0, canceled 0, ignored 0, pending 0
 [info] All tests passed.
-[info] Passed: Total 62, Failed 0, Errors 0, Passed 62
+[info] Passed: Total 61, Failed 0, Errors 0, Passed 61
 [debug] Passed tests:
 [debug] 	commandsTest.AddTest
 [debug] 	commandsTest.StatusTest

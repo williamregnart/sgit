@@ -38,7 +38,7 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
     file3.createFile()
     file3.addContent("my old friend",appendContent = false)
     Add.addFilesToIndex(test_directory.getPath)
-    Commit.commit(test_directory.getPath)
+    Commit.commit(test_directory.getPath,"message")
     Branch.executeBranchCommand("slave",test_directory.getPath)
   }
 
@@ -70,7 +70,7 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
       file4.addContent("I've come to talk with you again",appendContent = false)
 
       Add.addFileToIndex("file4",test_directory.getPath)
-      Commit.commit(test_directory.getPath)
+      Commit.commit(test_directory.getPath,"message")
       val files_in_branch_master = test_directory_handler.getAllFilesPath
 
       file4.existFile() shouldBe true
@@ -94,7 +94,7 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
       file4.addContent("I've come to talk with you again",appendContent = false)
 
       Add.addFileToIndex("file4",test_directory.getPath)
-      Commit.commit(test_directory.getPath)
+      Commit.commit(test_directory.getPath,"message")
 
       file4.existFile() shouldBe true
 
@@ -113,7 +113,7 @@ class CheckOutTest extends FunSpec with Matchers with BeforeAndAfter {
       file4.addContent("I've come to talk with you again",appendContent = false)
 
       Add.addFileToIndex("file4",test_directory.getPath)
-      Commit.commit(test_directory.getPath)
+      Commit.commit(test_directory.getPath,"message")
 
       file4.existFile() shouldBe true
 

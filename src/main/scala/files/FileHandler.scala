@@ -35,10 +35,16 @@ class FileHandler(f: File) {
 
   def getUniqueKey: String = {
     val msdDigest = MessageDigest.getInstance("SHA-1")
-    msdDigest.update(getContent.getBytes("UTF-8"), 0, getContent.length)
+    if(getContent!="") {
+      msdDigest.update(getContent.getBytes("UTF-8"), 0, getContent.length)
+    }
+    else{
+      msdDigest.update(" ".getBytes("UTF-8"), 0, 1)
+    }
     val sha1 = DatatypeConverter.printHexBinary(msdDigest.digest)
     sha1
   }
+
   def getContent:String={
     @scala.annotation.tailrec
     def apply(scanner: Scanner, content:String):String= {

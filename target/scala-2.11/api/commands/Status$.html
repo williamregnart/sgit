@@ -333,22 +333,22 @@
       <p class="shortcomment cmt">function getFilesModifiedUntracked</p><div class="fullcomment"><div class="comment cmt"><p>function getFilesModifiedUntracked</p></div><dl class="paramcmts block"><dt class="param">repo_files</dt><dd class="cmt"><p>: paths of files in repo</p></dd><dt class="param">index_files_blobs</dt><dd class="cmt"><p>: paths of files in index with their blob (content hashed)</p></dd><dt class="param">actual_directory_path</dt><dd class="cmt"><p>: sgit repo</p></dd><dt>returns</dt><dd class="cmt"><p>path of file which are in index and repo but with different blobs
 </p></dd></dl></div>
     </li><li name="commands.Status#getModifiedUncommittedFiles" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getModifiedUncommittedFiles(actual_index_files_path:List[String],old_index_files_path:List[String]):List[String]"></a>
-      <a id="getModifiedUncommittedFiles(List[String],List[String]):List[String]"></a>
+      <a id="getModifiedUncommittedFiles(actual_index_files_blobs:Map[String,String],old_index_files_blobs:Map[String,String]):List[String]"></a>
+      <a id="getModifiedUncommittedFiles(Map[String,String],Map[String,String]):List[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getModifiedUncommittedFiles</span><span class="params">(<span name="actual_index_files_path">actual_index_files_path: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="old_index_files_path">old_index_files_path: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">getModifiedUncommittedFiles</span><span class="params">(<span name="actual_index_files_blobs">actual_index_files_blobs: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="old_index_files_blobs">old_index_files_blobs: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../index.html#commands.Status$@getModifiedUncommittedFiles(actual_index_files_path:List[String],old_index_files_path:List[String]):List[String]" title="Permalink" target="_top">
+      <a href="../index.html#commands.Status$@getModifiedUncommittedFiles(actual_index_files_blobs:Map[String,String],old_index_files_blobs:Map[String,String]):List[String]" title="Permalink" target="_top">
         <img src="../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">function getModifiedUncommittedFiles</p><div class="fullcomment"><div class="comment cmt"><p>function getModifiedUncommittedFiles</p></div><dl class="paramcmts block"><dt class="param">actual_index_files_path</dt><dd class="cmt"><p>: index of actual repo</p></dd><dt class="param">old_index_files_path</dt><dd class="cmt"><p>: index of tree of last commit</p></dd><dt>returns</dt><dd class="cmt"><p>files path which are in actual and old indexes but with different blobs
+      <p class="shortcomment cmt">function getModifiedUncommittedFiles</p><div class="fullcomment"><div class="comment cmt"><p>function getModifiedUncommittedFiles</p></div><dl class="paramcmts block"><dt class="param">actual_index_files_blobs</dt><dd class="cmt"><p>: index of actual repo</p></dd><dt class="param">old_index_files_blobs</dt><dd class="cmt"><p>: index of tree of last commit</p></dd><dt>returns</dt><dd class="cmt"><p>files path which are in actual and old indexes but with different blobs
 </p></dd></dl></div>
     </li><li name="commands.Status#getNewFilesUntracked" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getNewFilesUntracked(repo_files:List[String],index_files:List[String]):List[String]"></a>

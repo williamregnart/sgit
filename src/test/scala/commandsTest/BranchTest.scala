@@ -28,7 +28,7 @@ class BranchTest extends FunSpec with Matchers with BeforeAndAfter{
     file1.createFile()
     file1.addContent("hello darkness my old friend",appendContent = false)
     Add.addFilesToIndex(test_directory.getPath)
-    Commit.commit(test_directory.getPath)
+    Commit.commit(test_directory.getPath,"message")
   }
 
   /**
@@ -62,7 +62,7 @@ class BranchTest extends FunSpec with Matchers with BeforeAndAfter{
       new_branch_file.getContent shouldBe actual_branch_file.getContent
     }
     it("file of new branch should have the commit of actual branch (after a first commit)"){
-      Commit.commit(test_directory.getPath)
+      Commit.commit(test_directory.getPath,"message")
       executeBranchCommand("darkness",test_directory.getPath)
 
       val actual_branch_file = new FileHandler(new File(branches_directory.getPath+"/master"))

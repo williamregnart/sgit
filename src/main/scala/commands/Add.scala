@@ -34,23 +34,20 @@ object Add{
 
     if(fileToAdd.existFile()) {
       //file should not be empty to be add to index
-      if (!(fileToAdd.getContent == "")) {
 
-        createBlob(fileToAdd.getContent, actual_directory_path)
+      createBlob(fileToAdd.getContent, actual_directory_path)
 
-        val lineToAdd = fileToAdd.getPathFromDir(actual_directory_path) + " " + fileToAdd.getUniqueKey
+      val lineToAdd = fileToAdd.getPathFromDir(actual_directory_path) + " " + fileToAdd.getUniqueKey
 
-        // if file path exists in index, replace the blob
-        if (indexFile.getLineWithPattern(fileToAdd.getPathFromDir(actual_directory_path)).isDefined) {
-          indexFile.replaceLineByContent(indexFile.getLineWithPattern(fileToAdd.getPathFromDir(actual_directory_path)).get, lineToAdd)
-        }
-        //if file with the right blob doesn't exist in index, add it
-        if (!indexFile.existPatternInFile(lineToAdd)) {
-          indexFile.addContent(lineToAdd + "\n", appendContent = true)
-        }
-        true
+      // if file path exists in index, replace the blob
+      if (indexFile.getLineWithPattern(fileToAdd.getPathFromDir(actual_directory_path)).isDefined) {
+        indexFile.replaceLineByContent(indexFile.getLineWithPattern(fileToAdd.getPathFromDir(actual_directory_path)).get, lineToAdd)
       }
-      else false
+      //if file with the right blob doesn't exist in index, add it
+      if (!indexFile.existPatternInFile(lineToAdd)) {
+        indexFile.addContent(lineToAdd + "\n", appendContent = true)
+      }
+        true
     }
       //if file not found
     else{

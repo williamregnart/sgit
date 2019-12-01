@@ -146,16 +146,31 @@ object Status {
 
   /**
     * function getModifiedUncommittedFiles
-    * @param actual_index_files_path : index of actual repo
-    * @param old_index_files_path : index of tree of last commit
+    * @param actual_index_files_blobs : index of actual repo
+    * @param old_index_files_blobs : index of tree of last commit
     * @return files path which are in actual and old indexes but with different blobs
     */
-  def getModifiedUncommittedFiles(actual_index_files_path:List[String], old_index_files_path:List[String]):List[String]= {
-    val added_uncommitted_files = getAddedUncommittedFiles(actual_index_files_path,old_index_files_path)
+  def getModifiedUncommittedFiles(actual_index_files_blobs:Map[String,String], old_index_files_blobs:Map[String,String]):List[String]= {
 
-    val changed_and_added_lines = getNewFilesUntracked(actual_index_files_path,old_index_files_path)
-
-    changed_and_added_lines.filter(element => !added_uncommitted_files.contains(element.split(" ")(0)))
+    @scala.annotation.tailrec
+    def apply(new_files_blobs:Map[String,String], old_files_blobs:Map[String,String], result:List[String]):List[String]={
+      if(new_files_blobs.isEmpty) result
+      else{
+        //if old index contains the file
+        if(old_files_blobs.get(new_files_blobs.head._1).isDefined){
+          if(old_files_blobs(new_files_blobs.head._1)!=new_files_blobs.head._2){
+            apply(new_files_blobs.tail,old_files_blobs,result:+new_files_blobs.head._1)
+          }
+          else{
+            apply(new_files_blobs.tail,old_files_blobs,result)
+          }
+        }
+        else{
+          apply(new_files_blobs.tail,old_files_blobs,result)
+        }
+      }
+    }
+    apply(actual_index_files_blobs,old_index_files_blobs,List())
   }
 
   /**
@@ -165,42 +180,71 @@ object Status {
     */
   def printUncommittedFiles(actual_directory_path:String):Boolean = {
     //actual index
-    val index_file = new IndexHandler(new File(actual_directory_path+"/.sgit/INDEX"))
+    val index_file = new IndexHandler(new File(actual_directory_path + "/.sgit/INDEX"))
+    val index_files_blobs = index_file.getPathAndBlob
+    val actual_index_files = index_file.getAllFilesPath
 
     //-------to get the index of tree of last commit------
-    val branch  = new FileHandler(new File(actual_directory_path+"/.sgit/HEAD")).getContent.replace("\n","")
+    val branch = new FileHandler(new File(actual_directory_path + "/.sgit/HEAD")).getContent.replace("\n", "")
 
-    val commit_name = new FileHandler(new File(actual_directory_path+"/.sgit/refs/heads/"+branch)).getContent.replace("\n","")
+    val commit_name = new FileHandler(new File(actual_directory_path + "/.sgit/refs/heads/" + branch)).getContent.replace("\n", "")
 
-    val commit_file = new CommitHandler(new File(actual_directory_path+"/.sgit/objects/commits/"+commit_name))
+    if (commit_name != "") {
 
-    val tree_file = new TreeHandler(new File(actual_directory_path+"/.sgit/objects/trees/"+commit_file.getTree))
+      val commit_file = new CommitHandler(new File(actual_directory_path + "/.sgit/objects/commits/" + commit_name))
 
-    val index_last_commit = new IndexHandler(new File(actual_directory_path+"/.sgit/INDEX_LAST_COMMIT"))
-    index_last_commit.createFile()
-    index_last_commit.addContent(tree_file.getIndex("",actual_directory_path),appendContent = false)
-    //--------------------------
+      val tree_file = new TreeHandler(new File(actual_directory_path + "/.sgit/objects/trees/" + commit_file.getTree))
 
-    val actual_index_files = index_file.getAllFilesPath
-    val old_index_files = index_last_commit.getAllFilesPath
-    val get_added_uncommitted_files = getAddedUncommittedFiles(actual_index_files,old_index_files)
-    val get_deleted_uncommitted_files = getDeletedUncommittedFiles(actual_index_files,old_index_files)
-    val get_modified_uncommitted_files = getModifiedUncommittedFiles(actual_index_files,old_index_files)
+      val index_last_commit = new IndexHandler(new File(actual_directory_path + "/.sgit/INDEX_LAST_COMMIT"))
+      index_last_commit.createFile()
+      index_last_commit.addContent(tree_file.getIndex("", actual_directory_path), appendContent = false)
+      //--------------------------
 
-    //if nothing to commit
-    if(get_added_uncommitted_files.isEmpty && get_deleted_uncommitted_files.isEmpty && get_modified_uncommitted_files.isEmpty){
-      println("No changes to be committed")
-      print(Console.WHITE)
-      false
+      val old_index_files = index_last_commit.getAllFilesPath
+      val old_index_files_blobs = index_last_commit.getPathAndBlob
+
+      val get_added_uncommitted_files = getAddedUncommittedFiles(actual_index_files, old_index_files)
+      val get_deleted_uncommitted_files = getDeletedUncommittedFiles(actual_index_files, old_index_files)
+
+      val get_modified_uncommitted_files = getModifiedUncommittedFiles(index_files_blobs, old_index_files_blobs)
+
+      //if nothing to commit
+      if(get_added_uncommitted_files.isEmpty && get_deleted_uncommitted_files.isEmpty && get_modified_uncommitted_files.isEmpty){
+        println("No changes to be committed")
+        print(Console.WHITE)
+        false
+      }
+      else{
+        //added = true for color green in console
+        println("changes to be committed : ")
+        printElements(get_added_uncommitted_files,"new file",added = true)
+        printElements(get_deleted_uncommitted_files,"deleted",added = true)
+        printElements(get_modified_uncommitted_files,"modified",added = true)
+        print(Console.WHITE)
+        true
+      }
     }
     else{
-      //added = true for color green in console
-      println("changes to be committed : ")
-      printElements(get_added_uncommitted_files,"new file",added = true)
-      printElements(get_deleted_uncommitted_files,"deleted",added = true)
-      printElements(get_modified_uncommitted_files,"modified",added = true)
-      print(Console.WHITE)
-      true
+      val old_index_files = List()
+      val get_added_uncommitted_files = getAddedUncommittedFiles(actual_index_files, old_index_files)
+      val get_deleted_uncommitted_files = getDeletedUncommittedFiles(actual_index_files, old_index_files)
+      val get_modified_uncommitted_files = getModifiedUncommittedFiles(index_files_blobs, Map())
+
+      //if nothing to commit
+      if(get_added_uncommitted_files.isEmpty && get_deleted_uncommitted_files.isEmpty && get_modified_uncommitted_files.isEmpty){
+        println("No changes to be committed")
+        print(Console.WHITE)
+        false
+      }
+      else{
+        //added = true for color green in console
+        println("changes to be committed : ")
+        printElements(get_added_uncommitted_files,"new file",added = true)
+        printElements(get_deleted_uncommitted_files,"deleted",added = true)
+        printElements(get_modified_uncommitted_files,"modified",added = true)
+        print(Console.WHITE)
+        true
+      }
     }
   }
 

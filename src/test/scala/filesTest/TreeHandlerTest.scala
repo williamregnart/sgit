@@ -37,7 +37,7 @@ class TreeHandlerTest extends FunSpec with Matchers with BeforeAndAfter{
     file3.createFile()
     file3.addContent("my old friend",appendContent = false)
     Add.addFilesToIndex(test_directory.getPath)
-    Commit.commit(test_directory.getPath)
+    Commit.commit(test_directory.getPath,"message")
   }
 
   /**

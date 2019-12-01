@@ -50,12 +50,6 @@ class AddTest extends FunSpec with Matchers with BeforeAndAfter {
       Add.addFileToIndex("wrong/path",test_directory.getPath)
     }
 
-    it("should not createBlob of file1 and not add it to INDEX file because file1 has no content"){
-      Add.addFileToIndex("directory1/file1",test_directory.getPath)
-
-      blobs_directory.listFiles() shouldBe Array[String]()
-      index_file.getContent shouldBe ""
-    }
 
     it("should createBlob of file1 and add it to INDEX file"){
       file1.addContent("hello darkness my old friend",appendContent = true)

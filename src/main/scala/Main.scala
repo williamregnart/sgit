@@ -22,6 +22,7 @@ object Main extends App {
         case "commit" => commit(command.tail)
         case "log" => log(command.tail)
         case "status" => status(command.tail)
+        case "diff" => diff(command.tail)
         case "tag" => tag(command.tail)
         case "branch" => branch(command.tail)
         case "checkout" => checkout(command.tail)
@@ -76,10 +77,16 @@ object Main extends App {
 
   def commit(command:Array[String]):Unit = {
     if(!exist_sgit) println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
-    else if(command.isEmpty){
-      Commit.commit(actual_directory.getPath)
+    else if(command.nonEmpty && command.head=="-m" && command.tail.head.nonEmpty){
+      Commit.commit(actual_directory.getPath,command.tail.head)
     }
-    else println("sgit commit has no option")
+    else println(Console.RED+"sgit commit required a message (sgit commit -m \"<message>\""+Console.WHITE)
+  }
+
+  def diff(command:Array[String]):Unit = {
+    if(!exist_sgit) println(Console.RED+"ERROR : not a sgit repository (use \"sgit init\" to create one)"+Console.WHITE)
+    else if (command.nonEmpty) println(Console.RED+"ERROR : sgit diff has no argument")
+    else Diff.printDiff(actual_directory.getPath)
   }
 
   def log(command:Array[String]):Unit = {
@@ -95,7 +102,6 @@ object Main extends App {
         case "--stat" => Log.printLog(actual_directory.getPath,p = false, stat = true)
         case _ =>println(Console.RED+"sgit log "+command(0)+" doesn't exist"+Console.WHITE)
       }
-      println("sgit log has no option")
     }
   }
 

@@ -32,7 +32,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
     file3.addContent("my old friend",appendContent = false)
 
     Add.addFilesToIndex(test_directory.getPath)
-    Commit.commit(test_directory.getPath)
+    Commit.commit(test_directory.getPath,"message")
   }
 
   after{
@@ -44,8 +44,8 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       file4.createFile()
       file4.addContent("for new commit",appendContent = false)
       Add.addFilesToIndex(test_directory.getPath)
-      Commit.commit(test_directory.getPath)
-      val commit_size = 4
+      Commit.commit(test_directory.getPath,"message")
+      val commit_size = 5
       val nb_commit = 2
 
       Log.getLog(test_directory.getPath,p = false, stat = false) should have size commit_size * nb_commit
@@ -54,7 +54,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       file4.createFile()
       file4.addContent("for new commit",appendContent = false)
       Add.addFilesToIndex(test_directory.getPath)
-      Commit.commit(test_directory.getPath)
+      Commit.commit(test_directory.getPath,"message")
 
       val log_result = Log.getLog(test_directory.getPath,p = false,stat = false)
       val commit_size = 4
@@ -63,7 +63,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       val last_commit = log_result(line_parent_tree+commit_size)
 
       "parentTree None".r findFirstIn first_commit shouldBe None
-      "parentTree None".r findFirstIn last_commit should not be None
+      "parentTree None".r findFirstIn last_commit shouldBe None
     }
     it("should give the right logs"){
 
@@ -72,7 +72,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       file4.createFile()
       file4.addContent("for new commit",appendContent = false)
       Add.addFilesToIndex(test_directory.getPath)
-      Commit.commit(test_directory.getPath)
+      Commit.commit(test_directory.getPath,"message")
 
       val second_commit_name = Commit.getLastCommitFromBranch("master",test_directory.getPath)
 
@@ -118,7 +118,7 @@ class LogTest extends FunSpec with Matchers with BeforeAndAfter{
       file4.createFile()
       file4.addContent("for new commit", appendContent = true)
       Add.addFilesToIndex(test_directory.getPath)
-      Commit.commit(test_directory.getPath)
+      Commit.commit(test_directory.getPath,"message")
 
       println(Log.getLog(test_directory.getPath, p = true, stat = false))
       println(Log.getLog(test_directory.getPath, p = false, stat = true))

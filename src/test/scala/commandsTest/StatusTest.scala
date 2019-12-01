@@ -32,7 +32,7 @@ class StatusTest extends FunSpec with Matchers with BeforeAndAfter {
     file2.addContent("darkness",appendContent = false)
 
     Add.addFilesToIndex(test_directory.getPath)
-    Commit.commit(test_directory.getPath)
+    Commit.commit(test_directory.getPath,"message")
 
     file3.createFile()
     file3.addContent("friend",appendContent = false)
