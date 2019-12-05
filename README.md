@@ -8,6 +8,7 @@
 <ul>
 <li>Download zip archive present at <a href="https://github.com/williamregnart/sgit/blob/master/target/universal/sgit-0.1.zip">this link</a></li>
 <li>Unzip archive in the directory of your choice</li>
+	<li>In the bin folder, make sgit executable by running command <i>chmod +x sgit</i></li>
 <li>In your shell, add the sgit-0.1/bin directory path to your PATH</li>
 
 </ul>
